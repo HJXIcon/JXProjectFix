@@ -149,6 +149,7 @@ int main(int argc, const char * argv[]) {
         NSFileManager *fm = [NSFileManager defaultManager];
         for (NSInteger i = 1; i < arguments.count; i++) {
             NSString *argument = arguments[i];
+            /// 工程目录
             if (i == 1) {
                 gSourceCodeDir = argument;
                 if (![fm fileExistsAtPath:gSourceCodeDir isDirectory:&isDirectory]) {
@@ -161,15 +162,17 @@ int main(int argc, const char * argv[]) {
                 }
                 continue;
             }
-            ///修改图片名字
+            /// 修改图片名字
             if ([argument isEqualToString:@"-handleXcassets"]) {
                 needHandleXcassets = YES;
                 continue;
             }
+            /// 删除多余的注视
             if ([argument isEqualToString:@"-deleteComments"]) {
                 needDeleteComments = YES;
                 continue;
             }
+            /// 修改工程名字
             if ([argument isEqualToString:@"-modifyProjectName"]) {
                 NSString *string = arguments[++i];
                 NSArray<NSString *> *names = [string componentsSeparatedByString:@">"];
@@ -185,6 +188,7 @@ int main(int argc, const char * argv[]) {
                 }
                 continue;
             }
+            /// 修改类名前缀
             if ([argument isEqualToString:@"-modifyClassNamePrefix"]) {
                 NSString *string = arguments[++i];
                 projectFilePath = [string stringByAppendingPathComponent:@"project.pbxproj"];
@@ -208,6 +212,7 @@ int main(int argc, const char * argv[]) {
                 }
                 continue;
             }
+            
             if ([argument isEqualToString:@"-spamCodeOut"]) {
                 outDirString = @"新增垃圾代码";
 //                outDirString = arguments[++i];
@@ -239,10 +244,12 @@ int main(int argc, const char * argv[]) {
 //
                 continue;
             }
+            
             if ([argument isEqualToString:@"-ignoreDirNames"]) {
                 ignoreDirNames = [arguments[++i] componentsSeparatedByString:@","];
                 continue;
             }
+            /// 修改api前缀
             if ([argument isEqualToString:@"-chageAPIPrefix"]){
                 NSString *string = arguments[++i];
                 NSArray<NSString *> *names = [string componentsSeparatedByString:@">"];
@@ -258,12 +265,16 @@ int main(int argc, const char * argv[]) {
                 }
                 continue;
             }
+            /// 修改aip名字
             if([argument isEqualToString:@"-modifyAPIName"]){
                 needModifyAPIName = YES;
                 continue;
             }
         }
         
+// ===========================================
+// deal
+// ===========================================
         if (needHandleXcassets) {
             @autoreleasepool {
                 handleXcassetsFiles(gSourceCodeDir);
@@ -280,6 +291,7 @@ int main(int argc, const char * argv[]) {
 //            }
             printf("修改 Xcassets 中的图片名称完成,一共有%ld个图片文件，修改了%ld个\n",(long)kImageCount,(long)kfixImageCount);
         }
+        
         if (needModifyAPIName){
             printf("正在修改api名称\n");
              @autoreleasepool {
@@ -287,12 +299,14 @@ int main(int argc, const char * argv[]) {
              }
             printf("修改api名称完成\n");
         }
+        
         if (needDeleteComments) {
             @autoreleasepool {
                 deleteComments(gSourceCodeDir);
             }
             printf("删除注释和空行完成\n");
         }
+        
         if (oldProjectName && newProjectName) {
             printf("正在修改工程名\n");
             @autoreleasepool {
@@ -641,6 +655,7 @@ void generateSpamCodeFile(NSString *outDirectory, NSString *mFilePath, GSCSource
             [mFileMethodsString appendString:@"}\n"];
         }];
         
+        /// 
         NSString *newCategoryName;
         switch (type) {
             case GSCSourceTypeClass:
