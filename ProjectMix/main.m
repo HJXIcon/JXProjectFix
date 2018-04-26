@@ -430,7 +430,7 @@ void addSpamCodeFile(NSString *sourceCodeDir){
     for (NSString *filePath in files) {
         
         /// 忽略文件夹(不需要添加垃圾代码)
-        if ([filePath containsString:@"coreData"] ||[filePath containsString:@"AFNetworking"]  ) {
+        if ([filePath containsString:@"coreData"] ||[filePath containsString:@"AFNetworking"]  || [filePath containsString:@"BYKeyChain"]) {
             continue;
         }
         
