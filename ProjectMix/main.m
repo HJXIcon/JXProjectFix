@@ -35,7 +35,7 @@ void deleteAllSpamCode(NSString *sourceCodeDir,NSString *prefix);
 void changePrefix(NSString *sourceCodeDir, NSArray<NSString *> *ignoreDirNames,NSString *oldName, NSString *newName);
 void writeToFile(NSString *apiName);
 void modifyApi(NSString *sourceCodeDir,NSString *oldName,NSString *newName);
-void changeAPIName(NSString *sourceCodeDir,NSString *oldName);
+void changeAPIName(NSString *sourceCodeDir,NSString *oldName,NSString *apiPrefix);
 NSString *gOutParameterName = nil;
 NSString *gSourceCodeDir = nil;
 NSInteger kLocalImageIndex = 0;
@@ -265,13 +265,14 @@ int main(int argc, const char * argv[]) {
                 }
                 continue;
             }
-            /// 修改aip名字
+            /// 修改api名字
             if([argument isEqualToString:@"-modifyAPIName"]){
                 needModifyAPIName = YES;
                 continue;
             }
         }
-        
+
+#pragma mark - *** deal -----
 // ===========================================
 // deal
 // ===========================================
@@ -295,8 +296,20 @@ int main(int argc, const char * argv[]) {
         if (needModifyAPIName){
             printf("正在修改api名称\n");
              @autoreleasepool {
-                deleteAllSpamCode(gSourceCodeDir,@"sp_");
+                deleteAllSpamCode(gSourceCodeDir,@"spp_");
+
              }
+            
+            @autoreleasepool {
+                NSString *path = @"/Users/hjxicon/Desktop/JXProjectFix/ProjectMix/LocalAPIList.plist";
+                NSMutableArray* points = [NSMutableArray arrayWithContentsOfFile:path];
+                for(int i = 0;i<points.count;i++){
+                    @autoreleasepool {
+    
+                        changeAPIName(gSourceCodeDir,points[i],@"spp_");
+                    }
+                }
+            }
             printf("修改api名称完成\n");
         }
         
@@ -1154,7 +1167,8 @@ void deleteAllSpamCode(NSString *sourceCodeDir,NSString *prefix){
                 ///用正则表达式匹配
                 //                    NSString *prefixString = @"sp_.*?:";
                 //                    NSString *prefixString = @"^ie_.*(\\;|\\:|\\{)$";
-                NSString *prefixString = @"ii_.*?:";
+//                NSString *prefixString = @"ii_.*?:";
+                NSString *prefixString = @"spp_.*?:";
                 NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:prefixString options:NSRegularExpressionCaseInsensitive error:&error];
                 
                 NSArray<NSTextCheckingResult *> *result = [regex matchesInString:fileContent options:0 range:NSMakeRange(0, fileContent.length)];
@@ -1162,7 +1176,7 @@ void deleteAllSpamCode(NSString *sourceCodeDir,NSString *prefix){
                     for (int i = 0; i<result.count; i++) {
                         NSTextCheckingResult *res = result[i];
                         
-                        //                            NSLog(@"str == %@", [fileContent substringWithRange:res.range]);
+//                                                    NSLog(@"str == %@", [fileContent substringWithRange:res.range]);
                         @autoreleasepool {
                             writeToFile([fileContent substringWithRange:res.range]);
                         }
@@ -1180,7 +1194,7 @@ void writeToFile(NSString *apiName){
     if(k>kPercent){
         return;
     }
-    NSString *path = @"/Users/journeyyoung/GDIOSProjectMix/ProjectMix/LocalAPIList.plist";
+    NSString *path = @"/Users/hjxicon/Desktop/JXProjectFix/ProjectMix/LocalAPIList.plist";
     NSMutableArray* points = [NSMutableArray arrayWithContentsOfFile:path];
     NSString *newName = [apiName stringByReplacingOccurrencesOfString:@":" withString:@""];
     [points addObject:newName];
@@ -1188,9 +1202,9 @@ void writeToFile(NSString *apiName){
     
 }
 
-void changeAPIName(NSString *sourceCodeDir,NSString *oldName){
-    NSString *path1 = @"/Users/journeyyoung/GDIOSProjectMix/ProjectMix/Name.plist";
-    NSString *path2 = @"/Users/journeyyoung/GDIOSProjectMix/ProjectMix/NewAPIList.plist";
+void changeAPIName(NSString *sourceCodeDir,NSString *oldName,NSString *apiPrefix){
+    NSString *path1 = @"/Users/hjxicon/Desktop/JXProjectFix/ProjectMix/Name.plist";
+    NSString *path2 = @"/Users/hjxicon/Desktop/JXProjectFix/ProjectMix/NewAPIList.plist";
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path1];
     NSMutableArray *newArr = [NSMutableArray arrayWithContentsOfFile:path2];
     NSArray *arr1 = dic[@"firstArray"];
@@ -1207,7 +1221,7 @@ void changeAPIName(NSString *sourceCodeDir,NSString *oldName){
         NSInteger k4 = arc4random()%6;
         NSInteger k5 = arc4random()%6;
         NSInteger k6 = arc4random()%6;
-        newName = [NSString stringWithFormat:@"ii_%@%@%@%@%@%@",arr1[k1],arr2[k2],arr3[k3],arr4[k4],arr5[k5],arr6[k6]];
+        newName = [NSString stringWithFormat:@"%@%@%@%@%@%@%@",apiPrefix,arr1[k1],arr2[k2],arr3[k3],arr4[k4],arr5[k5],arr6[k6]];
         if(![newArr containsObject:newName]){
             break;
         }
