@@ -13,7 +13,7 @@ NSString *PublicHeader = @"APublicHeader.h";
 //外部(delegate)调用的类
 NSString *publicCallClassName = @"ASpamCode_Public";
 //垃圾代码输出路径
-NSString *outDirectory = @"/Users/hjxicon/Desktop/Linux/FixCode";
+NSString *outDirectory = @"/Users/hjxicon/Desktop/垃圾";
 
 
 

@@ -19,23 +19,39 @@ typedef NS_ENUM(NSInteger, GSCSourceType) {
     GSCSourceTypeClass,
     GSCSourceTypeCategory,
 };
-
+/// 递归文件
 void recursiveDirectory(NSString *directory, NSArray<NSString *> *ignoreDirNames, void(^handleMFile)(NSString *mFilePath), void(^handleSwiftFile)(NSString *swiftFilePath));
+/// 生成垃圾文件
 void generateSpamCodeFile(NSString *outDirectory, NSString *mFilePath, GSCSourceType type);
+/// 添加垃圾文件
 void addSpamCodeFile(NSString *sourceCodeDir);
+/// swift
 void generateSwiftSpamCodeFile(NSString *outDirectory, NSString *swiftFilePath);
 NSString *randomString(NSInteger length);
+
+/// 处理Xcassets
 void handleXcassetsFiles(NSString *directory);
+/// 删除注释
 void deleteComments(NSString *directory);
+/// 修改工程名
 void modifyProjectName(NSString *projectDir, NSString *oldName, NSString *newName);
+/// 修改类前缀
 void modifyClassNamePrefix(NSMutableString *projectContent, NSString *sourceCodeDir, NSArray<NSString *> *ignoreDirNames, NSString *oldName, NSString *newName);
+
 void replaceFileContend(NSString *sourceCodeDir,NSString *oldClassName,NSString *newClassName);
+/// 生成Api
 void creatApiToFile(NSString *sourceCodeDir,NSString *apiName, NSString *paramName,NSString *logName,NSString *filePath, BOOL isHfile);
+/// 删除所有垃圾代码
 void deleteAllSpamCode(NSString *sourceCodeDir,NSString *prefix);
+/// 修改前缀
 void changePrefix(NSString *sourceCodeDir, NSArray<NSString *> *ignoreDirNames,NSString *oldName, NSString *newName);
+/// 写文件
 void writeToFile(NSString *apiName);
+/// 修改Api
 void modifyApi(NSString *sourceCodeDir,NSString *oldName,NSString *newName);
+/// 修改Api名
 void changeAPIName(NSString *sourceCodeDir,NSString *oldName,NSString *apiPrefix);
+
 NSString *gOutParameterName = nil;
 NSString *gSourceCodeDir = nil;
 NSInteger kLocalImageIndex = 0;
@@ -109,6 +125,7 @@ BOOL regularReplacement(NSMutableString *originalString, NSString *regularExpres
     return isChanged;
 }
 
+/// 修改文件名
 void renameFile(NSString *oldPath, NSString *newPath) {
     NSError *error;
     [[NSFileManager defaultManager] moveItemAtPath:oldPath toPath:newPath error:&error];
@@ -443,7 +460,7 @@ void addSpamCodeFile(NSString *sourceCodeDir){
     for (NSString *filePath in files) {
         
         /// 忽略文件夹(不需要添加垃圾代码)
-        if ([filePath containsString:@"coreData"] ||[filePath containsString:@"AFNetworking"]  || [filePath containsString:@"BYKeyChain"]) {
+        if ([filePath containsString:@"CoreData"] ||[filePath containsString:@"AFNetworking"]  || [filePath containsString:@"BYKeyChain"]) {
             continue;
         }
         
@@ -485,8 +502,8 @@ void addSpamCodeFile(NSString *sourceCodeDir){
 void creatApiToFile(NSString *sourceCodeDir,NSString *apiName, NSString *paramName,NSString *logName,NSString *filePath, BOOL isHfile){
     /// 不需要加垃圾代码的文件（宏定义.h.m）
     NSString *lastPathName = [filePath lastPathComponent];
-    if ([lastPathName containsString:@"Constants"] || [lastPathName containsString:@"JHCommon"] || [lastPathName containsString:@"JHUrl"] || [lastPathName containsString:@"BYSDKCenter"] || [lastPathName containsString:@"BYPeymentInfo"]||
-        [lastPathName containsString:@"BYSDKLoginUser"]||[lastPathName containsString:@"JHDemoConst"] || [lastPathName containsString:@"CoreData"]) {
+    if ([lastPathName containsString:@"BYConstants"] || [lastPathName containsString:@"JHCommon"] || [lastPathName containsString:@"BYUrl"] || [lastPathName containsString:@"BYSDKCenter"] || [lastPathName containsString:@"BYPeymentInfo"]||
+        [lastPathName containsString:@"BYSDKLoginUser"]||[lastPathName containsString:@"BYUnionSDK"]) {
         
         return;
     }
@@ -1000,6 +1017,7 @@ void modifyFilesClassName(NSString *sourceCodeDir, NSString *oldClassName, NSStr
                 printf("打开文件 %s 失败：%s\n", path.UTF8String, error.localizedDescription.UTF8String);
                 abort();
             }
+            
             
             NSString *regularExpression = [NSString stringWithFormat:@"\\b%@\\b", oldClassName];
             BOOL isChanged = regularReplacement(fileContent, regularExpression, newClassName);
