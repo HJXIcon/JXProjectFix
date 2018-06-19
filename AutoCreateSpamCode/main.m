@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 //引入的头文件
-NSString *PublicHeader = @"APublicHeader.h";
+NSString *PublicHeader = @"BPublicHeader.h";
 //外部(delegate)调用的类
-NSString *publicCallClassName = @"ASpamCode_Public";
+NSString *publicCallClassName = @"BY_Public";
 //垃圾代码输出路径
-NSString *outDirectory = @"/Users/hjxicon/Desktop/垃圾";
+NSString *outDirectory = @"/Users/hjxicon/Desktop/辣鸡代码";
 
 
 
@@ -91,7 +91,7 @@ NSString *getRandomClassName(int length)
     string = [[string lowercaseString] capitalizedString];//转换首字母大写
     
 //    return [getClassPrefixString() stringByAppendingString:string];
-    string = [[@"BJ7_" stringByAppendingString:string] stringByAppendingString:@"_C9S"];
+    string = [[@"BY_" stringByAppendingString:string] stringByAppendingString:@"_B9S"];
     return string;
 }
 
