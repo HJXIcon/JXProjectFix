@@ -502,7 +502,7 @@ void addSpamCodeFile(NSString *sourceCodeDir){
 void creatApiToFile(NSString *sourceCodeDir,NSString *apiName, NSString *paramName,NSString *logName,NSString *filePath, BOOL isHfile){
     /// 不需要加垃圾代码的文件（宏定义.h.m）
     NSString *lastPathName = [filePath lastPathComponent];
-    if ([lastPathName containsString:@"BYConstants"] || [lastPathName containsString:@"JHCommon"] || [lastPathName containsString:@"BYUrl"] || [lastPathName containsString:@"BYSDKCenter"] || [lastPathName containsString:@"BYPeymentInfo"]||
+    if ([lastPathName containsString:@"BYConstants"] || [lastPathName containsString:@"JHCommon"] || [lastPathName containsString:@"BYUrl"] || [lastPathName containsString:@"BYSDKCenter"] || [lastPathName containsString:@"BYBootInfo"]||
         [lastPathName containsString:@"BYSDKLoginUser"]||[lastPathName containsString:@"BYUnionSDK"]) {
         
         return;
