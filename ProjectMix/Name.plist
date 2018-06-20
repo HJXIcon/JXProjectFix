@@ -4,12 +4,12 @@
 <dict>
 	<key>firstArray</key>
 	<array>
-		<string>get</string>
-		<string>check</string>
-		<string>upload</string>
-		<string>is</string>
-		<string>has</string>
-		<string>rest</string>
+		<string>obtain</string>
+		<string>chose</string>
+		<string>download</string>
+		<string>been</string>
+		<string>hold</string>
+		<string>reset</string>
 	</array>
 	<key>secondArray</key>
 	<array>

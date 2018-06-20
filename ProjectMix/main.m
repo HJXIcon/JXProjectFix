@@ -479,8 +479,8 @@ void addSpamCodeFile(NSString *sourceCodeDir){
                 continue;
             }
             
-            NSArray *apiList = @[@"sp_checkUserInfo",@"sp_upload",@"sp_getMediaData",@"sp_didGetInfoSuccess",@"sp_getUserFollowSuccess",@"sp_getLoginState",@"sp_checkNetWorking",@"sp_checkInfo",@"sp_getMediaFailed",@"sp_getUserName",@"sp_checkDefualtSetting",@"sp_didUserInfoFailed",@"sp_getUsersMostLiked",@"sp_getUsersMostLikedSuccess",@"sp_getUsersMostFollowerSuccess"];
-            NSArray *logList = @[@"Get Info Success",@"Get Info Failed",@"Continue",@"Check your Network",@"Get User Succrss"];
+            NSArray *apiList = @[@"sp_choseUserInfo",@"sp_download",@"sp_obtainMediaData",@"sp_didObtainInfoSuccess",@"sp_obtainUserFollowSuccess",@"sp_obtainLoginState",@"sp_choseNetWorking",@"sp_choseInfo",@"sp_obtainMediaFailed",@"sp_obtainUserName",@"sp_choseDefualtSetting",@"sp_didUserInfoFailed",@"sp_obtainUsersMostLiked",@"sp_obtainUsersMostLikedSuccess",@"sp_obtainUsersMostFollowerSuccess"];
+            NSArray *logList = @[@"Obtain Info Success",@"Obtain Info Failed",@"Continue",@"Chose your Network",@"Obtain User Success"];
             NSArray *param = @[@"string",@"mediaInfo",@"followCount",@"mediaCount",@"isLogin"];
             int listIndex = arc4random() % 15;
             int logIndex = arc4random() % 5;
