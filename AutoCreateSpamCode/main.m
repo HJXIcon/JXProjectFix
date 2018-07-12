@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 //引入的头文件
-NSString *PublicHeader = @"KAI_PublicHeader.h";
+NSString *PublicHeader = @"XWT_PublicHeader.h";
 //外部(delegate)调用的类
-NSString *publicCallClassName = @"KAI_Public";
+NSString *publicCallClassName = @"XWT_Public";
 //垃圾代码输出路径
 NSString *outDirectory = @"/Users/hjxicon/Desktop/UnionCode";
 
@@ -63,7 +63,7 @@ NSString * getRandomStringsWithLow(int length){
 #pragma mark:随机获取类前缀
 NSString *getClassPrefixString(){
     
-    NSString *string = @"KAI_Class_";
+    NSString *string = @"XWT_Class_";
     NSArray *strings = @[@"A_A02_E",@"B_A01_F",@"C_A14_G",@"D_A13_H",@"E_A03_I",@"F_A04_J",@"G_A15_K",@"H_A05_L",@"I_A14_M",@"J_A06_N",@"K_A11_O",@"L_A15_P",@"M_A13_Q",@"N_A07_U",@"O_A12_W",@"P_A13_V",@"Q_A14_Y",@"S_A15_Z",@"T_16_S",@"Y_A17_T",@"Z_A18_A"];
     string = strings[(int)(arc4random() % strings.count)];
     
@@ -73,7 +73,7 @@ NSString *getClassPrefixString(){
 #pragma mark:随机获取方法名前缀
 NSString *getMethodPrefixString(){
     
-    NSString *string = @"KAI_method_";
+    NSString *string = @"XWT_method_";
     NSArray *strings = @[@"bpg_X01_",@"bag_X11_",@"bmg_X12_",@"qpg_X03_",@"fag_X05_",@"wme_X13_",@"tpy_X06_",@"uad_X15_",@"msg_X13_",@"msb_X14_",@"nsg_X18_",@"okg_X12_",@"sbg_X19_",@"snk_X15_",@"ssw_X11_",@"ac_X19_",@"ef_X20_",@"cd_X09_",@"of_X12_",@"tt_X01_",@"st_X08_"];
     string = strings[(int)(arc4random() % strings.count)];
     return string;
@@ -91,7 +91,7 @@ NSString *getRandomClassName(int length)
     string = [[string lowercaseString] capitalizedString];//转换首字母大写
     
 //    return [getClassPrefixString() stringByAppendingString:string];
-    string = [[@"KAI_" stringByAppendingString:string] stringByAppendingString:@"_RCim2"];
+    string = [[@"XWT_" stringByAppendingString:string] stringByAppendingString:@"_FineArt"];
     return string;
 }
 
@@ -155,8 +155,8 @@ NSSet * getMethodNamesSet(){
             methodName = @"BYBird_method_";
         }
         
-        methodName = [@"Mth0_" stringByAppendingString:methodName];
-        methodName = [methodName stringByAppendingString:@"_RCIM"];
+        methodName = [@"fine_" stringByAppendingString:methodName];
+        methodName = [methodName stringByAppendingString:@"_Arts"];
         
         [set addObject:methodName];
         count--;
@@ -262,7 +262,7 @@ void generateSpamCodeFile(NSString *outDirectory,NSString *className){
     //每个类的方法集合，对外的类只用一个方法，用来调用
     NSSet *methodSets = getMethodNamesSet();
     if ([className isEqualToString:publicCallClassName]) {
-        methodSets = [NSSet setWithObjects:@"KAI_main_call", nil];
+        methodSets = [NSSet setWithObjects:@"XWT_main_call", nil];
         
     }
     
