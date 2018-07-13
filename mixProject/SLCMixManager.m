@@ -9,6 +9,15 @@
 #import "SLCMixManager.h"
 #import "SLCDataManager.h"
 
+// 类的注释字符串
+#define ClassCommentString @"//\n//  "
+// 工程名字
+#define ProjectNameString  @"\n//  NFishSDK\n//"
+// 作者时间
+#define CreaterAndCreatedTime @"\n//  Created by HJXIcon on 2018/5/18.\n//  Copyright © 2018年 HJXIcon. All rights reserved.\n//"
+// 随机变量最大个数
+#define RandomPropertyCount 7
+
 @interface SLCMixManager()
 
 @property (nonatomic, assign) NSUInteger randomBodyNum; //body随机数
@@ -99,7 +108,7 @@
     
      bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodFire]];
     
-    NSString *methodLists = @"\n+ (NSArray <NSString *>*)getAllMethods:(id)obj{\n    unsigned int methodCount =0;\n    Method* methodList = class_copyMethodList([obj class],&methodCount);\n    NSMutableArray *methodsArray = [NSMutableArray arrayWithCapacity:methodCount];\n    for(int i = 0; i < methodCount; i++){\n     Method temp = methodList[i];\n     method_getImplementation(temp);\n     method_getName(temp);\nconst char* name_s =sel_getName(method_getName(temp));\n     int arguments = method_getNumberOfArguments(temp);\n     const char* encoding =method_getTypeEncoding(temp);\n     if (![[NSString stringWithUTF8String:name_s] containsString:@\"set\"]) {\n //不要setter\n   \n       [methodsArray addObject:[NSString stringWithUTF8String:name_s]];\n    }\n     }\n     free(methodList);\n    return methodsArray;\n}\n";
+    NSString *methodLists = @"\n+ (NSArray <NSString *>*)getAllMethods:(id)obj{\n    unsigned int methodCount =0;\n    Method* methodList = class_copyMethodList([obj class],&methodCount);\n    NSMutableArray *methodsArray = [NSMutableArray arrayWithCapacity:methodCount];\n    for(int i = 0; i < methodCount; i++){\n     Method temp = methodList[i];\n     method_getImplementation(temp);\n     method_getName(temp);\nconst char* name_s =sel_getName(method_getName(temp));\nint arguments = method_getNumberOfArguments(temp);\n     const char* encoding =method_getTypeEncoding(temp);\n          if (![[NSString stringWithUTF8String:name_s] containsString:@\"set\"]) {\n //不要setter\n   \n       [methodsArray addObject:[NSString stringWithUTF8String:name_s]];\n    }\n     }\n     free(methodList);\n    return methodsArray;\n}\n";
     
     bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodLists]];
     
@@ -122,9 +131,9 @@
     BOOL isFileExists = [fileManager fileExistsAtPath:[NSString stringWithFormat:@"%@.h",filePath]];
     if (isFileExists) return; //文件已存在,立即停止
     
-   __block NSString *hString = [NSString stringWithFormat:@"\n\n\n\n\n#import <Foundation/Foundation.h>\n\n\nNS_ASSUME_NONNULL_BEGIN\n@interface %@ : NSObject\n%@\n",file,[self randomProperty]]; //.h文件内容
+   __block NSString *hString = [NSString stringWithFormat:@"%@%@%@\n\n#import <Foundation/Foundation.h>\n\n\nNS_ASSUME_NONNULL_BEGIN\n@interface %@ : NSObject\n%@\n",[NSString stringWithFormat:@"%@%@.h",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,[self randomProperty]]; //.h文件内容
     
-    __block NSString *mString = [NSString stringWithFormat:@"\n\n\n\n\n#import \"%@.h\"\n\n\n\n@implementation %@",file,file]; //.m文件内容
+    __block NSString *mString = [NSString stringWithFormat:@"%@%@%@\n\n#import \"%@.h\"\n\n\n\n@implementation %@",[NSString stringWithFormat:@"%@%@.m",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,file]; //.m文件内容
     
     void(^handle)(NSArray <NSString *>*methodArray) = ^(NSArray <NSString *>*methodArray){
         
@@ -156,9 +165,9 @@
 
 //随机变量
 - (NSString *)randomProperty {
-    NSUInteger randomNum = arc4random() % 6;
+    NSUInteger randomNum = arc4random() % RandomPropertyCount;
     if (randomNum == 0) return @"\n";
-    NSString *property = @"\n";
+    NSString *property = @"";
     for (NSInteger i = 0; i < randomNum; i ++) {
         if ([property containsString:[self randomPerProperty]]) continue; //如果有,跳过
         property = [NSString stringWithFormat:@"%@\n%@",property,[self randomPerProperty]];
@@ -168,6 +177,7 @@
 
 //随机一个变量
 - (NSString *)randomPerProperty {
+    
     NSString *propertyName = [NSString stringWithFormat:@"%@%@",bodyArray()[self.randomBodyNum],[self randomChar]];
     NSArray <NSString *>*propertyArray = @[
                                            @"\n",
@@ -176,8 +186,9 @@
                                            [NSString stringWithFormat:@"@property (nonatomic, copy) NSString *%@;",propertyName],
                                            [NSString stringWithFormat:@"@property (nonatomic, strong) NSArray *%@;",propertyName],
                                            [NSString stringWithFormat:@"@property (nonatomic, strong) NSDictionary *%@;",propertyName],
+                                           [NSString stringWithFormat:@"@property (nonatomic, copy) void(^%@Block)(void);",propertyName]
                                            ];
-    NSUInteger randomNum = arc4random() % 5;
+    NSUInteger randomNum = arc4random() % 7;
     return propertyArray[randomNum];
 }
 

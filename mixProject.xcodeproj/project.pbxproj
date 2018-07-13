@@ -7,6 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0160457A20F85C47005A6663 /* HJXadviceCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160448920F85C46005A6663 /* HJXadviceCallback.m */; };
+		0160457B20F85C47005A6663 /* HJXaffairView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160448B20F85C46005A6663 /* HJXaffairView.m */; };
+		0160457C20F85C47005A6663 /* HJXagentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160448D20F85C46005A6663 /* HJXagentManager.m */; };
+		0160457D20F85C47005A6663 /* HJXairAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160448F20F85C46005A6663 /* HJXairAnimation.m */; };
+		0160457E20F85C47005A6663 /* HJXappointmentFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449120F85C46005A6663 /* HJXappointmentFilter.m */; };
+		0160457F20F85C47005A6663 /* HJXareaDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449320F85C46005A6663 /* HJXareaDialog.m */; };
+		0160458020F85C47005A6663 /* HJXarticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449520F85C46005A6663 /* HJXarticleView.m */; };
+		0160458120F85C47005A6663 /* HJXatmosphereFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449720F85C46005A6663 /* HJXatmosphereFilter.m */; };
+		0160458220F85C47005A6663 /* HJXbalanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449920F85C46005A6663 /* HJXbalanceSource.m */; };
+		0160458320F85C47005A6663 /* HJXbeatArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449B20F85C46005A6663 /* HJXbeatArray.m */; };
+		0160458420F85C47005A6663 /* HJXbeautifulCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449D20F85C46005A6663 /* HJXbeautifulCollection.m */; };
+		0160458520F85C47005A6663 /* HJXbikeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160449F20F85C46005A6663 /* HJXbikeController.m */; };
+		0160458620F85C47005A6663 /* HJXbiteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044A120F85C46005A6663 /* HJXbiteHelper.m */; };
+		0160458720F85C47005A6663 /* HJXboatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044A320F85C46005A6663 /* HJXboatHelper.m */; };
+		0160458820F85C47005A6663 /* HJXbootRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044A520F85C46005A6663 /* HJXbootRender.m */; };
+		0160458920F85C47005A6663 /* HJXbrushLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044A720F85C46005A6663 /* HJXbrushLabel.m */; };
+		0160458A20F85C47005A6663 /* HJXBullets.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044A920F85C46005A6663 /* HJXBullets.m */; };
+		0160458B20F85C47005A6663 /* HJXburnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044AB20F85C46005A6663 /* HJXburnView.m */; };
+		0160458C20F85C47005A6663 /* HJXcatMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044AD20F85C46005A6663 /* HJXcatMapper.m */; };
+		0160458D20F85C47005A6663 /* HJXcharacterControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044AF20F85C46005A6663 /* HJXcharacterControl.m */; };
+		0160458E20F85C47005A6663 /* HJXcodeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044B120F85C46005A6663 /* HJXcodeEvent.m */; };
+		0160458F20F85C47005A6663 /* HJXcodeSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044B320F85C46005A6663 /* HJXcodeSettings.m */; };
+		0160459020F85C47005A6663 /* HJXcommandToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044B520F85C46005A6663 /* HJXcommandToken.m */; };
+		0160459120F85C47005A6663 /* HJXcontestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044B720F85C46005A6663 /* HJXcontestManager.m */; };
+		0160459220F85C47005A6663 /* HJXcrazyProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044B920F85C46005A6663 /* HJXcrazyProcessor.m */; };
+		0160459320F85C47005A6663 /* HJXcreativeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044BB20F85C46005A6663 /* HJXcreativeManager.m */; };
+		0160459420F85C47005A6663 /* HJXcriticismTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044BD20F85C46005A6663 /* HJXcriticismTask.m */; };
+		0160459520F85C47005A6663 /* HJXcupArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044BF20F85C46005A6663 /* HJXcupArray.m */; };
+		0160459620F85C47005A6663 /* HJXdanceSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044C120F85C46005A6663 /* HJXdanceSerializer.m */; };
+		0160459720F85C47005A6663 /* HJXdaughterWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044C320F85C46005A6663 /* HJXdaughterWrapper.m */; };
+		0160459820F85C47005A6663 /* HJXdecisionTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044C520F85C46005A6663 /* HJXdecisionTextField.m */; };
+		0160459920F85C47005A6663 /* HJXdecisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044C720F85C46005A6663 /* HJXdecisionView.m */; };
+		0160459A20F85C47005A6663 /* HJXdependentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044C920F85C46005A6663 /* HJXdependentHandler.m */; };
+		0160459B20F85C47005A6663 /* HJXdepositProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044CB20F85C46005A6663 /* HJXdepositProtocol.m */; };
+		0160459C20F85C47005A6663 /* HJXdepressionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044CD20F85C46005A6663 /* HJXdepressionProvider.m */; };
+		0160459D20F85C47005A6663 /* HJXdesignControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044CF20F85C46005A6663 /* HJXdesignControl.m */; };
+		0160459E20F85C47005A6663 /* HJXdesireListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044D120F85C46005A6663 /* HJXdesireListener.m */; };
+		0160459F20F85C47005A6663 /* HJXdetailConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044D320F85C46005A6663 /* HJXdetailConfiguration.m */; };
+		016045A020F85C47005A6663 /* HJXdisasterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044D520F85C46005A6663 /* HJXdisasterTool.m */; };
+		016045A120F85C47005A6663 /* HJXdriverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044D720F85C46005A6663 /* HJXdriverView.m */; };
+		016045A220F85C47005A6663 /* HJXdutyRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044D920F85C46005A6663 /* HJXdutyRouter.m */; };
+		016045A320F85C47005A6663 /* HJXeatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044DB20F85C46005A6663 /* HJXeatManager.m */; };
+		016045A420F85C47005A6663 /* HJXeditorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044DD20F85C46005A6663 /* HJXeditorModel.m */; };
+		016045A520F85C47005A6663 /* HJXemploymentNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044DF20F85C46005A6663 /* HJXemploymentNotification.m */; };
+		016045A620F85C47005A6663 /* HJXequipmentLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044E120F85C46005A6663 /* HJXequipmentLoader.m */; };
+		016045A720F85C47005A6663 /* HJXessayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044E320F85C46005A6663 /* HJXessayButton.m */; };
+		016045A820F85C47005A6663 /* HJXevidenceTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044E520F85C46005A6663 /* HJXevidenceTransformer.m */; };
+		016045A920F85C47005A6663 /* HJXgapSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044E720F85C46005A6663 /* HJXgapSession.m */; };
+		016045AA20F85C47005A6663 /* HJXgardenQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044E920F85C46005A6663 /* HJXgardenQueue.m */; };
+		016045AB20F85C47005A6663 /* HJXgateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044EB20F85C46005A6663 /* HJXgateVC.m */; };
+		016045AC20F85C47005A6663 /* HJXgolfClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044ED20F85C46005A6663 /* HJXgolfClient.m */; };
+		016045AD20F85C47005A6663 /* HJXhalfImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044EF20F85C46005A6663 /* HJXhalfImageView.m */; };
+		016045AE20F85C47005A6663 /* HJXheavyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044F120F85C46005A6663 /* HJXheavyHeader.m */; };
+		016045AF20F85C47005A6663 /* HJXhighService.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044F320F85C46005A6663 /* HJXhighService.m */; };
+		016045B020F85C47005A6663 /* HJXhitAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044F520F85C46005A6663 /* HJXhitAnimator.m */; };
+		016045B120F85C47005A6663 /* HJXhomeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044F720F85C46005A6663 /* HJXhomeNode.m */; };
+		016045B220F85C47005A6663 /* HJXhorrorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044F920F85C46005A6663 /* HJXhorrorController.m */; };
+		016045B320F85C47005A6663 /* HJXimageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044FB20F85C46005A6663 /* HJXimageProvider.m */; };
+		016045B420F85C47005A6663 /* HJXinsideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044FD20F85C46005A6663 /* HJXinsideCell.m */; };
+		016045B520F85C47005A6663 /* HJXinviteGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 016044FF20F85C46005A6663 /* HJXinviteGroup.m */; };
+		016045B620F85C47005A6663 /* HJXjuryImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450120F85C46005A6663 /* HJXjuryImageView.m */; };
+		016045B720F85C47005A6663 /* HJXkindListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450320F85C46005A6663 /* HJXkindListener.m */; };
+		016045B820F85C47005A6663 /* HJXlandObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450520F85C46005A6663 /* HJXlandObserver.m */; };
+		016045B920F85C47005A6663 /* HJXleadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450720F85C46005A6663 /* HJXleadVC.m */; };
+		016045BA20F85C47005A6663 /* HJXlectureDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450920F85C46005A6663 /* HJXlectureDialog.m */; };
+		016045BB20F85C47005A6663 /* HJXlogButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450B20F85C46005A6663 /* HJXlogButton.m */; };
+		016045BC20F85C47005A6663 /* HJXlogLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450D20F85C46005A6663 /* HJXlogLayer.m */; };
+		016045BD20F85C47005A6663 /* HJXmessageTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160450F20F85C46005A6663 /* HJXmessageTextField.m */; };
+		016045BE20F85C47005A6663 /* HJXmobileLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451120F85C46005A6663 /* HJXmobileLayout.m */; };
+		016045BF20F85C47005A6663 /* HJXmobileQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451320F85C46005A6663 /* HJXmobileQueue.m */; };
+		016045C020F85C47005A6663 /* HJXmoneyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451520F85C46005A6663 /* HJXmoneyView.m */; };
+		016045C120F85C47005A6663 /* HJXmouthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451720F85C46005A6663 /* HJXmouthManager.m */; };
+		016045C220F85C47005A6663 /* HJXnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451920F85C46005A6663 /* HJXnailCell.m */; };
+		016045C320F85C47005A6663 /* HJXnightAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451B20F85C46005A6663 /* HJXnightAdapter.m */; };
+		016045C420F85C47005A6663 /* HJXorderProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451D20F85C46005A6663 /* HJXorderProtocol.m */; };
+		016045C520F85C47005A6663 /* HJXoriginalMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160451F20F85C46005A6663 /* HJXoriginalMapper.m */; };
+		016045C620F85C47005A6663 /* HJXpastLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452120F85C46005A6663 /* HJXpastLoader.m */; };
+		016045C720F85C47005A6663 /* HJXpensionNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452320F85C46005A6663 /* HJXpensionNotification.m */; };
+		016045C820F85C47005A6663 /* HJXpersonalRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452520F85C46005A6663 /* HJXpersonalRender.m */; };
+		016045C920F85C47005A6663 /* HJXphoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452720F85C46005A6663 /* HJXphoneVC.m */; };
+		016045CA20F85C47005A6663 /* HJXpickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452920F85C46005A6663 /* HJXpickController.m */; };
+		016045CB20F85C47005A6663 /* HJXplayLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452B20F85C46005A6663 /* HJXplayLogger.m */; };
+		016045CC20F85C47005A6663 /* HJXpracticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452D20F85C46005A6663 /* HJXpracticeModel.m */; };
+		016045CD20F85C47005A6663 /* HJXprocedureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160452F20F85C46005A6663 /* HJXprocedureView.m */; };
+		016045CE20F85C47005A6663 /* HJXproductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453120F85C46005A6663 /* HJXproductGroup.m */; };
+		016045CF20F85C47005A6663 /* HJXproductVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453320F85C46005A6663 /* HJXproductVC.m */; };
+		016045D020F85C47005A6663 /* HJXprofessorContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453520F85C46005A6663 /* HJXprofessorContext.m */; };
+		016045D120F85C47005A6663 /* HJXprofileTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453720F85C46005A6663 /* HJXprofileTracker.m */; };
+		016045D220F85C47005A6663 /* HJXpsychologyStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453920F85C46005A6663 /* HJXpsychologyStorage.m */; };
+		016045D320F85C47005A6663 /* HJXqualityConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453B20F85C46005A6663 /* HJXqualityConfiguration.m */; };
+		016045D420F85C47005A6663 /* HJXrateAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453D20F85C46005A6663 /* HJXrateAnimation.m */; };
+		016045D520F85C47005A6663 /* HJXrecoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160453F20F85C46005A6663 /* HJXrecoverVC.m */; };
+		016045D620F85C47005A6663 /* HJXrelationshipError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454120F85C46005A6663 /* HJXrelationshipError.m */; };
+		016045D720F85C47005A6663 /* HJXresortInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454320F85C46005A6663 /* HJXresortInterpolator.m */; };
+		016045D820F85C47005A6663 /* HJXriseDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454520F85C46005A6663 /* HJXriseDelegate.m */; };
+		016045D920F85C47005A6663 /* HJXsandwichOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454720F85C46005A6663 /* HJXsandwichOperation.m */; };
+		016045DA20F85C47005A6663 /* HJXsecretLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454920F85C46005A6663 /* HJXsecretLabel.m */; };
+		016045DB20F85C47005A6663 /* HJXsensitiveTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454B20F85C46005A6663 /* HJXsensitiveTask.m */; };
+		016045DC20F85C47005A6663 /* HJXshakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454D20F85C46005A6663 /* HJXshakeCell.m */; };
+		016045DD20F85C47005A6663 /* HJXshoulderSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160454F20F85C47005A6663 /* HJXshoulderSource.m */; };
+		016045DE20F85C47005A6663 /* HJXsinkException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455120F85C47005A6663 /* HJXsinkException.m */; };
+		016045DF20F85C47005A6663 /* HJXskinVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455320F85C47005A6663 /* HJXskinVC.m */; };
+		016045E020F85C47005A6663 /* HJXsolutionBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455520F85C47005A6663 /* HJXsolutionBatch.m */; };
+		016045E120F85C47005A6663 /* HJXsplitLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455720F85C47005A6663 /* HJXsplitLayer.m */; };
+		016045E220F85C47005A6663 /* HJXstandardAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455920F85C47005A6663 /* HJXstandardAnimator.m */; };
+		016045E320F85C47005A6663 /* HJXstationDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455B20F85C47005A6663 /* HJXstationDictionary.m */; };
+		016045E420F85C47005A6663 /* HJXstillHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455D20F85C47005A6663 /* HJXstillHandler.m */; };
+		016045E520F85C47005A6663 /* HJXsubjectAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160455F20F85C47005A6663 /* HJXsubjectAnimation.m */; };
+		016045E620F85C47005A6663 /* HJXsupportTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456120F85C47005A6663 /* HJXsupportTextField.m */; };
+		016045E720F85C47005A6663 /* HJXtackleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456320F85C47005A6663 /* HJXtackleViewController.m */; };
+		016045E820F85C47005A6663 /* HJXtellContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456520F85C47005A6663 /* HJXtellContext.m */; };
+		016045E920F85C47005A6663 /* HJXtestEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456720F85C47005A6663 /* HJXtestEditor.m */; };
+		016045EA20F85C47005A6663 /* HJXtieDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456920F85C47005A6663 /* HJXtieDelegate.m */; };
+		016045EB20F85C47005A6663 /* HJXtouchBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456B20F85C47005A6663 /* HJXtouchBatch.m */; };
+		016045EC20F85C47005A6663 /* HJXtradeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456D20F85C47005A6663 /* HJXtradeView.m */; };
+		016045ED20F85C47005A6663 /* HJXtreatHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160456F20F85C47005A6663 /* HJXtreatHelper.m */; };
+		016045EE20F85C47005A6663 /* HJXupperHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160457120F85C47005A6663 /* HJXupperHandler.m */; };
+		016045EF20F85C47005A6663 /* HJXwaitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160457320F85C47005A6663 /* HJXwaitVC.m */; };
+		016045F020F85C47005A6663 /* HJXwinterAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160457520F85C47005A6663 /* HJXwinterAdapter.m */; };
+		016045F120F85C47005A6663 /* HJXwomanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160457720F85C47005A6663 /* HJXwomanManager.m */; };
+		016045F220F85C47005A6663 /* HJXworkerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160457920F85C47005A6663 /* HJXworkerModel.m */; };
 		91EE35DA20F3625800BD8AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE35D920F3625800BD8AA4 /* main.m */; };
 		91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +145,248 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0160448820F85C46005A6663 /* HJXadviceCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXadviceCallback.h; sourceTree = "<group>"; };
+		0160448920F85C46005A6663 /* HJXadviceCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXadviceCallback.m; sourceTree = "<group>"; };
+		0160448A20F85C46005A6663 /* HJXaffairView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXaffairView.h; sourceTree = "<group>"; };
+		0160448B20F85C46005A6663 /* HJXaffairView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXaffairView.m; sourceTree = "<group>"; };
+		0160448C20F85C46005A6663 /* HJXagentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXagentManager.h; sourceTree = "<group>"; };
+		0160448D20F85C46005A6663 /* HJXagentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXagentManager.m; sourceTree = "<group>"; };
+		0160448E20F85C46005A6663 /* HJXairAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXairAnimation.h; sourceTree = "<group>"; };
+		0160448F20F85C46005A6663 /* HJXairAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXairAnimation.m; sourceTree = "<group>"; };
+		0160449020F85C46005A6663 /* HJXappointmentFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXappointmentFilter.h; sourceTree = "<group>"; };
+		0160449120F85C46005A6663 /* HJXappointmentFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXappointmentFilter.m; sourceTree = "<group>"; };
+		0160449220F85C46005A6663 /* HJXareaDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXareaDialog.h; sourceTree = "<group>"; };
+		0160449320F85C46005A6663 /* HJXareaDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXareaDialog.m; sourceTree = "<group>"; };
+		0160449420F85C46005A6663 /* HJXarticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXarticleView.h; sourceTree = "<group>"; };
+		0160449520F85C46005A6663 /* HJXarticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXarticleView.m; sourceTree = "<group>"; };
+		0160449620F85C46005A6663 /* HJXatmosphereFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXatmosphereFilter.h; sourceTree = "<group>"; };
+		0160449720F85C46005A6663 /* HJXatmosphereFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXatmosphereFilter.m; sourceTree = "<group>"; };
+		0160449820F85C46005A6663 /* HJXbalanceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbalanceSource.h; sourceTree = "<group>"; };
+		0160449920F85C46005A6663 /* HJXbalanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbalanceSource.m; sourceTree = "<group>"; };
+		0160449A20F85C46005A6663 /* HJXbeatArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbeatArray.h; sourceTree = "<group>"; };
+		0160449B20F85C46005A6663 /* HJXbeatArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbeatArray.m; sourceTree = "<group>"; };
+		0160449C20F85C46005A6663 /* HJXbeautifulCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbeautifulCollection.h; sourceTree = "<group>"; };
+		0160449D20F85C46005A6663 /* HJXbeautifulCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbeautifulCollection.m; sourceTree = "<group>"; };
+		0160449E20F85C46005A6663 /* HJXbikeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbikeController.h; sourceTree = "<group>"; };
+		0160449F20F85C46005A6663 /* HJXbikeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbikeController.m; sourceTree = "<group>"; };
+		016044A020F85C46005A6663 /* HJXbiteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbiteHelper.h; sourceTree = "<group>"; };
+		016044A120F85C46005A6663 /* HJXbiteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbiteHelper.m; sourceTree = "<group>"; };
+		016044A220F85C46005A6663 /* HJXboatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXboatHelper.h; sourceTree = "<group>"; };
+		016044A320F85C46005A6663 /* HJXboatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXboatHelper.m; sourceTree = "<group>"; };
+		016044A420F85C46005A6663 /* HJXbootRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbootRender.h; sourceTree = "<group>"; };
+		016044A520F85C46005A6663 /* HJXbootRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbootRender.m; sourceTree = "<group>"; };
+		016044A620F85C46005A6663 /* HJXbrushLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbrushLabel.h; sourceTree = "<group>"; };
+		016044A720F85C46005A6663 /* HJXbrushLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbrushLabel.m; sourceTree = "<group>"; };
+		016044A820F85C46005A6663 /* HJXBullets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXBullets.h; sourceTree = "<group>"; };
+		016044A920F85C46005A6663 /* HJXBullets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXBullets.m; sourceTree = "<group>"; };
+		016044AA20F85C46005A6663 /* HJXburnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXburnView.h; sourceTree = "<group>"; };
+		016044AB20F85C46005A6663 /* HJXburnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXburnView.m; sourceTree = "<group>"; };
+		016044AC20F85C46005A6663 /* HJXcatMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcatMapper.h; sourceTree = "<group>"; };
+		016044AD20F85C46005A6663 /* HJXcatMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcatMapper.m; sourceTree = "<group>"; };
+		016044AE20F85C46005A6663 /* HJXcharacterControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcharacterControl.h; sourceTree = "<group>"; };
+		016044AF20F85C46005A6663 /* HJXcharacterControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcharacterControl.m; sourceTree = "<group>"; };
+		016044B020F85C46005A6663 /* HJXcodeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcodeEvent.h; sourceTree = "<group>"; };
+		016044B120F85C46005A6663 /* HJXcodeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcodeEvent.m; sourceTree = "<group>"; };
+		016044B220F85C46005A6663 /* HJXcodeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcodeSettings.h; sourceTree = "<group>"; };
+		016044B320F85C46005A6663 /* HJXcodeSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcodeSettings.m; sourceTree = "<group>"; };
+		016044B420F85C46005A6663 /* HJXcommandToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcommandToken.h; sourceTree = "<group>"; };
+		016044B520F85C46005A6663 /* HJXcommandToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcommandToken.m; sourceTree = "<group>"; };
+		016044B620F85C46005A6663 /* HJXcontestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcontestManager.h; sourceTree = "<group>"; };
+		016044B720F85C46005A6663 /* HJXcontestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcontestManager.m; sourceTree = "<group>"; };
+		016044B820F85C46005A6663 /* HJXcrazyProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcrazyProcessor.h; sourceTree = "<group>"; };
+		016044B920F85C46005A6663 /* HJXcrazyProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcrazyProcessor.m; sourceTree = "<group>"; };
+		016044BA20F85C46005A6663 /* HJXcreativeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcreativeManager.h; sourceTree = "<group>"; };
+		016044BB20F85C46005A6663 /* HJXcreativeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcreativeManager.m; sourceTree = "<group>"; };
+		016044BC20F85C46005A6663 /* HJXcriticismTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcriticismTask.h; sourceTree = "<group>"; };
+		016044BD20F85C46005A6663 /* HJXcriticismTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcriticismTask.m; sourceTree = "<group>"; };
+		016044BE20F85C46005A6663 /* HJXcupArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcupArray.h; sourceTree = "<group>"; };
+		016044BF20F85C46005A6663 /* HJXcupArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcupArray.m; sourceTree = "<group>"; };
+		016044C020F85C46005A6663 /* HJXdanceSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdanceSerializer.h; sourceTree = "<group>"; };
+		016044C120F85C46005A6663 /* HJXdanceSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdanceSerializer.m; sourceTree = "<group>"; };
+		016044C220F85C46005A6663 /* HJXdaughterWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdaughterWrapper.h; sourceTree = "<group>"; };
+		016044C320F85C46005A6663 /* HJXdaughterWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdaughterWrapper.m; sourceTree = "<group>"; };
+		016044C420F85C46005A6663 /* HJXdecisionTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdecisionTextField.h; sourceTree = "<group>"; };
+		016044C520F85C46005A6663 /* HJXdecisionTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdecisionTextField.m; sourceTree = "<group>"; };
+		016044C620F85C46005A6663 /* HJXdecisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdecisionView.h; sourceTree = "<group>"; };
+		016044C720F85C46005A6663 /* HJXdecisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdecisionView.m; sourceTree = "<group>"; };
+		016044C820F85C46005A6663 /* HJXdependentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdependentHandler.h; sourceTree = "<group>"; };
+		016044C920F85C46005A6663 /* HJXdependentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdependentHandler.m; sourceTree = "<group>"; };
+		016044CA20F85C46005A6663 /* HJXdepositProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdepositProtocol.h; sourceTree = "<group>"; };
+		016044CB20F85C46005A6663 /* HJXdepositProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdepositProtocol.m; sourceTree = "<group>"; };
+		016044CC20F85C46005A6663 /* HJXdepressionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdepressionProvider.h; sourceTree = "<group>"; };
+		016044CD20F85C46005A6663 /* HJXdepressionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdepressionProvider.m; sourceTree = "<group>"; };
+		016044CE20F85C46005A6663 /* HJXdesignControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdesignControl.h; sourceTree = "<group>"; };
+		016044CF20F85C46005A6663 /* HJXdesignControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdesignControl.m; sourceTree = "<group>"; };
+		016044D020F85C46005A6663 /* HJXdesireListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdesireListener.h; sourceTree = "<group>"; };
+		016044D120F85C46005A6663 /* HJXdesireListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdesireListener.m; sourceTree = "<group>"; };
+		016044D220F85C46005A6663 /* HJXdetailConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdetailConfiguration.h; sourceTree = "<group>"; };
+		016044D320F85C46005A6663 /* HJXdetailConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdetailConfiguration.m; sourceTree = "<group>"; };
+		016044D420F85C46005A6663 /* HJXdisasterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdisasterTool.h; sourceTree = "<group>"; };
+		016044D520F85C46005A6663 /* HJXdisasterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdisasterTool.m; sourceTree = "<group>"; };
+		016044D620F85C46005A6663 /* HJXdriverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdriverView.h; sourceTree = "<group>"; };
+		016044D720F85C46005A6663 /* HJXdriverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdriverView.m; sourceTree = "<group>"; };
+		016044D820F85C46005A6663 /* HJXdutyRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdutyRouter.h; sourceTree = "<group>"; };
+		016044D920F85C46005A6663 /* HJXdutyRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdutyRouter.m; sourceTree = "<group>"; };
+		016044DA20F85C46005A6663 /* HJXeatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXeatManager.h; sourceTree = "<group>"; };
+		016044DB20F85C46005A6663 /* HJXeatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXeatManager.m; sourceTree = "<group>"; };
+		016044DC20F85C46005A6663 /* HJXeditorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXeditorModel.h; sourceTree = "<group>"; };
+		016044DD20F85C46005A6663 /* HJXeditorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXeditorModel.m; sourceTree = "<group>"; };
+		016044DE20F85C46005A6663 /* HJXemploymentNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXemploymentNotification.h; sourceTree = "<group>"; };
+		016044DF20F85C46005A6663 /* HJXemploymentNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXemploymentNotification.m; sourceTree = "<group>"; };
+		016044E020F85C46005A6663 /* HJXequipmentLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXequipmentLoader.h; sourceTree = "<group>"; };
+		016044E120F85C46005A6663 /* HJXequipmentLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXequipmentLoader.m; sourceTree = "<group>"; };
+		016044E220F85C46005A6663 /* HJXessayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXessayButton.h; sourceTree = "<group>"; };
+		016044E320F85C46005A6663 /* HJXessayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXessayButton.m; sourceTree = "<group>"; };
+		016044E420F85C46005A6663 /* HJXevidenceTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXevidenceTransformer.h; sourceTree = "<group>"; };
+		016044E520F85C46005A6663 /* HJXevidenceTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXevidenceTransformer.m; sourceTree = "<group>"; };
+		016044E620F85C46005A6663 /* HJXgapSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgapSession.h; sourceTree = "<group>"; };
+		016044E720F85C46005A6663 /* HJXgapSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgapSession.m; sourceTree = "<group>"; };
+		016044E820F85C46005A6663 /* HJXgardenQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgardenQueue.h; sourceTree = "<group>"; };
+		016044E920F85C46005A6663 /* HJXgardenQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgardenQueue.m; sourceTree = "<group>"; };
+		016044EA20F85C46005A6663 /* HJXgateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgateVC.h; sourceTree = "<group>"; };
+		016044EB20F85C46005A6663 /* HJXgateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgateVC.m; sourceTree = "<group>"; };
+		016044EC20F85C46005A6663 /* HJXgolfClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgolfClient.h; sourceTree = "<group>"; };
+		016044ED20F85C46005A6663 /* HJXgolfClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgolfClient.m; sourceTree = "<group>"; };
+		016044EE20F85C46005A6663 /* HJXhalfImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhalfImageView.h; sourceTree = "<group>"; };
+		016044EF20F85C46005A6663 /* HJXhalfImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhalfImageView.m; sourceTree = "<group>"; };
+		016044F020F85C46005A6663 /* HJXheavyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXheavyHeader.h; sourceTree = "<group>"; };
+		016044F120F85C46005A6663 /* HJXheavyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXheavyHeader.m; sourceTree = "<group>"; };
+		016044F220F85C46005A6663 /* HJXhighService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhighService.h; sourceTree = "<group>"; };
+		016044F320F85C46005A6663 /* HJXhighService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhighService.m; sourceTree = "<group>"; };
+		016044F420F85C46005A6663 /* HJXhitAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhitAnimator.h; sourceTree = "<group>"; };
+		016044F520F85C46005A6663 /* HJXhitAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhitAnimator.m; sourceTree = "<group>"; };
+		016044F620F85C46005A6663 /* HJXhomeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhomeNode.h; sourceTree = "<group>"; };
+		016044F720F85C46005A6663 /* HJXhomeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhomeNode.m; sourceTree = "<group>"; };
+		016044F820F85C46005A6663 /* HJXhorrorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhorrorController.h; sourceTree = "<group>"; };
+		016044F920F85C46005A6663 /* HJXhorrorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhorrorController.m; sourceTree = "<group>"; };
+		016044FA20F85C46005A6663 /* HJXimageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXimageProvider.h; sourceTree = "<group>"; };
+		016044FB20F85C46005A6663 /* HJXimageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXimageProvider.m; sourceTree = "<group>"; };
+		016044FC20F85C46005A6663 /* HJXinsideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXinsideCell.h; sourceTree = "<group>"; };
+		016044FD20F85C46005A6663 /* HJXinsideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXinsideCell.m; sourceTree = "<group>"; };
+		016044FE20F85C46005A6663 /* HJXinviteGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXinviteGroup.h; sourceTree = "<group>"; };
+		016044FF20F85C46005A6663 /* HJXinviteGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXinviteGroup.m; sourceTree = "<group>"; };
+		0160450020F85C46005A6663 /* HJXjuryImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXjuryImageView.h; sourceTree = "<group>"; };
+		0160450120F85C46005A6663 /* HJXjuryImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXjuryImageView.m; sourceTree = "<group>"; };
+		0160450220F85C46005A6663 /* HJXkindListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXkindListener.h; sourceTree = "<group>"; };
+		0160450320F85C46005A6663 /* HJXkindListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXkindListener.m; sourceTree = "<group>"; };
+		0160450420F85C46005A6663 /* HJXlandObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlandObserver.h; sourceTree = "<group>"; };
+		0160450520F85C46005A6663 /* HJXlandObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlandObserver.m; sourceTree = "<group>"; };
+		0160450620F85C46005A6663 /* HJXleadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXleadVC.h; sourceTree = "<group>"; };
+		0160450720F85C46005A6663 /* HJXleadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXleadVC.m; sourceTree = "<group>"; };
+		0160450820F85C46005A6663 /* HJXlectureDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlectureDialog.h; sourceTree = "<group>"; };
+		0160450920F85C46005A6663 /* HJXlectureDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlectureDialog.m; sourceTree = "<group>"; };
+		0160450A20F85C46005A6663 /* HJXlogButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlogButton.h; sourceTree = "<group>"; };
+		0160450B20F85C46005A6663 /* HJXlogButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlogButton.m; sourceTree = "<group>"; };
+		0160450C20F85C46005A6663 /* HJXlogLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlogLayer.h; sourceTree = "<group>"; };
+		0160450D20F85C46005A6663 /* HJXlogLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlogLayer.m; sourceTree = "<group>"; };
+		0160450E20F85C46005A6663 /* HJXmessageTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmessageTextField.h; sourceTree = "<group>"; };
+		0160450F20F85C46005A6663 /* HJXmessageTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmessageTextField.m; sourceTree = "<group>"; };
+		0160451020F85C46005A6663 /* HJXmobileLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmobileLayout.h; sourceTree = "<group>"; };
+		0160451120F85C46005A6663 /* HJXmobileLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmobileLayout.m; sourceTree = "<group>"; };
+		0160451220F85C46005A6663 /* HJXmobileQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmobileQueue.h; sourceTree = "<group>"; };
+		0160451320F85C46005A6663 /* HJXmobileQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmobileQueue.m; sourceTree = "<group>"; };
+		0160451420F85C46005A6663 /* HJXmoneyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmoneyView.h; sourceTree = "<group>"; };
+		0160451520F85C46005A6663 /* HJXmoneyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmoneyView.m; sourceTree = "<group>"; };
+		0160451620F85C46005A6663 /* HJXmouthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmouthManager.h; sourceTree = "<group>"; };
+		0160451720F85C46005A6663 /* HJXmouthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmouthManager.m; sourceTree = "<group>"; };
+		0160451820F85C46005A6663 /* HJXnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXnailCell.h; sourceTree = "<group>"; };
+		0160451920F85C46005A6663 /* HJXnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXnailCell.m; sourceTree = "<group>"; };
+		0160451A20F85C46005A6663 /* HJXnightAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXnightAdapter.h; sourceTree = "<group>"; };
+		0160451B20F85C46005A6663 /* HJXnightAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXnightAdapter.m; sourceTree = "<group>"; };
+		0160451C20F85C46005A6663 /* HJXorderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXorderProtocol.h; sourceTree = "<group>"; };
+		0160451D20F85C46005A6663 /* HJXorderProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXorderProtocol.m; sourceTree = "<group>"; };
+		0160451E20F85C46005A6663 /* HJXoriginalMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXoriginalMapper.h; sourceTree = "<group>"; };
+		0160451F20F85C46005A6663 /* HJXoriginalMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXoriginalMapper.m; sourceTree = "<group>"; };
+		0160452020F85C46005A6663 /* HJXpastLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpastLoader.h; sourceTree = "<group>"; };
+		0160452120F85C46005A6663 /* HJXpastLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpastLoader.m; sourceTree = "<group>"; };
+		0160452220F85C46005A6663 /* HJXpensionNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpensionNotification.h; sourceTree = "<group>"; };
+		0160452320F85C46005A6663 /* HJXpensionNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpensionNotification.m; sourceTree = "<group>"; };
+		0160452420F85C46005A6663 /* HJXpersonalRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpersonalRender.h; sourceTree = "<group>"; };
+		0160452520F85C46005A6663 /* HJXpersonalRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpersonalRender.m; sourceTree = "<group>"; };
+		0160452620F85C46005A6663 /* HJXphoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXphoneVC.h; sourceTree = "<group>"; };
+		0160452720F85C46005A6663 /* HJXphoneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXphoneVC.m; sourceTree = "<group>"; };
+		0160452820F85C46005A6663 /* HJXpickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpickController.h; sourceTree = "<group>"; };
+		0160452920F85C46005A6663 /* HJXpickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpickController.m; sourceTree = "<group>"; };
+		0160452A20F85C46005A6663 /* HJXplayLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXplayLogger.h; sourceTree = "<group>"; };
+		0160452B20F85C46005A6663 /* HJXplayLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXplayLogger.m; sourceTree = "<group>"; };
+		0160452C20F85C46005A6663 /* HJXpracticeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpracticeModel.h; sourceTree = "<group>"; };
+		0160452D20F85C46005A6663 /* HJXpracticeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpracticeModel.m; sourceTree = "<group>"; };
+		0160452E20F85C46005A6663 /* HJXprocedureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXprocedureView.h; sourceTree = "<group>"; };
+		0160452F20F85C46005A6663 /* HJXprocedureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXprocedureView.m; sourceTree = "<group>"; };
+		0160453020F85C46005A6663 /* HJXproductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXproductGroup.h; sourceTree = "<group>"; };
+		0160453120F85C46005A6663 /* HJXproductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXproductGroup.m; sourceTree = "<group>"; };
+		0160453220F85C46005A6663 /* HJXproductVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXproductVC.h; sourceTree = "<group>"; };
+		0160453320F85C46005A6663 /* HJXproductVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXproductVC.m; sourceTree = "<group>"; };
+		0160453420F85C46005A6663 /* HJXprofessorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXprofessorContext.h; sourceTree = "<group>"; };
+		0160453520F85C46005A6663 /* HJXprofessorContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXprofessorContext.m; sourceTree = "<group>"; };
+		0160453620F85C46005A6663 /* HJXprofileTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXprofileTracker.h; sourceTree = "<group>"; };
+		0160453720F85C46005A6663 /* HJXprofileTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXprofileTracker.m; sourceTree = "<group>"; };
+		0160453820F85C46005A6663 /* HJXpsychologyStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpsychologyStorage.h; sourceTree = "<group>"; };
+		0160453920F85C46005A6663 /* HJXpsychologyStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpsychologyStorage.m; sourceTree = "<group>"; };
+		0160453A20F85C46005A6663 /* HJXqualityConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXqualityConfiguration.h; sourceTree = "<group>"; };
+		0160453B20F85C46005A6663 /* HJXqualityConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXqualityConfiguration.m; sourceTree = "<group>"; };
+		0160453C20F85C46005A6663 /* HJXrateAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrateAnimation.h; sourceTree = "<group>"; };
+		0160453D20F85C46005A6663 /* HJXrateAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrateAnimation.m; sourceTree = "<group>"; };
+		0160453E20F85C46005A6663 /* HJXrecoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrecoverVC.h; sourceTree = "<group>"; };
+		0160453F20F85C46005A6663 /* HJXrecoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrecoverVC.m; sourceTree = "<group>"; };
+		0160454020F85C46005A6663 /* HJXrelationshipError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrelationshipError.h; sourceTree = "<group>"; };
+		0160454120F85C46005A6663 /* HJXrelationshipError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrelationshipError.m; sourceTree = "<group>"; };
+		0160454220F85C46005A6663 /* HJXresortInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXresortInterpolator.h; sourceTree = "<group>"; };
+		0160454320F85C46005A6663 /* HJXresortInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXresortInterpolator.m; sourceTree = "<group>"; };
+		0160454420F85C46005A6663 /* HJXriseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXriseDelegate.h; sourceTree = "<group>"; };
+		0160454520F85C46005A6663 /* HJXriseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXriseDelegate.m; sourceTree = "<group>"; };
+		0160454620F85C46005A6663 /* HJXsandwichOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsandwichOperation.h; sourceTree = "<group>"; };
+		0160454720F85C46005A6663 /* HJXsandwichOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsandwichOperation.m; sourceTree = "<group>"; };
+		0160454820F85C46005A6663 /* HJXsecretLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsecretLabel.h; sourceTree = "<group>"; };
+		0160454920F85C46005A6663 /* HJXsecretLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsecretLabel.m; sourceTree = "<group>"; };
+		0160454A20F85C46005A6663 /* HJXsensitiveTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsensitiveTask.h; sourceTree = "<group>"; };
+		0160454B20F85C46005A6663 /* HJXsensitiveTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsensitiveTask.m; sourceTree = "<group>"; };
+		0160454C20F85C46005A6663 /* HJXshakeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXshakeCell.h; sourceTree = "<group>"; };
+		0160454D20F85C46005A6663 /* HJXshakeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXshakeCell.m; sourceTree = "<group>"; };
+		0160454E20F85C46005A6663 /* HJXshoulderSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXshoulderSource.h; sourceTree = "<group>"; };
+		0160454F20F85C47005A6663 /* HJXshoulderSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXshoulderSource.m; sourceTree = "<group>"; };
+		0160455020F85C47005A6663 /* HJXsinkException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsinkException.h; sourceTree = "<group>"; };
+		0160455120F85C47005A6663 /* HJXsinkException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsinkException.m; sourceTree = "<group>"; };
+		0160455220F85C47005A6663 /* HJXskinVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXskinVC.h; sourceTree = "<group>"; };
+		0160455320F85C47005A6663 /* HJXskinVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXskinVC.m; sourceTree = "<group>"; };
+		0160455420F85C47005A6663 /* HJXsolutionBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsolutionBatch.h; sourceTree = "<group>"; };
+		0160455520F85C47005A6663 /* HJXsolutionBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsolutionBatch.m; sourceTree = "<group>"; };
+		0160455620F85C47005A6663 /* HJXsplitLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsplitLayer.h; sourceTree = "<group>"; };
+		0160455720F85C47005A6663 /* HJXsplitLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsplitLayer.m; sourceTree = "<group>"; };
+		0160455820F85C47005A6663 /* HJXstandardAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXstandardAnimator.h; sourceTree = "<group>"; };
+		0160455920F85C47005A6663 /* HJXstandardAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXstandardAnimator.m; sourceTree = "<group>"; };
+		0160455A20F85C47005A6663 /* HJXstationDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXstationDictionary.h; sourceTree = "<group>"; };
+		0160455B20F85C47005A6663 /* HJXstationDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXstationDictionary.m; sourceTree = "<group>"; };
+		0160455C20F85C47005A6663 /* HJXstillHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXstillHandler.h; sourceTree = "<group>"; };
+		0160455D20F85C47005A6663 /* HJXstillHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXstillHandler.m; sourceTree = "<group>"; };
+		0160455E20F85C47005A6663 /* HJXsubjectAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsubjectAnimation.h; sourceTree = "<group>"; };
+		0160455F20F85C47005A6663 /* HJXsubjectAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsubjectAnimation.m; sourceTree = "<group>"; };
+		0160456020F85C47005A6663 /* HJXsupportTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsupportTextField.h; sourceTree = "<group>"; };
+		0160456120F85C47005A6663 /* HJXsupportTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsupportTextField.m; sourceTree = "<group>"; };
+		0160456220F85C47005A6663 /* HJXtackleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtackleViewController.h; sourceTree = "<group>"; };
+		0160456320F85C47005A6663 /* HJXtackleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtackleViewController.m; sourceTree = "<group>"; };
+		0160456420F85C47005A6663 /* HJXtellContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtellContext.h; sourceTree = "<group>"; };
+		0160456520F85C47005A6663 /* HJXtellContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtellContext.m; sourceTree = "<group>"; };
+		0160456620F85C47005A6663 /* HJXtestEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtestEditor.h; sourceTree = "<group>"; };
+		0160456720F85C47005A6663 /* HJXtestEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtestEditor.m; sourceTree = "<group>"; };
+		0160456820F85C47005A6663 /* HJXtieDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtieDelegate.h; sourceTree = "<group>"; };
+		0160456920F85C47005A6663 /* HJXtieDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtieDelegate.m; sourceTree = "<group>"; };
+		0160456A20F85C47005A6663 /* HJXtouchBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtouchBatch.h; sourceTree = "<group>"; };
+		0160456B20F85C47005A6663 /* HJXtouchBatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtouchBatch.m; sourceTree = "<group>"; };
+		0160456C20F85C47005A6663 /* HJXtradeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtradeView.h; sourceTree = "<group>"; };
+		0160456D20F85C47005A6663 /* HJXtradeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtradeView.m; sourceTree = "<group>"; };
+		0160456E20F85C47005A6663 /* HJXtreatHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtreatHelper.h; sourceTree = "<group>"; };
+		0160456F20F85C47005A6663 /* HJXtreatHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtreatHelper.m; sourceTree = "<group>"; };
+		0160457020F85C47005A6663 /* HJXupperHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXupperHandler.h; sourceTree = "<group>"; };
+		0160457120F85C47005A6663 /* HJXupperHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXupperHandler.m; sourceTree = "<group>"; };
+		0160457220F85C47005A6663 /* HJXwaitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXwaitVC.h; sourceTree = "<group>"; };
+		0160457320F85C47005A6663 /* HJXwaitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXwaitVC.m; sourceTree = "<group>"; };
+		0160457420F85C47005A6663 /* HJXwinterAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXwinterAdapter.h; sourceTree = "<group>"; };
+		0160457520F85C47005A6663 /* HJXwinterAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXwinterAdapter.m; sourceTree = "<group>"; };
+		0160457620F85C47005A6663 /* HJXwomanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXwomanManager.h; sourceTree = "<group>"; };
+		0160457720F85C47005A6663 /* HJXwomanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXwomanManager.m; sourceTree = "<group>"; };
+		0160457820F85C47005A6663 /* HJXworkerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXworkerModel.h; sourceTree = "<group>"; };
+		0160457920F85C47005A6663 /* HJXworkerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXworkerModel.m; sourceTree = "<group>"; };
 		91EE35D620F3625800BD8AA4 /* mixProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mixProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EE35D920F3625800BD8AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLCMixManager.h; sourceTree = "<group>"; };
@@ -42,6 +405,255 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0160448720F85C46005A6663 /* mixProject */ = {
+			isa = PBXGroup;
+			children = (
+				0160448820F85C46005A6663 /* HJXadviceCallback.h */,
+				0160448920F85C46005A6663 /* HJXadviceCallback.m */,
+				0160448A20F85C46005A6663 /* HJXaffairView.h */,
+				0160448B20F85C46005A6663 /* HJXaffairView.m */,
+				0160448C20F85C46005A6663 /* HJXagentManager.h */,
+				0160448D20F85C46005A6663 /* HJXagentManager.m */,
+				0160448E20F85C46005A6663 /* HJXairAnimation.h */,
+				0160448F20F85C46005A6663 /* HJXairAnimation.m */,
+				0160449020F85C46005A6663 /* HJXappointmentFilter.h */,
+				0160449120F85C46005A6663 /* HJXappointmentFilter.m */,
+				0160449220F85C46005A6663 /* HJXareaDialog.h */,
+				0160449320F85C46005A6663 /* HJXareaDialog.m */,
+				0160449420F85C46005A6663 /* HJXarticleView.h */,
+				0160449520F85C46005A6663 /* HJXarticleView.m */,
+				0160449620F85C46005A6663 /* HJXatmosphereFilter.h */,
+				0160449720F85C46005A6663 /* HJXatmosphereFilter.m */,
+				0160449820F85C46005A6663 /* HJXbalanceSource.h */,
+				0160449920F85C46005A6663 /* HJXbalanceSource.m */,
+				0160449A20F85C46005A6663 /* HJXbeatArray.h */,
+				0160449B20F85C46005A6663 /* HJXbeatArray.m */,
+				0160449C20F85C46005A6663 /* HJXbeautifulCollection.h */,
+				0160449D20F85C46005A6663 /* HJXbeautifulCollection.m */,
+				0160449E20F85C46005A6663 /* HJXbikeController.h */,
+				0160449F20F85C46005A6663 /* HJXbikeController.m */,
+				016044A020F85C46005A6663 /* HJXbiteHelper.h */,
+				016044A120F85C46005A6663 /* HJXbiteHelper.m */,
+				016044A220F85C46005A6663 /* HJXboatHelper.h */,
+				016044A320F85C46005A6663 /* HJXboatHelper.m */,
+				016044A420F85C46005A6663 /* HJXbootRender.h */,
+				016044A520F85C46005A6663 /* HJXbootRender.m */,
+				016044A620F85C46005A6663 /* HJXbrushLabel.h */,
+				016044A720F85C46005A6663 /* HJXbrushLabel.m */,
+				016044A820F85C46005A6663 /* HJXBullets.h */,
+				016044A920F85C46005A6663 /* HJXBullets.m */,
+				016044AA20F85C46005A6663 /* HJXburnView.h */,
+				016044AB20F85C46005A6663 /* HJXburnView.m */,
+				016044AC20F85C46005A6663 /* HJXcatMapper.h */,
+				016044AD20F85C46005A6663 /* HJXcatMapper.m */,
+				016044AE20F85C46005A6663 /* HJXcharacterControl.h */,
+				016044AF20F85C46005A6663 /* HJXcharacterControl.m */,
+				016044B020F85C46005A6663 /* HJXcodeEvent.h */,
+				016044B120F85C46005A6663 /* HJXcodeEvent.m */,
+				016044B220F85C46005A6663 /* HJXcodeSettings.h */,
+				016044B320F85C46005A6663 /* HJXcodeSettings.m */,
+				016044B420F85C46005A6663 /* HJXcommandToken.h */,
+				016044B520F85C46005A6663 /* HJXcommandToken.m */,
+				016044B620F85C46005A6663 /* HJXcontestManager.h */,
+				016044B720F85C46005A6663 /* HJXcontestManager.m */,
+				016044B820F85C46005A6663 /* HJXcrazyProcessor.h */,
+				016044B920F85C46005A6663 /* HJXcrazyProcessor.m */,
+				016044BA20F85C46005A6663 /* HJXcreativeManager.h */,
+				016044BB20F85C46005A6663 /* HJXcreativeManager.m */,
+				016044BC20F85C46005A6663 /* HJXcriticismTask.h */,
+				016044BD20F85C46005A6663 /* HJXcriticismTask.m */,
+				016044BE20F85C46005A6663 /* HJXcupArray.h */,
+				016044BF20F85C46005A6663 /* HJXcupArray.m */,
+				016044C020F85C46005A6663 /* HJXdanceSerializer.h */,
+				016044C120F85C46005A6663 /* HJXdanceSerializer.m */,
+				016044C220F85C46005A6663 /* HJXdaughterWrapper.h */,
+				016044C320F85C46005A6663 /* HJXdaughterWrapper.m */,
+				016044C420F85C46005A6663 /* HJXdecisionTextField.h */,
+				016044C520F85C46005A6663 /* HJXdecisionTextField.m */,
+				016044C620F85C46005A6663 /* HJXdecisionView.h */,
+				016044C720F85C46005A6663 /* HJXdecisionView.m */,
+				016044C820F85C46005A6663 /* HJXdependentHandler.h */,
+				016044C920F85C46005A6663 /* HJXdependentHandler.m */,
+				016044CA20F85C46005A6663 /* HJXdepositProtocol.h */,
+				016044CB20F85C46005A6663 /* HJXdepositProtocol.m */,
+				016044CC20F85C46005A6663 /* HJXdepressionProvider.h */,
+				016044CD20F85C46005A6663 /* HJXdepressionProvider.m */,
+				016044CE20F85C46005A6663 /* HJXdesignControl.h */,
+				016044CF20F85C46005A6663 /* HJXdesignControl.m */,
+				016044D020F85C46005A6663 /* HJXdesireListener.h */,
+				016044D120F85C46005A6663 /* HJXdesireListener.m */,
+				016044D220F85C46005A6663 /* HJXdetailConfiguration.h */,
+				016044D320F85C46005A6663 /* HJXdetailConfiguration.m */,
+				016044D420F85C46005A6663 /* HJXdisasterTool.h */,
+				016044D520F85C46005A6663 /* HJXdisasterTool.m */,
+				016044D620F85C46005A6663 /* HJXdriverView.h */,
+				016044D720F85C46005A6663 /* HJXdriverView.m */,
+				016044D820F85C46005A6663 /* HJXdutyRouter.h */,
+				016044D920F85C46005A6663 /* HJXdutyRouter.m */,
+				016044DA20F85C46005A6663 /* HJXeatManager.h */,
+				016044DB20F85C46005A6663 /* HJXeatManager.m */,
+				016044DC20F85C46005A6663 /* HJXeditorModel.h */,
+				016044DD20F85C46005A6663 /* HJXeditorModel.m */,
+				016044DE20F85C46005A6663 /* HJXemploymentNotification.h */,
+				016044DF20F85C46005A6663 /* HJXemploymentNotification.m */,
+				016044E020F85C46005A6663 /* HJXequipmentLoader.h */,
+				016044E120F85C46005A6663 /* HJXequipmentLoader.m */,
+				016044E220F85C46005A6663 /* HJXessayButton.h */,
+				016044E320F85C46005A6663 /* HJXessayButton.m */,
+				016044E420F85C46005A6663 /* HJXevidenceTransformer.h */,
+				016044E520F85C46005A6663 /* HJXevidenceTransformer.m */,
+				016044E620F85C46005A6663 /* HJXgapSession.h */,
+				016044E720F85C46005A6663 /* HJXgapSession.m */,
+				016044E820F85C46005A6663 /* HJXgardenQueue.h */,
+				016044E920F85C46005A6663 /* HJXgardenQueue.m */,
+				016044EA20F85C46005A6663 /* HJXgateVC.h */,
+				016044EB20F85C46005A6663 /* HJXgateVC.m */,
+				016044EC20F85C46005A6663 /* HJXgolfClient.h */,
+				016044ED20F85C46005A6663 /* HJXgolfClient.m */,
+				016044EE20F85C46005A6663 /* HJXhalfImageView.h */,
+				016044EF20F85C46005A6663 /* HJXhalfImageView.m */,
+				016044F020F85C46005A6663 /* HJXheavyHeader.h */,
+				016044F120F85C46005A6663 /* HJXheavyHeader.m */,
+				016044F220F85C46005A6663 /* HJXhighService.h */,
+				016044F320F85C46005A6663 /* HJXhighService.m */,
+				016044F420F85C46005A6663 /* HJXhitAnimator.h */,
+				016044F520F85C46005A6663 /* HJXhitAnimator.m */,
+				016044F620F85C46005A6663 /* HJXhomeNode.h */,
+				016044F720F85C46005A6663 /* HJXhomeNode.m */,
+				016044F820F85C46005A6663 /* HJXhorrorController.h */,
+				016044F920F85C46005A6663 /* HJXhorrorController.m */,
+				016044FA20F85C46005A6663 /* HJXimageProvider.h */,
+				016044FB20F85C46005A6663 /* HJXimageProvider.m */,
+				016044FC20F85C46005A6663 /* HJXinsideCell.h */,
+				016044FD20F85C46005A6663 /* HJXinsideCell.m */,
+				016044FE20F85C46005A6663 /* HJXinviteGroup.h */,
+				016044FF20F85C46005A6663 /* HJXinviteGroup.m */,
+				0160450020F85C46005A6663 /* HJXjuryImageView.h */,
+				0160450120F85C46005A6663 /* HJXjuryImageView.m */,
+				0160450220F85C46005A6663 /* HJXkindListener.h */,
+				0160450320F85C46005A6663 /* HJXkindListener.m */,
+				0160450420F85C46005A6663 /* HJXlandObserver.h */,
+				0160450520F85C46005A6663 /* HJXlandObserver.m */,
+				0160450620F85C46005A6663 /* HJXleadVC.h */,
+				0160450720F85C46005A6663 /* HJXleadVC.m */,
+				0160450820F85C46005A6663 /* HJXlectureDialog.h */,
+				0160450920F85C46005A6663 /* HJXlectureDialog.m */,
+				0160450A20F85C46005A6663 /* HJXlogButton.h */,
+				0160450B20F85C46005A6663 /* HJXlogButton.m */,
+				0160450C20F85C46005A6663 /* HJXlogLayer.h */,
+				0160450D20F85C46005A6663 /* HJXlogLayer.m */,
+				0160450E20F85C46005A6663 /* HJXmessageTextField.h */,
+				0160450F20F85C46005A6663 /* HJXmessageTextField.m */,
+				0160451020F85C46005A6663 /* HJXmobileLayout.h */,
+				0160451120F85C46005A6663 /* HJXmobileLayout.m */,
+				0160451220F85C46005A6663 /* HJXmobileQueue.h */,
+				0160451320F85C46005A6663 /* HJXmobileQueue.m */,
+				0160451420F85C46005A6663 /* HJXmoneyView.h */,
+				0160451520F85C46005A6663 /* HJXmoneyView.m */,
+				0160451620F85C46005A6663 /* HJXmouthManager.h */,
+				0160451720F85C46005A6663 /* HJXmouthManager.m */,
+				0160451820F85C46005A6663 /* HJXnailCell.h */,
+				0160451920F85C46005A6663 /* HJXnailCell.m */,
+				0160451A20F85C46005A6663 /* HJXnightAdapter.h */,
+				0160451B20F85C46005A6663 /* HJXnightAdapter.m */,
+				0160451C20F85C46005A6663 /* HJXorderProtocol.h */,
+				0160451D20F85C46005A6663 /* HJXorderProtocol.m */,
+				0160451E20F85C46005A6663 /* HJXoriginalMapper.h */,
+				0160451F20F85C46005A6663 /* HJXoriginalMapper.m */,
+				0160452020F85C46005A6663 /* HJXpastLoader.h */,
+				0160452120F85C46005A6663 /* HJXpastLoader.m */,
+				0160452220F85C46005A6663 /* HJXpensionNotification.h */,
+				0160452320F85C46005A6663 /* HJXpensionNotification.m */,
+				0160452420F85C46005A6663 /* HJXpersonalRender.h */,
+				0160452520F85C46005A6663 /* HJXpersonalRender.m */,
+				0160452620F85C46005A6663 /* HJXphoneVC.h */,
+				0160452720F85C46005A6663 /* HJXphoneVC.m */,
+				0160452820F85C46005A6663 /* HJXpickController.h */,
+				0160452920F85C46005A6663 /* HJXpickController.m */,
+				0160452A20F85C46005A6663 /* HJXplayLogger.h */,
+				0160452B20F85C46005A6663 /* HJXplayLogger.m */,
+				0160452C20F85C46005A6663 /* HJXpracticeModel.h */,
+				0160452D20F85C46005A6663 /* HJXpracticeModel.m */,
+				0160452E20F85C46005A6663 /* HJXprocedureView.h */,
+				0160452F20F85C46005A6663 /* HJXprocedureView.m */,
+				0160453020F85C46005A6663 /* HJXproductGroup.h */,
+				0160453120F85C46005A6663 /* HJXproductGroup.m */,
+				0160453220F85C46005A6663 /* HJXproductVC.h */,
+				0160453320F85C46005A6663 /* HJXproductVC.m */,
+				0160453420F85C46005A6663 /* HJXprofessorContext.h */,
+				0160453520F85C46005A6663 /* HJXprofessorContext.m */,
+				0160453620F85C46005A6663 /* HJXprofileTracker.h */,
+				0160453720F85C46005A6663 /* HJXprofileTracker.m */,
+				0160453820F85C46005A6663 /* HJXpsychologyStorage.h */,
+				0160453920F85C46005A6663 /* HJXpsychologyStorage.m */,
+				0160453A20F85C46005A6663 /* HJXqualityConfiguration.h */,
+				0160453B20F85C46005A6663 /* HJXqualityConfiguration.m */,
+				0160453C20F85C46005A6663 /* HJXrateAnimation.h */,
+				0160453D20F85C46005A6663 /* HJXrateAnimation.m */,
+				0160453E20F85C46005A6663 /* HJXrecoverVC.h */,
+				0160453F20F85C46005A6663 /* HJXrecoverVC.m */,
+				0160454020F85C46005A6663 /* HJXrelationshipError.h */,
+				0160454120F85C46005A6663 /* HJXrelationshipError.m */,
+				0160454220F85C46005A6663 /* HJXresortInterpolator.h */,
+				0160454320F85C46005A6663 /* HJXresortInterpolator.m */,
+				0160454420F85C46005A6663 /* HJXriseDelegate.h */,
+				0160454520F85C46005A6663 /* HJXriseDelegate.m */,
+				0160454620F85C46005A6663 /* HJXsandwichOperation.h */,
+				0160454720F85C46005A6663 /* HJXsandwichOperation.m */,
+				0160454820F85C46005A6663 /* HJXsecretLabel.h */,
+				0160454920F85C46005A6663 /* HJXsecretLabel.m */,
+				0160454A20F85C46005A6663 /* HJXsensitiveTask.h */,
+				0160454B20F85C46005A6663 /* HJXsensitiveTask.m */,
+				0160454C20F85C46005A6663 /* HJXshakeCell.h */,
+				0160454D20F85C46005A6663 /* HJXshakeCell.m */,
+				0160454E20F85C46005A6663 /* HJXshoulderSource.h */,
+				0160454F20F85C47005A6663 /* HJXshoulderSource.m */,
+				0160455020F85C47005A6663 /* HJXsinkException.h */,
+				0160455120F85C47005A6663 /* HJXsinkException.m */,
+				0160455220F85C47005A6663 /* HJXskinVC.h */,
+				0160455320F85C47005A6663 /* HJXskinVC.m */,
+				0160455420F85C47005A6663 /* HJXsolutionBatch.h */,
+				0160455520F85C47005A6663 /* HJXsolutionBatch.m */,
+				0160455620F85C47005A6663 /* HJXsplitLayer.h */,
+				0160455720F85C47005A6663 /* HJXsplitLayer.m */,
+				0160455820F85C47005A6663 /* HJXstandardAnimator.h */,
+				0160455920F85C47005A6663 /* HJXstandardAnimator.m */,
+				0160455A20F85C47005A6663 /* HJXstationDictionary.h */,
+				0160455B20F85C47005A6663 /* HJXstationDictionary.m */,
+				0160455C20F85C47005A6663 /* HJXstillHandler.h */,
+				0160455D20F85C47005A6663 /* HJXstillHandler.m */,
+				0160455E20F85C47005A6663 /* HJXsubjectAnimation.h */,
+				0160455F20F85C47005A6663 /* HJXsubjectAnimation.m */,
+				0160456020F85C47005A6663 /* HJXsupportTextField.h */,
+				0160456120F85C47005A6663 /* HJXsupportTextField.m */,
+				0160456220F85C47005A6663 /* HJXtackleViewController.h */,
+				0160456320F85C47005A6663 /* HJXtackleViewController.m */,
+				0160456420F85C47005A6663 /* HJXtellContext.h */,
+				0160456520F85C47005A6663 /* HJXtellContext.m */,
+				0160456620F85C47005A6663 /* HJXtestEditor.h */,
+				0160456720F85C47005A6663 /* HJXtestEditor.m */,
+				0160456820F85C47005A6663 /* HJXtieDelegate.h */,
+				0160456920F85C47005A6663 /* HJXtieDelegate.m */,
+				0160456A20F85C47005A6663 /* HJXtouchBatch.h */,
+				0160456B20F85C47005A6663 /* HJXtouchBatch.m */,
+				0160456C20F85C47005A6663 /* HJXtradeView.h */,
+				0160456D20F85C47005A6663 /* HJXtradeView.m */,
+				0160456E20F85C47005A6663 /* HJXtreatHelper.h */,
+				0160456F20F85C47005A6663 /* HJXtreatHelper.m */,
+				0160457020F85C47005A6663 /* HJXupperHandler.h */,
+				0160457120F85C47005A6663 /* HJXupperHandler.m */,
+				0160457220F85C47005A6663 /* HJXwaitVC.h */,
+				0160457320F85C47005A6663 /* HJXwaitVC.m */,
+				0160457420F85C47005A6663 /* HJXwinterAdapter.h */,
+				0160457520F85C47005A6663 /* HJXwinterAdapter.m */,
+				0160457620F85C47005A6663 /* HJXwomanManager.h */,
+				0160457720F85C47005A6663 /* HJXwomanManager.m */,
+				0160457820F85C47005A6663 /* HJXworkerModel.h */,
+				0160457920F85C47005A6663 /* HJXworkerModel.m */,
+			);
+			path = mixProject;
+			sourceTree = "<group>";
+		};
 		91EE35CD20F3625800BD8AA4 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +673,7 @@
 		91EE35D820F3625800BD8AA4 /* mixProject */ = {
 			isa = PBXGroup;
 			children = (
+				0160448720F85C46005A6663 /* mixProject */,
 				91EE37CA20F3C67500BD8AA4 /* SLCDataManager.h */,
 				91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */,
 				91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */,
@@ -125,8 +738,129 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016045BC20F85C47005A6663 /* HJXlogLayer.m in Sources */,
+				0160457B20F85C47005A6663 /* HJXaffairView.m in Sources */,
 				91EE35DA20F3625800BD8AA4 /* main.m in Sources */,
+				016045B720F85C47005A6663 /* HJXkindListener.m in Sources */,
+				0160458F20F85C47005A6663 /* HJXcodeSettings.m in Sources */,
+				016045AA20F85C47005A6663 /* HJXgardenQueue.m in Sources */,
+				016045DF20F85C47005A6663 /* HJXskinVC.m in Sources */,
+				0160458320F85C47005A6663 /* HJXbeatArray.m in Sources */,
+				016045CE20F85C47005A6663 /* HJXproductGroup.m in Sources */,
+				016045DB20F85C47005A6663 /* HJXsensitiveTask.m in Sources */,
+				0160459E20F85C47005A6663 /* HJXdesireListener.m in Sources */,
+				016045D620F85C47005A6663 /* HJXrelationshipError.m in Sources */,
+				016045E020F85C47005A6663 /* HJXsolutionBatch.m in Sources */,
+				0160459220F85C47005A6663 /* HJXcrazyProcessor.m in Sources */,
+				016045D520F85C47005A6663 /* HJXrecoverVC.m in Sources */,
+				0160457D20F85C47005A6663 /* HJXairAnimation.m in Sources */,
+				016045C820F85C47005A6663 /* HJXpersonalRender.m in Sources */,
+				016045E720F85C47005A6663 /* HJXtackleViewController.m in Sources */,
+				016045D420F85C47005A6663 /* HJXrateAnimation.m in Sources */,
+				016045E220F85C47005A6663 /* HJXstandardAnimator.m in Sources */,
+				016045C120F85C47005A6663 /* HJXmouthManager.m in Sources */,
+				016045D220F85C47005A6663 /* HJXpsychologyStorage.m in Sources */,
+				016045E620F85C47005A6663 /* HJXsupportTextField.m in Sources */,
+				016045AD20F85C47005A6663 /* HJXhalfImageView.m in Sources */,
+				016045A520F85C47005A6663 /* HJXemploymentNotification.m in Sources */,
+				016045EB20F85C47005A6663 /* HJXtouchBatch.m in Sources */,
+				0160457E20F85C47005A6663 /* HJXappointmentFilter.m in Sources */,
+				016045CA20F85C47005A6663 /* HJXpickController.m in Sources */,
+				016045B120F85C47005A6663 /* HJXhomeNode.m in Sources */,
+				016045C920F85C47005A6663 /* HJXphoneVC.m in Sources */,
+				016045AC20F85C47005A6663 /* HJXgolfClient.m in Sources */,
+				0160459B20F85C47005A6663 /* HJXdepositProtocol.m in Sources */,
+				016045A220F85C47005A6663 /* HJXdutyRouter.m in Sources */,
+				016045E120F85C47005A6663 /* HJXsplitLayer.m in Sources */,
+				0160457A20F85C47005A6663 /* HJXadviceCallback.m in Sources */,
+				016045BB20F85C47005A6663 /* HJXlogButton.m in Sources */,
+				0160457F20F85C47005A6663 /* HJXareaDialog.m in Sources */,
+				016045DC20F85C47005A6663 /* HJXshakeCell.m in Sources */,
+				016045C320F85C47005A6663 /* HJXnightAdapter.m in Sources */,
+				016045D720F85C47005A6663 /* HJXresortInterpolator.m in Sources */,
+				016045D320F85C47005A6663 /* HJXqualityConfiguration.m in Sources */,
+				0160457C20F85C47005A6663 /* HJXagentManager.m in Sources */,
+				016045B920F85C47005A6663 /* HJXleadVC.m in Sources */,
+				016045A320F85C47005A6663 /* HJXeatManager.m in Sources */,
+				016045A820F85C47005A6663 /* HJXevidenceTransformer.m in Sources */,
+				016045E520F85C47005A6663 /* HJXsubjectAnimation.m in Sources */,
+				016045E920F85C47005A6663 /* HJXtestEditor.m in Sources */,
+				0160459820F85C47005A6663 /* HJXdecisionTextField.m in Sources */,
+				0160458B20F85C47005A6663 /* HJXburnView.m in Sources */,
+				016045ED20F85C47005A6663 /* HJXtreatHelper.m in Sources */,
+				016045BF20F85C47005A6663 /* HJXmobileQueue.m in Sources */,
+				016045BE20F85C47005A6663 /* HJXmobileLayout.m in Sources */,
+				016045B020F85C47005A6663 /* HJXhitAnimator.m in Sources */,
 				91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */,
+				016045BD20F85C47005A6663 /* HJXmessageTextField.m in Sources */,
+				016045EC20F85C47005A6663 /* HJXtradeView.m in Sources */,
+				0160458520F85C47005A6663 /* HJXbikeController.m in Sources */,
+				0160459F20F85C47005A6663 /* HJXdetailConfiguration.m in Sources */,
+				016045E320F85C47005A6663 /* HJXstationDictionary.m in Sources */,
+				0160458C20F85C47005A6663 /* HJXcatMapper.m in Sources */,
+				016045A920F85C47005A6663 /* HJXgapSession.m in Sources */,
+				0160459720F85C47005A6663 /* HJXdaughterWrapper.m in Sources */,
+				016045F220F85C47005A6663 /* HJXworkerModel.m in Sources */,
+				016045C620F85C47005A6663 /* HJXpastLoader.m in Sources */,
+				016045B520F85C47005A6663 /* HJXinviteGroup.m in Sources */,
+				0160458A20F85C47005A6663 /* HJXBullets.m in Sources */,
+				016045A420F85C47005A6663 /* HJXeditorModel.m in Sources */,
+				0160458720F85C47005A6663 /* HJXboatHelper.m in Sources */,
+				0160458E20F85C47005A6663 /* HJXcodeEvent.m in Sources */,
+				016045CC20F85C47005A6663 /* HJXpracticeModel.m in Sources */,
+				016045E420F85C47005A6663 /* HJXstillHandler.m in Sources */,
+				016045B320F85C47005A6663 /* HJXimageProvider.m in Sources */,
+				0160458D20F85C47005A6663 /* HJXcharacterControl.m in Sources */,
+				0160458420F85C47005A6663 /* HJXbeautifulCollection.m in Sources */,
+				016045C520F85C47005A6663 /* HJXoriginalMapper.m in Sources */,
+				016045D920F85C47005A6663 /* HJXsandwichOperation.m in Sources */,
+				016045CF20F85C47005A6663 /* HJXproductVC.m in Sources */,
+				016045C720F85C47005A6663 /* HJXpensionNotification.m in Sources */,
+				0160459920F85C47005A6663 /* HJXdecisionView.m in Sources */,
+				016045C220F85C47005A6663 /* HJXnailCell.m in Sources */,
+				0160459520F85C47005A6663 /* HJXcupArray.m in Sources */,
+				016045EE20F85C47005A6663 /* HJXupperHandler.m in Sources */,
+				016045F120F85C47005A6663 /* HJXwomanManager.m in Sources */,
+				0160459320F85C47005A6663 /* HJXcreativeManager.m in Sources */,
+				0160459A20F85C47005A6663 /* HJXdependentHandler.m in Sources */,
+				016045F020F85C47005A6663 /* HJXwinterAdapter.m in Sources */,
+				016045D820F85C47005A6663 /* HJXriseDelegate.m in Sources */,
+				016045AE20F85C47005A6663 /* HJXheavyHeader.m in Sources */,
+				016045CB20F85C47005A6663 /* HJXplayLogger.m in Sources */,
+				016045EF20F85C47005A6663 /* HJXwaitVC.m in Sources */,
+				016045B220F85C47005A6663 /* HJXhorrorController.m in Sources */,
+				016045DA20F85C47005A6663 /* HJXsecretLabel.m in Sources */,
+				016045D120F85C47005A6663 /* HJXprofileTracker.m in Sources */,
+				016045D020F85C47005A6663 /* HJXprofessorContext.m in Sources */,
+				016045C420F85C47005A6663 /* HJXorderProtocol.m in Sources */,
+				016045E820F85C47005A6663 /* HJXtellContext.m in Sources */,
+				016045DE20F85C47005A6663 /* HJXsinkException.m in Sources */,
+				016045EA20F85C47005A6663 /* HJXtieDelegate.m in Sources */,
+				016045B420F85C47005A6663 /* HJXinsideCell.m in Sources */,
+				016045CD20F85C47005A6663 /* HJXprocedureView.m in Sources */,
+				0160459420F85C47005A6663 /* HJXcriticismTask.m in Sources */,
+				0160458820F85C47005A6663 /* HJXbootRender.m in Sources */,
+				0160459120F85C47005A6663 /* HJXcontestManager.m in Sources */,
+				016045AB20F85C47005A6663 /* HJXgateVC.m in Sources */,
+				016045C020F85C47005A6663 /* HJXmoneyView.m in Sources */,
+				0160458120F85C47005A6663 /* HJXatmosphereFilter.m in Sources */,
+				016045B620F85C47005A6663 /* HJXjuryImageView.m in Sources */,
+				0160458920F85C47005A6663 /* HJXbrushLabel.m in Sources */,
+				0160459C20F85C47005A6663 /* HJXdepressionProvider.m in Sources */,
+				016045A720F85C47005A6663 /* HJXessayButton.m in Sources */,
+				016045AF20F85C47005A6663 /* HJXhighService.m in Sources */,
+				016045B820F85C47005A6663 /* HJXlandObserver.m in Sources */,
+				0160459D20F85C47005A6663 /* HJXdesignControl.m in Sources */,
+				016045A120F85C47005A6663 /* HJXdriverView.m in Sources */,
+				0160458020F85C47005A6663 /* HJXarticleView.m in Sources */,
+				0160459020F85C47005A6663 /* HJXcommandToken.m in Sources */,
+				0160459620F85C47005A6663 /* HJXdanceSerializer.m in Sources */,
+				0160458620F85C47005A6663 /* HJXbiteHelper.m in Sources */,
+				016045A020F85C47005A6663 /* HJXdisasterTool.m in Sources */,
+				0160458220F85C47005A6663 /* HJXbalanceSource.m in Sources */,
+				016045BA20F85C47005A6663 /* HJXlectureDialog.m in Sources */,
+				016045A620F85C47005A6663 /* HJXequipmentLoader.m in Sources */,
+				016045DD20F85C47005A6663 /* HJXshoulderSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
