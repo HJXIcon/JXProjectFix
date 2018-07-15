@@ -8,6 +8,8 @@
 
 #import "SLCMixManager.h"
 #import "SLCDataManager.h"
+#import <objc/message.h>
+#import "JXRunDealTools.h"
 
 // 类的注释字符串
 #define ClassCommentString @"//\n//  "
@@ -27,6 +29,8 @@
 @property (nonatomic, copy) NSString *defaultFullPath; //默认全路径 - 桌面
 @property (nonatomic, strong) NSMutableArray <NSString *>* classArray; //classArray
 
+// 所有类对应的方法数组: key:类名 value:方法数组
+@property (nonatomic, strong) NSMutableDictionary<NSString *,NSArray *> *clsMethodsDict;
 @end
 
 @implementation SLCMixManager
@@ -38,6 +42,7 @@
         self.fullPath = [self defaultFullPath];
         self.fileHeader = @"SLC";
         self.classArray = [NSMutableArray array];
+        self.clsMethodsDict = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -145,11 +150,62 @@
             if ([mString containsString:method]) continue; //如果有,跳过
             
             mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n\n%@",[self removeLastOneChar:method]]];
-            mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n{\n      for (NSInteger i = 0; i < 3; i++) {\n        NSString *str = @\"func name = %@\";\n        [str stringByAppendingString:@\"time is 3\"];\n       }\n}\n",method]];
+            
+#warning TODO...
+            NSString *preClsSelStrig;
+            // 随机调用一个类的实例方法
+            if (self.classArray.count > 1) {
+                NSInteger clsIndex = arc4random() % self.classArray.count;
+                NSString *clsString = self.classArray[clsIndex];
+                
+                // 不是当期类
+                if (![file isEqualToString:clsString]) {
+                    
+//                    //所有的方法
+                    NSArray<NSString *> * SELNameArray = self.clsMethodsDict[clsString];
+                    
+                    // 所有方法对应的参数数据
+                    NSDictionary<NSString *,NSArray *> *methodArgumentsDict = [JXRunDealTools getAllMethodArgumentsDict:NSClassFromString(clsString)];
+                    
+                    
+                    
+                    NSString *SELString;
+                    if (SELNameArray.count > 1) {
+                        SELString = SELNameArray[arc4random() % SELNameArray.count];
+
+                        NSArray *arguments = methodArgumentsDict[SELString];
+                    
+                        
+                        NSString *tmp;
+                        // 超过三个参数的方法不调用
+                        if (arguments.count - 2 < 3) {
+                            
+                            if (arguments.count - 2 == 0) {
+                                tmp = [NSString stringWithFormat:@"((void(*)(id, SEL))objc_msgSend)(instance, NSSelectorFromString(@\"%@\"));",SELString];
+                            }
+                            if (arguments.count - 2 == 1) {
+                                tmp = [NSString stringWithFormat:@"[instance performSelector:NSSelectorFromString(SELString) withObject:%@ afterDelay:0];",[JXRunDealTools getArgument:arguments[2]]];
+                            }
+                            
+                            if (arguments.count - 2 == 2) {
+                                tmp = [NSString stringWithFormat:@"[instance performSelector:NSSelectorFromString(SELString) withObject:%@ withObject:%@ afterDelay:0];",[JXRunDealTools getArgument:arguments[2]],[JXRunDealTools getArgument:arguments[3]]];
+                            }
+                            
+                            preClsSelStrig = [NSString stringWithFormat:@"\n\n Class cls = NSClassFromString(@\"%@\");\n id instance = [[cls alloc]init];\n %@\n",clsString,tmp];
+                        }
+                            
+                        }
+        
+                }
+               
+            }
+            
+            mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n{\n      for (NSInteger i = 0; i < 3; i++) {\n        NSString *str = @\"func name = %@\";\n        [str stringByAppendingString:@\"time is 3\"];\n%@ \n       }\n}\n",method,preClsSelStrig]];
         }
+    
     };
     
-    [self randomMethod:handle];
+    [self randomMethod:handle withClsName:file];
     
     
     hString = [hString stringByAppendingString:@"\n@end\nNS_ASSUME_NONNULL_END"];
@@ -193,42 +249,64 @@
 }
 
 //随机方法
-- (void)randomMethod:(void(^)(NSArray <NSString *>*methodArray))handle {
+- (void)randomMethod:(void(^)(NSArray <NSString *>*methodArray))handle withClsName:(NSString *)clsName {
     NSUInteger randomNum = 1 + arc4random() % 6;
     NSMutableArray *array = [NSMutableArray array];
+    NSMutableArray *SELArr = [NSMutableArray array];
     for (NSInteger i = 0; i < randomNum; i ++) {
-        NSString *methodString = [self randomPerMethod];
+        NSString *methodString = [self randomPerMethod].firstObject;
+        NSString *SELString = [self randomPerMethod].lastObject;
         [array addObject:methodString];
+        [SELArr addObject:SELString];
     }
+    
+    self.clsMethodsDict[clsName] = SELArr;
     if (handle) handle(array);
 }
 
-//随机一个方法
-- (NSString *)randomPerMethod {
+//随机一个方法数组(0:方法完整字符串(-(void)ss;)，1:方法的SEL字符串)
+- (NSArray<NSString *> *)randomPerMethod {
     NSUInteger randomNum = arc4random() % 4;
     return [self recursiveMethod:randomNum];
 }
 
-- (NSString *)recursiveMethod:(NSInteger)times {
+// 返回数组(0:方法完整字符串(-(void)ss;)，1:方法的SEL字符串)
+- (NSArray<NSString *> *)recursiveMethod:(NSInteger)times {
+    
+    NSMutableArray *tmpArray = [NSMutableArray array];
+    NSString *SELName;// 方法名
     if (times == 0) {
         NSString *methodName = bodyArray()[self.randomBodyNum];
-        return [NSString stringWithFormat:@"- (void)%@;",methodName];
+        SELName = methodName;
+        [tmpArray insertObject:[NSString stringWithFormat:@"- (void)%@;",methodName] atIndex:0];
+        [tmpArray insertObject:SELName atIndex:1];
+        
+        return tmpArray;
+        
     }else {
         NSString *methodName = bodyArray()[self.randomBodyNum];
+        SELName = methodName;
         for (NSInteger i = 0; i < times; i ++ ) {
             NSString *newMethod = bodyArray()[self.randomBodyNum];
             NSUInteger randomM = arc4random() % 4;
             if (![methodName containsString:newMethod]) { //不包含拼接的新串
                 if (i == 0) {
+                    SELName = [NSString stringWithFormat:@"%@%@:",SELName,newMethod];
                     methodName = [NSString stringWithFormat:@"%@%@:(%@)%@",methodName,newMethod.capitalizedString,typesArray()[randomM],newMethod];
+                    
                 }else {
+                    SELName = [NSString stringWithFormat:@"%@ and%@:",SELName,newMethod];
                   methodName = [NSString stringWithFormat:@"%@ and%@:(%@)%@",methodName,newMethod.capitalizedString,typesArray()[randomM],newMethod];
                 }
             }else { //包含,跳过
                 break;
             }
         }
-        return [NSString stringWithFormat:@"- (void)%@;",methodName];
+        
+        [tmpArray insertObject:[NSString stringWithFormat:@"- (void)%@;",methodName] atIndex:0];
+        [tmpArray insertObject:SELName atIndex:1];
+        return tmpArray;
+//        return [NSString stringWithFormat:@"- (void)%@;",methodName];
     }
 }
 
@@ -439,6 +517,7 @@
     NSString *backPath = [fileManager fileExistsAtPath:self.childFullPath] ? self.childFullPath : nil;
     return backPath;
 }
+
 
 
 @end

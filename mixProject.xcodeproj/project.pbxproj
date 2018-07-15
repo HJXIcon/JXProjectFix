@@ -130,6 +130,128 @@
 		016045F220F85C47005A6663 /* HJXworkerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0160457920F85C47005A6663 /* HJXworkerModel.m */; };
 		91EE35DA20F3625800BD8AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE35D920F3625800BD8AA4 /* main.m */; };
 		91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */; };
+		F3C77F1520FBB15000D69493 /* JXRunDealTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1420FBB15000D69493 /* JXRunDealTools.m */; };
+		F3C7800920FBBE1400D69493 /* HJXplaceException.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1820FBBE1300D69493 /* HJXplaceException.m */; };
+		F3C7800A20FBBE1400D69493 /* HJXjuryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1920FBBE1300D69493 /* HJXjuryModel.m */; };
+		F3C7800B20FBBE1400D69493 /* HJXexplanationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1A20FBBE1300D69493 /* HJXexplanationControl.m */; };
+		F3C7800C20FBBE1400D69493 /* HJXvastController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1C20FBBE1300D69493 /* HJXvastController.m */; };
+		F3C7800D20FBBE1400D69493 /* HJXpieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1E20FBBE1300D69493 /* HJXpieNode.m */; };
+		F3C7800E20FBBE1400D69493 /* HJXhealthTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1F20FBBE1300D69493 /* HJXhealthTimer.m */; };
+		F3C7800F20FBBE1400D69493 /* HJXfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F2120FBBE1300D69493 /* HJXfaceUtil.m */; };
+		F3C7801020FBBE1400D69493 /* HJXnegativeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F2620FBBE1300D69493 /* HJXnegativeTimer.m */; };
+		F3C7801120FBBE1400D69493 /* HJXsetProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F2720FBBE1300D69493 /* HJXsetProfile.m */; };
+		F3C7801220FBBE1400D69493 /* HJXsmokeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F2920FBBE1300D69493 /* HJXsmokeEvent.m */; };
+		F3C7801320FBBE1400D69493 /* HJXdayFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F2F20FBBE1300D69493 /* HJXdayFilter.m */; };
+		F3C7801420FBBE1400D69493 /* HJXjudgeStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3120FBBE1300D69493 /* HJXjudgeStack.m */; };
+		F3C7801520FBBE1400D69493 /* HJXfactorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3220FBBE1300D69493 /* HJXfactorUtil.m */; };
+		F3C7801620FBBE1400D69493 /* HJXprincipleTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3320FBBE1300D69493 /* HJXprincipleTracker.m */; };
+		F3C7801720FBBE1400D69493 /* HJXtoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3420FBBE1300D69493 /* HJXtoneController.m */; };
+		F3C7801820FBBE1400D69493 /* HJXgrassRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3A20FBBE1300D69493 /* HJXgrassRequest.m */; };
+		F3C7801920FBBE1400D69493 /* HJXlogDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3C20FBBE1300D69493 /* HJXlogDataSource.m */; };
+		F3C7801A20FBBE1400D69493 /* HJXaccidentGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F3F20FBBE1300D69493 /* HJXaccidentGenerator.m */; };
+		F3C7801B20FBBE1400D69493 /* HJXanalysisCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F4020FBBE1300D69493 /* HJXanalysisCell.m */; };
+		F3C7801C20FBBE1400D69493 /* HJXsprayObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F4220FBBE1300D69493 /* HJXsprayObserver.m */; };
+		F3C7801D20FBBE1400D69493 /* HJXlakeEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F4420FBBE1300D69493 /* HJXlakeEditor.m */; };
+		F3C7801E20FBBE1400D69493 /* HJXdiscussionRender.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F4820FBBE1300D69493 /* HJXdiscussionRender.m */; };
+		F3C7801F20FBBE1400D69493 /* HJXcrazyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F4920FBBE1300D69493 /* HJXcrazyLoader.m */; };
+		F3C7802020FBBE1400D69493 /* HJXcreamView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F4C20FBBE1300D69493 /* HJXcreamView.m */; };
+		F3C7802120FBBE1400D69493 /* HJXfatherNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5220FBBE1300D69493 /* HJXfatherNotification.m */; };
+		F3C7802220FBBE1400D69493 /* HJXdraftView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5420FBBE1300D69493 /* HJXdraftView.m */; };
+		F3C7802320FBBE1400D69493 /* HJXmouseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5520FBBE1300D69493 /* HJXmouseHelper.m */; };
+		F3C7802420FBBE1400D69493 /* HJXovenNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5820FBBE1300D69493 /* HJXovenNotification.m */; };
+		F3C7802520FBBE1400D69493 /* HJXdueView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5920FBBE1300D69493 /* HJXdueView.m */; };
+		F3C7802620FBBE1400D69493 /* HJXclickTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5A20FBBE1300D69493 /* HJXclickTextView.m */; };
+		F3C7802720FBBE1400D69493 /* HJXcityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5B20FBBE1300D69493 /* HJXcityFilter.m */; };
+		F3C7802820FBBE1400D69493 /* HJXspareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5C20FBBE1300D69493 /* HJXspareModel.m */; };
+		F3C7802920FBBE1400D69493 /* HJXrepeatListener.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F5F20FBBE1300D69493 /* HJXrepeatListener.m */; };
+		F3C7802A20FBBE1400D69493 /* HJXrestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6520FBBE1400D69493 /* HJXrestUtil.m */; };
+		F3C7802B20FBBE1400D69493 /* HJXpossibleError.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6620FBBE1400D69493 /* HJXpossibleError.m */; };
+		F3C7802C20FBBE1400D69493 /* HJXearthCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6720FBBE1400D69493 /* HJXearthCollection.m */; };
+		F3C7802D20FBBE1400D69493 /* HJXbirdUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6820FBBE1400D69493 /* HJXbirdUtil.m */; };
+		F3C7802E20FBBE1400D69493 /* HJXparkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6920FBBE1400D69493 /* HJXparkImageView.m */; };
+		F3C7802F20FBBE1400D69493 /* HJXgatherObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6B20FBBE1400D69493 /* HJXgatherObserver.m */; };
+		F3C7803020FBBE1400D69493 /* HJXweekExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6C20FBBE1400D69493 /* HJXweekExecutor.m */; };
+		F3C7803120FBBE1400D69493 /* HJXactionDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6E20FBBE1400D69493 /* HJXactionDictionary.m */; };
+		F3C7803220FBBE1400D69493 /* HJXknowledgeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F6F20FBBE1400D69493 /* HJXknowledgeAnimation.m */; };
+		F3C7803320FBBE1400D69493 /* HJXguaranteeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F7120FBBE1400D69493 /* HJXguaranteeWrapper.m */; };
+		F3C7803420FBBE1400D69493 /* HJXladyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F7620FBBE1400D69493 /* HJXladyTextField.m */; };
+		F3C7803520FBBE1400D69493 /* HJXpartnerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F7A20FBBE1400D69493 /* HJXpartnerLayout.m */; };
+		F3C7803620FBBE1400D69493 /* HJXmaximumDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F7D20FBBE1400D69493 /* HJXmaximumDataSource.m */; };
+		F3C7803720FBBE1400D69493 /* HJXpurchaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8020FBBE1400D69493 /* HJXpurchaseCell.m */; };
+		F3C7803820FBBE1400D69493 /* HJXqualityEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8120FBBE1400D69493 /* HJXqualityEvent.m */; };
+		F3C7803920FBBE1400D69493 /* HJXrefuseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8220FBBE1400D69493 /* HJXrefuseStore.m */; };
+		F3C7803A20FBBE1400D69493 /* HJXimaginationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8320FBBE1400D69493 /* HJXimaginationHandler.m */; };
+		F3C7803B20FBBE1400D69493 /* HJXfruitOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8520FBBE1400D69493 /* HJXfruitOperation.m */; };
+		F3C7803C20FBBE1400D69493 /* HJXbaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8820FBBE1400D69493 /* HJXbaseVC.m */; };
+		F3C7803D20FBBE1400D69493 /* HJXpleasureProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8B20FBBE1400D69493 /* HJXpleasureProcessor.m */; };
+		F3C7803E20FBBE1400D69493 /* HJXseaEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8D20FBBE1400D69493 /* HJXseaEditor.m */; };
+		F3C7803F20FBBE1400D69493 /* HJXpromptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F8F20FBBE1400D69493 /* HJXpromptVC.m */; };
+		F3C7804020FBBE1400D69493 /* HJXreasonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9020FBBE1400D69493 /* HJXreasonUtil.m */; };
+		F3C7804120FBBE1400D69493 /* HJXroughHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9120FBBE1400D69493 /* HJXroughHeader.m */; };
+		F3C7804220FBBE1400D69493 /* HJXlightNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9320FBBE1400D69493 /* HJXlightNotification.m */; };
+		F3C7804320FBBE1400D69493 /* HJXbuddyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9520FBBE1400D69493 /* HJXbuddyController.m */; };
+		F3C7804420FBBE1400D69493 /* HJXweekGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9620FBBE1400D69493 /* HJXweekGenerator.m */; };
+		F3C7804520FBBE1400D69493 /* HJXwheelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9720FBBE1400D69493 /* HJXwheelModel.m */; };
+		F3C7804620FBBE1400D69493 /* HJXhighInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9B20FBBE1400D69493 /* HJXhighInterpolator.m */; };
+		F3C7804720FBBE1400D69493 /* HJXguestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9C20FBBE1400D69493 /* HJXguestController.m */; };
+		F3C7804820FBBE1400D69493 /* HJXpresentationSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F9F20FBBE1400D69493 /* HJXpresentationSession.m */; };
+		F3C7804920FBBE1400D69493 /* HJXpoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FA020FBBE1400D69493 /* HJXpoundButton.m */; };
+		F3C7804A20FBBE1400D69493 /* HJXdepressionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FA120FBBE1400D69493 /* HJXdepressionContext.m */; };
+		F3C7804B20FBBE1400D69493 /* HJXbakeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FA520FBBE1400D69493 /* HJXbakeNotification.m */; };
+		F3C7804C20FBBE1400D69493 /* HJXoriginalUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FA620FBBE1400D69493 /* HJXoriginalUtil.m */; };
+		F3C7804D20FBBE1400D69493 /* HJXeconomyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FA720FBBE1400D69493 /* HJXeconomyCallback.m */; };
+		F3C7804E20FBBE1400D69493 /* HJXsurpriseList.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FA920FBBE1400D69493 /* HJXsurpriseList.m */; };
+		F3C7804F20FBBE1400D69493 /* HJXcomplaintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FAA20FBBE1400D69493 /* HJXcomplaintManager.m */; };
+		F3C7805020FBBE1400D69493 /* HJXdaughterService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FAB20FBBE1400D69493 /* HJXdaughterService.m */; };
+		F3C7805120FBBE1400D69493 /* HJXsuitUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FAD20FBBE1400D69493 /* HJXsuitUtil.m */; };
+		F3C7805220FBBE1400D69493 /* HJXgainEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FAF20FBBE1400D69493 /* HJXgainEvent.m */; };
+		F3C7805320FBBE1400D69493 /* HJXrecordingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FB220FBBE1400D69493 /* HJXrecordingUtility.m */; };
+		F3C7805420FBBE1400D69493 /* HJXfeelingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FB520FBBE1400D69493 /* HJXfeelingUtil.m */; };
+		F3C7805520FBBE1400D69493 /* HJXroofLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FB720FBBE1400D69493 /* HJXroofLogger.m */; };
+		F3C7805620FBBE1400D69493 /* HJXequivalentExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FB820FBBE1400D69493 /* HJXequivalentExecutor.m */; };
+		F3C7805720FBBE1400D69493 /* HJXreadingDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FBA20FBBE1400D69493 /* HJXreadingDatabase.m */; };
+		F3C7805820FBBE1400D69493 /* HJXweekendCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FBB20FBBE1400D69493 /* HJXweekendCache.m */; };
+		F3C7805920FBBE1400D69493 /* HJXbenchFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FBC20FBBE1400D69493 /* HJXbenchFooter.m */; };
+		F3C7805A20FBBE1400D69493 /* HJXhallObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FBD20FBBE1400D69493 /* HJXhallObserver.m */; };
+		F3C7805B20FBBE1400D69493 /* HJXdefinitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FBF20FBBE1400D69493 /* HJXdefinitionAnimation.m */; };
+		F3C7805C20FBBE1400D69493 /* HJXemployListener.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FC020FBBE1400D69493 /* HJXemployListener.m */; };
+		F3C7805D20FBBE1400D69493 /* HJXexerciseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FC220FBBE1400D69493 /* HJXexerciseSerializer.m */; };
+		F3C7805E20FBBE1400D69493 /* HJXartNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FC420FBBE1400D69493 /* HJXartNode.m */; };
+		F3C7805F20FBBE1400D69493 /* HJXlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FC520FBBE1400D69493 /* HJXlayerNode.m */; };
+		F3C7806020FBBE1400D69493 /* HJXmateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FC820FBBE1400D69493 /* HJXmateUtil.m */; };
+		F3C7806120FBBE1400D69493 /* HJXattitudeProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FC920FBBE1400D69493 /* HJXattitudeProcessor.m */; };
+		F3C7806220FBBE1400D69493 /* HJXtouristDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FCB20FBBE1400D69493 /* HJXtouristDelegate.m */; };
+		F3C7806320FBBE1400D69493 /* HJXresolveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FCF20FBBE1400D69493 /* HJXresolveModel.m */; };
+		F3C7806420FBBE1400D69493 /* HJXtonightObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FD020FBBE1400D69493 /* HJXtonightObserver.m */; };
+		F3C7806520FBBE1400D69493 /* HJXspecialistExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FD520FBBE1400D69493 /* HJXspecialistExecutor.m */; };
+		F3C7806620FBBE1400D69493 /* HJXbitterDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FD720FBBE1400D69493 /* HJXbitterDictionary.m */; };
+		F3C7806720FBBE1400D69493 /* HJXplayError.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FD820FBBE1400D69493 /* HJXplayError.m */; };
+		F3C7806820FBBE1400D69493 /* HJXambitionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FD920FBBE1400D69493 /* HJXambitionHandler.m */; };
+		F3C7806920FBBE1400D69493 /* HJXweirdSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FDD20FBBE1400D69493 /* HJXweirdSource.m */; };
+		F3C7806A20FBBE1400D69493 /* HJXmasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FDE20FBBE1400D69493 /* HJXmasterController.m */; };
+		F3C7806B20FBBE1400D69493 /* HJXvarietyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FDF20FBBE1400D69493 /* HJXvarietyDataSource.m */; };
+		F3C7806C20FBBE1400D69493 /* HJXpaintDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FE420FBBE1400D69493 /* HJXpaintDispatch.m */; };
+		F3C7806D20FBBE1400D69493 /* HJXnewspaperView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FE520FBBE1400D69493 /* HJXnewspaperView.m */; };
+		F3C7806E20FBBE1400D69493 /* HJXBullets.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FE720FBBE1400D69493 /* HJXBullets.m */; };
+		F3C7806F20FBBE1400D69493 /* HJXputButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FE820FBBE1400D69493 /* HJXputButton.m */; };
+		F3C7807020FBBE1400D69493 /* HJXblindSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FE920FBBE1400D69493 /* HJXblindSettings.m */; };
+		F3C7807120FBBE1400D69493 /* HJXstealView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FED20FBBE1400D69493 /* HJXstealView.m */; };
+		F3C7807220FBBE1400D69493 /* HJXbellFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FEE20FBBE1400D69493 /* HJXbellFilter.m */; };
+		F3C7807320FBBE1400D69493 /* HJXmanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FEF20FBBE1400D69493 /* HJXmanCell.m */; };
+		F3C7807420FBBE1400D69493 /* HJXcoastRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FF120FBBE1400D69493 /* HJXcoastRouter.m */; };
+		F3C7807520FBBE1400D69493 /* HJXpromotionCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FF320FBBE1400D69493 /* HJXpromotionCache.m */; };
+		F3C7807620FBBE1400D69493 /* HJXleadSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FF820FBBE1400D69493 /* HJXleadSerializer.m */; };
+		F3C7807720FBBE1400D69493 /* HJXhideMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FF920FBBE1400D69493 /* HJXhideMapper.m */; };
+		F3C7807820FBBE1400D69493 /* HJXhairModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FFA20FBBE1400D69493 /* HJXhairModel.m */; };
+		F3C7807920FBBE1400D69493 /* HJXwifeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FFC20FBBE1400D69493 /* HJXwifeHandler.m */; };
+		F3C7807A20FBBE1400D69493 /* HJXairportProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FFE20FBBE1400D69493 /* HJXairportProfile.m */; };
+		F3C7807B20FBBE1400D69493 /* HJXborderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77FFF20FBBE1400D69493 /* HJXborderItem.m */; };
+		F3C7807C20FBBE1400D69493 /* HJXmessHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C7800020FBBE1400D69493 /* HJXmessHandler.m */; };
+		F3C7807D20FBBE1400D69493 /* HJXscreenTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C7800220FBBE1400D69493 /* HJXscreenTracker.m */; };
+		F3C7807E20FBBE1400D69493 /* HJXguaranteeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C7800320FBBE1400D69493 /* HJXguaranteeView.m */; };
+		F3C7807F20FBBE1400D69493 /* HJXrecommendationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C7800420FBBE1400D69493 /* HJXrecommendationCell.m */; };
+		F3C7808020FBBE1400D69493 /* HJXqueenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C7800620FBBE1400D69493 /* HJXqueenVC.m */; };
+		F3C7808120FBBE1400D69493 /* HJXsirFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C7800720FBBE1400D69493 /* HJXsirFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -392,6 +514,250 @@
 		91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLCMixManager.h; sourceTree = "<group>"; };
 		91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLCMixManager.m; sourceTree = "<group>"; };
 		91EE37CA20F3C67500BD8AA4 /* SLCDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLCDataManager.h; sourceTree = "<group>"; };
+		F3C77F1320FBB15000D69493 /* JXRunDealTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXRunDealTools.h; sourceTree = "<group>"; };
+		F3C77F1420FBB15000D69493 /* JXRunDealTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXRunDealTools.m; sourceTree = "<group>"; };
+		F3C77F1720FBBE1300D69493 /* HJXfeelingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXfeelingUtil.h; sourceTree = "<group>"; };
+		F3C77F1820FBBE1300D69493 /* HJXplaceException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXplaceException.m; sourceTree = "<group>"; };
+		F3C77F1920FBBE1300D69493 /* HJXjuryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXjuryModel.m; sourceTree = "<group>"; };
+		F3C77F1A20FBBE1300D69493 /* HJXexplanationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXexplanationControl.m; sourceTree = "<group>"; };
+		F3C77F1B20FBBE1300D69493 /* HJXgainEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgainEvent.h; sourceTree = "<group>"; };
+		F3C77F1C20FBBE1300D69493 /* HJXvastController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXvastController.m; sourceTree = "<group>"; };
+		F3C77F1D20FBBE1300D69493 /* HJXrecordingUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrecordingUtility.h; sourceTree = "<group>"; };
+		F3C77F1E20FBBE1300D69493 /* HJXpieNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpieNode.m; sourceTree = "<group>"; };
+		F3C77F1F20FBBE1300D69493 /* HJXhealthTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhealthTimer.m; sourceTree = "<group>"; };
+		F3C77F2020FBBE1300D69493 /* HJXsuitUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsuitUtil.h; sourceTree = "<group>"; };
+		F3C77F2120FBBE1300D69493 /* HJXfaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXfaceUtil.m; sourceTree = "<group>"; };
+		F3C77F2220FBBE1300D69493 /* HJXsurpriseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsurpriseList.h; sourceTree = "<group>"; };
+		F3C77F2320FBBE1300D69493 /* HJXcomplaintManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcomplaintManager.h; sourceTree = "<group>"; };
+		F3C77F2420FBBE1300D69493 /* HJXdaughterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdaughterService.h; sourceTree = "<group>"; };
+		F3C77F2520FBBE1300D69493 /* HJXeconomyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXeconomyCallback.h; sourceTree = "<group>"; };
+		F3C77F2620FBBE1300D69493 /* HJXnegativeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXnegativeTimer.m; sourceTree = "<group>"; };
+		F3C77F2720FBBE1300D69493 /* HJXsetProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsetProfile.m; sourceTree = "<group>"; };
+		F3C77F2820FBBE1300D69493 /* HJXoriginalUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXoriginalUtil.h; sourceTree = "<group>"; };
+		F3C77F2920FBBE1300D69493 /* HJXsmokeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsmokeEvent.m; sourceTree = "<group>"; };
+		F3C77F2A20FBBE1300D69493 /* HJXbakeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbakeNotification.h; sourceTree = "<group>"; };
+		F3C77F2B20FBBE1300D69493 /* HJXpoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpoundButton.h; sourceTree = "<group>"; };
+		F3C77F2C20FBBE1300D69493 /* HJXpresentationSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpresentationSession.h; sourceTree = "<group>"; };
+		F3C77F2D20FBBE1300D69493 /* HJXdepressionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdepressionContext.h; sourceTree = "<group>"; };
+		F3C77F2E20FBBE1300D69493 /* HJXhighInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhighInterpolator.h; sourceTree = "<group>"; };
+		F3C77F2F20FBBE1300D69493 /* HJXdayFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdayFilter.m; sourceTree = "<group>"; };
+		F3C77F3020FBBE1300D69493 /* HJXguestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXguestController.h; sourceTree = "<group>"; };
+		F3C77F3120FBBE1300D69493 /* HJXjudgeStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXjudgeStack.m; sourceTree = "<group>"; };
+		F3C77F3220FBBE1300D69493 /* HJXfactorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXfactorUtil.m; sourceTree = "<group>"; };
+		F3C77F3320FBBE1300D69493 /* HJXprincipleTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXprincipleTracker.m; sourceTree = "<group>"; };
+		F3C77F3420FBBE1300D69493 /* HJXtoneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtoneController.m; sourceTree = "<group>"; };
+		F3C77F3520FBBE1300D69493 /* HJXweekGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXweekGenerator.h; sourceTree = "<group>"; };
+		F3C77F3620FBBE1300D69493 /* HJXbuddyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbuddyController.h; sourceTree = "<group>"; };
+		F3C77F3720FBBE1300D69493 /* HJXwheelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXwheelModel.h; sourceTree = "<group>"; };
+		F3C77F3820FBBE1300D69493 /* HJXroughHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXroughHeader.h; sourceTree = "<group>"; };
+		F3C77F3920FBBE1300D69493 /* HJXreasonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXreasonUtil.h; sourceTree = "<group>"; };
+		F3C77F3A20FBBE1300D69493 /* HJXgrassRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgrassRequest.m; sourceTree = "<group>"; };
+		F3C77F3B20FBBE1300D69493 /* HJXlightNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlightNotification.h; sourceTree = "<group>"; };
+		F3C77F3C20FBBE1300D69493 /* HJXlogDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlogDataSource.m; sourceTree = "<group>"; };
+		F3C77F3D20FBBE1300D69493 /* HJXattitudeProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXattitudeProcessor.h; sourceTree = "<group>"; };
+		F3C77F3E20FBBE1300D69493 /* HJXtouristDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtouristDelegate.h; sourceTree = "<group>"; };
+		F3C77F3F20FBBE1300D69493 /* HJXaccidentGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXaccidentGenerator.m; sourceTree = "<group>"; };
+		F3C77F4020FBBE1300D69493 /* HJXanalysisCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXanalysisCell.m; sourceTree = "<group>"; };
+		F3C77F4120FBBE1300D69493 /* HJXmateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmateUtil.h; sourceTree = "<group>"; };
+		F3C77F4220FBBE1300D69493 /* HJXsprayObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsprayObserver.m; sourceTree = "<group>"; };
+		F3C77F4320FBBE1300D69493 /* HJXlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlayerNode.h; sourceTree = "<group>"; };
+		F3C77F4420FBBE1300D69493 /* HJXlakeEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlakeEditor.m; sourceTree = "<group>"; };
+		F3C77F4520FBBE1300D69493 /* HJXexerciseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXexerciseSerializer.h; sourceTree = "<group>"; };
+		F3C77F4620FBBE1300D69493 /* HJXartNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXartNode.h; sourceTree = "<group>"; };
+		F3C77F4720FBBE1300D69493 /* HJXemployListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXemployListener.h; sourceTree = "<group>"; };
+		F3C77F4820FBBE1300D69493 /* HJXdiscussionRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdiscussionRender.m; sourceTree = "<group>"; };
+		F3C77F4920FBBE1300D69493 /* HJXcrazyLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcrazyLoader.m; sourceTree = "<group>"; };
+		F3C77F4A20FBBE1300D69493 /* HJXhallObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhallObserver.h; sourceTree = "<group>"; };
+		F3C77F4B20FBBE1300D69493 /* HJXdefinitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdefinitionAnimation.h; sourceTree = "<group>"; };
+		F3C77F4C20FBBE1300D69493 /* HJXcreamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcreamView.m; sourceTree = "<group>"; };
+		F3C77F4D20FBBE1300D69493 /* HJXreadingDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXreadingDatabase.h; sourceTree = "<group>"; };
+		F3C77F4E20FBBE1300D69493 /* HJXbenchFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbenchFooter.h; sourceTree = "<group>"; };
+		F3C77F4F20FBBE1300D69493 /* HJXweekendCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXweekendCache.h; sourceTree = "<group>"; };
+		F3C77F5020FBBE1300D69493 /* HJXequivalentExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXequivalentExecutor.h; sourceTree = "<group>"; };
+		F3C77F5120FBBE1300D69493 /* HJXroofLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXroofLogger.h; sourceTree = "<group>"; };
+		F3C77F5220FBBE1300D69493 /* HJXfatherNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXfatherNotification.m; sourceTree = "<group>"; };
+		F3C77F5320FBBE1300D69493 /* HJXBullets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXBullets.h; sourceTree = "<group>"; };
+		F3C77F5420FBBE1300D69493 /* HJXdraftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdraftView.m; sourceTree = "<group>"; };
+		F3C77F5520FBBE1300D69493 /* HJXmouseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmouseHelper.m; sourceTree = "<group>"; };
+		F3C77F5620FBBE1300D69493 /* HJXpaintDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpaintDispatch.h; sourceTree = "<group>"; };
+		F3C77F5720FBBE1300D69493 /* HJXnewspaperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXnewspaperView.h; sourceTree = "<group>"; };
+		F3C77F5820FBBE1300D69493 /* HJXovenNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXovenNotification.m; sourceTree = "<group>"; };
+		F3C77F5920FBBE1300D69493 /* HJXdueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdueView.m; sourceTree = "<group>"; };
+		F3C77F5A20FBBE1300D69493 /* HJXclickTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXclickTextView.m; sourceTree = "<group>"; };
+		F3C77F5B20FBBE1300D69493 /* HJXcityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcityFilter.m; sourceTree = "<group>"; };
+		F3C77F5C20FBBE1300D69493 /* HJXspareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXspareModel.m; sourceTree = "<group>"; };
+		F3C77F5D20FBBE1300D69493 /* HJXweirdSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXweirdSource.h; sourceTree = "<group>"; };
+		F3C77F5E20FBBE1300D69493 /* HJXmasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmasterController.h; sourceTree = "<group>"; };
+		F3C77F5F20FBBE1300D69493 /* HJXrepeatListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrepeatListener.m; sourceTree = "<group>"; };
+		F3C77F6020FBBE1300D69493 /* HJXvarietyDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXvarietyDataSource.h; sourceTree = "<group>"; };
+		F3C77F6120FBBE1300D69493 /* HJXbitterDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbitterDictionary.h; sourceTree = "<group>"; };
+		F3C77F6220FBBE1400D69493 /* HJXplayError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXplayError.h; sourceTree = "<group>"; };
+		F3C77F6320FBBE1400D69493 /* HJXambitionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXambitionHandler.h; sourceTree = "<group>"; };
+		F3C77F6420FBBE1400D69493 /* HJXspecialistExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXspecialistExecutor.h; sourceTree = "<group>"; };
+		F3C77F6520FBBE1400D69493 /* HJXrestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrestUtil.m; sourceTree = "<group>"; };
+		F3C77F6620FBBE1400D69493 /* HJXpossibleError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpossibleError.m; sourceTree = "<group>"; };
+		F3C77F6720FBBE1400D69493 /* HJXearthCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXearthCollection.m; sourceTree = "<group>"; };
+		F3C77F6820FBBE1400D69493 /* HJXbirdUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbirdUtil.m; sourceTree = "<group>"; };
+		F3C77F6920FBBE1400D69493 /* HJXparkImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXparkImageView.m; sourceTree = "<group>"; };
+		F3C77F6A20FBBE1400D69493 /* HJXtonightObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtonightObserver.h; sourceTree = "<group>"; };
+		F3C77F6B20FBBE1400D69493 /* HJXgatherObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgatherObserver.m; sourceTree = "<group>"; };
+		F3C77F6C20FBBE1400D69493 /* HJXweekExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXweekExecutor.m; sourceTree = "<group>"; };
+		F3C77F6D20FBBE1400D69493 /* HJXresolveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXresolveModel.h; sourceTree = "<group>"; };
+		F3C77F6E20FBBE1400D69493 /* HJXactionDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXactionDictionary.m; sourceTree = "<group>"; };
+		F3C77F6F20FBBE1400D69493 /* HJXknowledgeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXknowledgeAnimation.m; sourceTree = "<group>"; };
+		F3C77F7020FBBE1400D69493 /* HJXqueenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXqueenVC.h; sourceTree = "<group>"; };
+		F3C77F7120FBBE1400D69493 /* HJXguaranteeWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXguaranteeWrapper.m; sourceTree = "<group>"; };
+		F3C77F7220FBBE1400D69493 /* HJXsirFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsirFactory.h; sourceTree = "<group>"; };
+		F3C77F7320FBBE1400D69493 /* HJXguaranteeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXguaranteeView.h; sourceTree = "<group>"; };
+		F3C77F7420FBBE1400D69493 /* HJXrecommendationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrecommendationCell.h; sourceTree = "<group>"; };
+		F3C77F7520FBBE1400D69493 /* HJXscreenTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXscreenTracker.h; sourceTree = "<group>"; };
+		F3C77F7620FBBE1400D69493 /* HJXladyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXladyTextField.m; sourceTree = "<group>"; };
+		F3C77F7720FBBE1400D69493 /* HJXmessHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmessHandler.h; sourceTree = "<group>"; };
+		F3C77F7820FBBE1400D69493 /* HJXborderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXborderItem.h; sourceTree = "<group>"; };
+		F3C77F7920FBBE1400D69493 /* HJXairportProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXairportProfile.h; sourceTree = "<group>"; };
+		F3C77F7A20FBBE1400D69493 /* HJXpartnerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpartnerLayout.m; sourceTree = "<group>"; };
+		F3C77F7B20FBBE1400D69493 /* HJXhairModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhairModel.h; sourceTree = "<group>"; };
+		F3C77F7C20FBBE1400D69493 /* HJXwifeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXwifeHandler.h; sourceTree = "<group>"; };
+		F3C77F7D20FBBE1400D69493 /* HJXmaximumDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmaximumDataSource.m; sourceTree = "<group>"; };
+		F3C77F7E20FBBE1400D69493 /* HJXhideMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhideMapper.h; sourceTree = "<group>"; };
+		F3C77F7F20FBBE1400D69493 /* HJXleadSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXleadSerializer.h; sourceTree = "<group>"; };
+		F3C77F8020FBBE1400D69493 /* HJXpurchaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpurchaseCell.m; sourceTree = "<group>"; };
+		F3C77F8120FBBE1400D69493 /* HJXqualityEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXqualityEvent.m; sourceTree = "<group>"; };
+		F3C77F8220FBBE1400D69493 /* HJXrefuseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrefuseStore.m; sourceTree = "<group>"; };
+		F3C77F8320FBBE1400D69493 /* HJXimaginationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXimaginationHandler.m; sourceTree = "<group>"; };
+		F3C77F8420FBBE1400D69493 /* HJXpromotionCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpromotionCache.h; sourceTree = "<group>"; };
+		F3C77F8520FBBE1400D69493 /* HJXfruitOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXfruitOperation.m; sourceTree = "<group>"; };
+		F3C77F8620FBBE1400D69493 /* HJXmanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmanCell.h; sourceTree = "<group>"; };
+		F3C77F8720FBBE1400D69493 /* HJXcoastRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcoastRouter.h; sourceTree = "<group>"; };
+		F3C77F8820FBBE1400D69493 /* HJXbaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbaseVC.m; sourceTree = "<group>"; };
+		F3C77F8920FBBE1400D69493 /* HJXbellFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbellFilter.h; sourceTree = "<group>"; };
+		F3C77F8A20FBBE1400D69493 /* HJXputButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXputButton.h; sourceTree = "<group>"; };
+		F3C77F8B20FBBE1400D69493 /* HJXpleasureProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpleasureProcessor.m; sourceTree = "<group>"; };
+		F3C77F8C20FBBE1400D69493 /* HJXblindSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXblindSettings.h; sourceTree = "<group>"; };
+		F3C77F8D20FBBE1400D69493 /* HJXseaEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXseaEditor.m; sourceTree = "<group>"; };
+		F3C77F8E20FBBE1400D69493 /* HJXstealView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXstealView.h; sourceTree = "<group>"; };
+		F3C77F8F20FBBE1400D69493 /* HJXpromptVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpromptVC.m; sourceTree = "<group>"; };
+		F3C77F9020FBBE1400D69493 /* HJXreasonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXreasonUtil.m; sourceTree = "<group>"; };
+		F3C77F9120FBBE1400D69493 /* HJXroughHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXroughHeader.m; sourceTree = "<group>"; };
+		F3C77F9220FBBE1400D69493 /* HJXlogDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlogDataSource.h; sourceTree = "<group>"; };
+		F3C77F9320FBBE1400D69493 /* HJXlightNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlightNotification.m; sourceTree = "<group>"; };
+		F3C77F9420FBBE1400D69493 /* HJXgrassRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgrassRequest.h; sourceTree = "<group>"; };
+		F3C77F9520FBBE1400D69493 /* HJXbuddyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbuddyController.m; sourceTree = "<group>"; };
+		F3C77F9620FBBE1400D69493 /* HJXweekGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXweekGenerator.m; sourceTree = "<group>"; };
+		F3C77F9720FBBE1400D69493 /* HJXwheelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXwheelModel.m; sourceTree = "<group>"; };
+		F3C77F9820FBBE1400D69493 /* HJXprincipleTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXprincipleTracker.h; sourceTree = "<group>"; };
+		F3C77F9920FBBE1400D69493 /* HJXfactorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXfactorUtil.h; sourceTree = "<group>"; };
+		F3C77F9A20FBBE1400D69493 /* HJXtoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXtoneController.h; sourceTree = "<group>"; };
+		F3C77F9B20FBBE1400D69493 /* HJXhighInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhighInterpolator.m; sourceTree = "<group>"; };
+		F3C77F9C20FBBE1400D69493 /* HJXguestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXguestController.m; sourceTree = "<group>"; };
+		F3C77F9D20FBBE1400D69493 /* HJXdayFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdayFilter.h; sourceTree = "<group>"; };
+		F3C77F9E20FBBE1400D69493 /* HJXjudgeStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXjudgeStack.h; sourceTree = "<group>"; };
+		F3C77F9F20FBBE1400D69493 /* HJXpresentationSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpresentationSession.m; sourceTree = "<group>"; };
+		F3C77FA020FBBE1400D69493 /* HJXpoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpoundButton.m; sourceTree = "<group>"; };
+		F3C77FA120FBBE1400D69493 /* HJXdepressionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdepressionContext.m; sourceTree = "<group>"; };
+		F3C77FA220FBBE1400D69493 /* HJXsetProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsetProfile.h; sourceTree = "<group>"; };
+		F3C77FA320FBBE1400D69493 /* HJXnegativeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXnegativeTimer.h; sourceTree = "<group>"; };
+		F3C77FA420FBBE1400D69493 /* HJXsmokeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsmokeEvent.h; sourceTree = "<group>"; };
+		F3C77FA520FBBE1400D69493 /* HJXbakeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbakeNotification.m; sourceTree = "<group>"; };
+		F3C77FA620FBBE1400D69493 /* HJXoriginalUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXoriginalUtil.m; sourceTree = "<group>"; };
+		F3C77FA720FBBE1400D69493 /* HJXeconomyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXeconomyCallback.m; sourceTree = "<group>"; };
+		F3C77FA820FBBE1400D69493 /* HJXfaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXfaceUtil.h; sourceTree = "<group>"; };
+		F3C77FA920FBBE1400D69493 /* HJXsurpriseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsurpriseList.m; sourceTree = "<group>"; };
+		F3C77FAA20FBBE1400D69493 /* HJXcomplaintManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcomplaintManager.m; sourceTree = "<group>"; };
+		F3C77FAB20FBBE1400D69493 /* HJXdaughterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdaughterService.m; sourceTree = "<group>"; };
+		F3C77FAC20FBBE1400D69493 /* HJXhealthTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXhealthTimer.h; sourceTree = "<group>"; };
+		F3C77FAD20FBBE1400D69493 /* HJXsuitUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsuitUtil.m; sourceTree = "<group>"; };
+		F3C77FAE20FBBE1400D69493 /* HJXpieNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpieNode.h; sourceTree = "<group>"; };
+		F3C77FAF20FBBE1400D69493 /* HJXgainEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXgainEvent.m; sourceTree = "<group>"; };
+		F3C77FB020FBBE1400D69493 /* HJXvastController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXvastController.h; sourceTree = "<group>"; };
+		F3C77FB120FBBE1400D69493 /* HJXexplanationControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXexplanationControl.h; sourceTree = "<group>"; };
+		F3C77FB220FBBE1400D69493 /* HJXrecordingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrecordingUtility.m; sourceTree = "<group>"; };
+		F3C77FB320FBBE1400D69493 /* HJXjuryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXjuryModel.h; sourceTree = "<group>"; };
+		F3C77FB420FBBE1400D69493 /* HJXplaceException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXplaceException.h; sourceTree = "<group>"; };
+		F3C77FB520FBBE1400D69493 /* HJXfeelingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXfeelingUtil.m; sourceTree = "<group>"; };
+		F3C77FB620FBBE1400D69493 /* HJXfatherNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXfatherNotification.h; sourceTree = "<group>"; };
+		F3C77FB720FBBE1400D69493 /* HJXroofLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXroofLogger.m; sourceTree = "<group>"; };
+		F3C77FB820FBBE1400D69493 /* HJXequivalentExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXequivalentExecutor.m; sourceTree = "<group>"; };
+		F3C77FB920FBBE1400D69493 /* HJXcreamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcreamView.h; sourceTree = "<group>"; };
+		F3C77FBA20FBBE1400D69493 /* HJXreadingDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXreadingDatabase.m; sourceTree = "<group>"; };
+		F3C77FBB20FBBE1400D69493 /* HJXweekendCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXweekendCache.m; sourceTree = "<group>"; };
+		F3C77FBC20FBBE1400D69493 /* HJXbenchFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbenchFooter.m; sourceTree = "<group>"; };
+		F3C77FBD20FBBE1400D69493 /* HJXhallObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhallObserver.m; sourceTree = "<group>"; };
+		F3C77FBE20FBBE1400D69493 /* HJXcrazyLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcrazyLoader.h; sourceTree = "<group>"; };
+		F3C77FBF20FBBE1400D69493 /* HJXdefinitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdefinitionAnimation.m; sourceTree = "<group>"; };
+		F3C77FC020FBBE1400D69493 /* HJXemployListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXemployListener.m; sourceTree = "<group>"; };
+		F3C77FC120FBBE1400D69493 /* HJXdiscussionRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdiscussionRender.h; sourceTree = "<group>"; };
+		F3C77FC220FBBE1400D69493 /* HJXexerciseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXexerciseSerializer.m; sourceTree = "<group>"; };
+		F3C77FC320FBBE1400D69493 /* HJXlakeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlakeEditor.h; sourceTree = "<group>"; };
+		F3C77FC420FBBE1400D69493 /* HJXartNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXartNode.m; sourceTree = "<group>"; };
+		F3C77FC520FBBE1400D69493 /* HJXlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlayerNode.m; sourceTree = "<group>"; };
+		F3C77FC620FBBE1400D69493 /* HJXsprayObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsprayObserver.h; sourceTree = "<group>"; };
+		F3C77FC720FBBE1400D69493 /* HJXanalysisCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXanalysisCell.h; sourceTree = "<group>"; };
+		F3C77FC820FBBE1400D69493 /* HJXmateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmateUtil.m; sourceTree = "<group>"; };
+		F3C77FC920FBBE1400D69493 /* HJXattitudeProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXattitudeProcessor.m; sourceTree = "<group>"; };
+		F3C77FCA20FBBE1400D69493 /* HJXaccidentGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXaccidentGenerator.h; sourceTree = "<group>"; };
+		F3C77FCB20FBBE1400D69493 /* HJXtouristDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtouristDelegate.m; sourceTree = "<group>"; };
+		F3C77FCC20FBBE1400D69493 /* HJXactionDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXactionDictionary.h; sourceTree = "<group>"; };
+		F3C77FCD20FBBE1400D69493 /* HJXgatherObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXgatherObserver.h; sourceTree = "<group>"; };
+		F3C77FCE20FBBE1400D69493 /* HJXweekExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXweekExecutor.h; sourceTree = "<group>"; };
+		F3C77FCF20FBBE1400D69493 /* HJXresolveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXresolveModel.m; sourceTree = "<group>"; };
+		F3C77FD020FBBE1400D69493 /* HJXtonightObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXtonightObserver.m; sourceTree = "<group>"; };
+		F3C77FD120FBBE1400D69493 /* HJXparkImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXparkImageView.h; sourceTree = "<group>"; };
+		F3C77FD220FBBE1400D69493 /* HJXearthCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXearthCollection.h; sourceTree = "<group>"; };
+		F3C77FD320FBBE1400D69493 /* HJXbirdUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbirdUtil.h; sourceTree = "<group>"; };
+		F3C77FD420FBBE1400D69493 /* HJXrestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrestUtil.h; sourceTree = "<group>"; };
+		F3C77FD520FBBE1400D69493 /* HJXspecialistExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXspecialistExecutor.m; sourceTree = "<group>"; };
+		F3C77FD620FBBE1400D69493 /* HJXpossibleError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpossibleError.h; sourceTree = "<group>"; };
+		F3C77FD720FBBE1400D69493 /* HJXbitterDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbitterDictionary.m; sourceTree = "<group>"; };
+		F3C77FD820FBBE1400D69493 /* HJXplayError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXplayError.m; sourceTree = "<group>"; };
+		F3C77FD920FBBE1400D69493 /* HJXambitionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXambitionHandler.m; sourceTree = "<group>"; };
+		F3C77FDA20FBBE1400D69493 /* HJXcityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcityFilter.h; sourceTree = "<group>"; };
+		F3C77FDB20FBBE1400D69493 /* HJXspareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXspareModel.h; sourceTree = "<group>"; };
+		F3C77FDC20FBBE1400D69493 /* HJXrepeatListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrepeatListener.h; sourceTree = "<group>"; };
+		F3C77FDD20FBBE1400D69493 /* HJXweirdSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXweirdSource.m; sourceTree = "<group>"; };
+		F3C77FDE20FBBE1400D69493 /* HJXmasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmasterController.m; sourceTree = "<group>"; };
+		F3C77FDF20FBBE1400D69493 /* HJXvarietyDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXvarietyDataSource.m; sourceTree = "<group>"; };
+		F3C77FE020FBBE1400D69493 /* HJXdueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdueView.h; sourceTree = "<group>"; };
+		F3C77FE120FBBE1400D69493 /* HJXclickTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXclickTextView.h; sourceTree = "<group>"; };
+		F3C77FE220FBBE1400D69493 /* HJXovenNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXovenNotification.h; sourceTree = "<group>"; };
+		F3C77FE320FBBE1400D69493 /* HJXmouseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmouseHelper.h; sourceTree = "<group>"; };
+		F3C77FE420FBBE1400D69493 /* HJXpaintDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpaintDispatch.m; sourceTree = "<group>"; };
+		F3C77FE520FBBE1400D69493 /* HJXnewspaperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXnewspaperView.m; sourceTree = "<group>"; };
+		F3C77FE620FBBE1400D69493 /* HJXdraftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdraftView.h; sourceTree = "<group>"; };
+		F3C77FE720FBBE1400D69493 /* HJXBullets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXBullets.m; sourceTree = "<group>"; };
+		F3C77FE820FBBE1400D69493 /* HJXputButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXputButton.m; sourceTree = "<group>"; };
+		F3C77FE920FBBE1400D69493 /* HJXblindSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXblindSettings.m; sourceTree = "<group>"; };
+		F3C77FEA20FBBE1400D69493 /* HJXseaEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXseaEditor.h; sourceTree = "<group>"; };
+		F3C77FEB20FBBE1400D69493 /* HJXpleasureProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpleasureProcessor.h; sourceTree = "<group>"; };
+		F3C77FEC20FBBE1400D69493 /* HJXpromptVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpromptVC.h; sourceTree = "<group>"; };
+		F3C77FED20FBBE1400D69493 /* HJXstealView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXstealView.m; sourceTree = "<group>"; };
+		F3C77FEE20FBBE1400D69493 /* HJXbellFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXbellFilter.m; sourceTree = "<group>"; };
+		F3C77FEF20FBBE1400D69493 /* HJXmanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmanCell.m; sourceTree = "<group>"; };
+		F3C77FF020FBBE1400D69493 /* HJXbaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXbaseVC.h; sourceTree = "<group>"; };
+		F3C77FF120FBBE1400D69493 /* HJXcoastRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcoastRouter.m; sourceTree = "<group>"; };
+		F3C77FF220FBBE1400D69493 /* HJXfruitOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXfruitOperation.h; sourceTree = "<group>"; };
+		F3C77FF320FBBE1400D69493 /* HJXpromotionCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpromotionCache.m; sourceTree = "<group>"; };
+		F3C77FF420FBBE1400D69493 /* HJXqualityEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXqualityEvent.h; sourceTree = "<group>"; };
+		F3C77FF520FBBE1400D69493 /* HJXpurchaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpurchaseCell.h; sourceTree = "<group>"; };
+		F3C77FF620FBBE1400D69493 /* HJXrefuseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXrefuseStore.h; sourceTree = "<group>"; };
+		F3C77FF720FBBE1400D69493 /* HJXimaginationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXimaginationHandler.h; sourceTree = "<group>"; };
+		F3C77FF820FBBE1400D69493 /* HJXleadSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXleadSerializer.m; sourceTree = "<group>"; };
+		F3C77FF920FBBE1400D69493 /* HJXhideMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhideMapper.m; sourceTree = "<group>"; };
+		F3C77FFA20FBBE1400D69493 /* HJXhairModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXhairModel.m; sourceTree = "<group>"; };
+		F3C77FFB20FBBE1400D69493 /* HJXpartnerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpartnerLayout.h; sourceTree = "<group>"; };
+		F3C77FFC20FBBE1400D69493 /* HJXwifeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXwifeHandler.m; sourceTree = "<group>"; };
+		F3C77FFD20FBBE1400D69493 /* HJXmaximumDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmaximumDataSource.h; sourceTree = "<group>"; };
+		F3C77FFE20FBBE1400D69493 /* HJXairportProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXairportProfile.m; sourceTree = "<group>"; };
+		F3C77FFF20FBBE1400D69493 /* HJXborderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXborderItem.m; sourceTree = "<group>"; };
+		F3C7800020FBBE1400D69493 /* HJXmessHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmessHandler.m; sourceTree = "<group>"; };
+		F3C7800120FBBE1400D69493 /* HJXladyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXladyTextField.h; sourceTree = "<group>"; };
+		F3C7800220FBBE1400D69493 /* HJXscreenTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXscreenTracker.m; sourceTree = "<group>"; };
+		F3C7800320FBBE1400D69493 /* HJXguaranteeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXguaranteeView.m; sourceTree = "<group>"; };
+		F3C7800420FBBE1400D69493 /* HJXrecommendationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXrecommendationCell.m; sourceTree = "<group>"; };
+		F3C7800520FBBE1400D69493 /* HJXknowledgeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXknowledgeAnimation.h; sourceTree = "<group>"; };
+		F3C7800620FBBE1400D69493 /* HJXqueenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXqueenVC.m; sourceTree = "<group>"; };
+		F3C7800720FBBE1400D69493 /* HJXsirFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsirFactory.m; sourceTree = "<group>"; };
+		F3C7800820FBBE1400D69493 /* HJXguaranteeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXguaranteeWrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -673,13 +1039,265 @@
 		91EE35D820F3625800BD8AA4 /* mixProject */ = {
 			isa = PBXGroup;
 			children = (
+				F3C77F1620FBBE1300D69493 /* JXProject */,
 				0160448720F85C46005A6663 /* mixProject */,
 				91EE37CA20F3C67500BD8AA4 /* SLCDataManager.h */,
 				91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */,
 				91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */,
+				F3C77F1320FBB15000D69493 /* JXRunDealTools.h */,
+				F3C77F1420FBB15000D69493 /* JXRunDealTools.m */,
 				91EE35D920F3625800BD8AA4 /* main.m */,
 			);
 			path = mixProject;
+			sourceTree = "<group>";
+		};
+		F3C77F1620FBBE1300D69493 /* JXProject */ = {
+			isa = PBXGroup;
+			children = (
+				F3C77F1720FBBE1300D69493 /* HJXfeelingUtil.h */,
+				F3C77F1820FBBE1300D69493 /* HJXplaceException.m */,
+				F3C77F1920FBBE1300D69493 /* HJXjuryModel.m */,
+				F3C77F1A20FBBE1300D69493 /* HJXexplanationControl.m */,
+				F3C77F1B20FBBE1300D69493 /* HJXgainEvent.h */,
+				F3C77F1C20FBBE1300D69493 /* HJXvastController.m */,
+				F3C77F1D20FBBE1300D69493 /* HJXrecordingUtility.h */,
+				F3C77F1E20FBBE1300D69493 /* HJXpieNode.m */,
+				F3C77F1F20FBBE1300D69493 /* HJXhealthTimer.m */,
+				F3C77F2020FBBE1300D69493 /* HJXsuitUtil.h */,
+				F3C77F2120FBBE1300D69493 /* HJXfaceUtil.m */,
+				F3C77F2220FBBE1300D69493 /* HJXsurpriseList.h */,
+				F3C77F2320FBBE1300D69493 /* HJXcomplaintManager.h */,
+				F3C77F2420FBBE1300D69493 /* HJXdaughterService.h */,
+				F3C77F2520FBBE1300D69493 /* HJXeconomyCallback.h */,
+				F3C77F2620FBBE1300D69493 /* HJXnegativeTimer.m */,
+				F3C77F2720FBBE1300D69493 /* HJXsetProfile.m */,
+				F3C77F2820FBBE1300D69493 /* HJXoriginalUtil.h */,
+				F3C77F2920FBBE1300D69493 /* HJXsmokeEvent.m */,
+				F3C77F2A20FBBE1300D69493 /* HJXbakeNotification.h */,
+				F3C77F2B20FBBE1300D69493 /* HJXpoundButton.h */,
+				F3C77F2C20FBBE1300D69493 /* HJXpresentationSession.h */,
+				F3C77F2D20FBBE1300D69493 /* HJXdepressionContext.h */,
+				F3C77F2E20FBBE1300D69493 /* HJXhighInterpolator.h */,
+				F3C77F2F20FBBE1300D69493 /* HJXdayFilter.m */,
+				F3C77F3020FBBE1300D69493 /* HJXguestController.h */,
+				F3C77F3120FBBE1300D69493 /* HJXjudgeStack.m */,
+				F3C77F3220FBBE1300D69493 /* HJXfactorUtil.m */,
+				F3C77F3320FBBE1300D69493 /* HJXprincipleTracker.m */,
+				F3C77F3420FBBE1300D69493 /* HJXtoneController.m */,
+				F3C77F3520FBBE1300D69493 /* HJXweekGenerator.h */,
+				F3C77F3620FBBE1300D69493 /* HJXbuddyController.h */,
+				F3C77F3720FBBE1300D69493 /* HJXwheelModel.h */,
+				F3C77F3820FBBE1300D69493 /* HJXroughHeader.h */,
+				F3C77F3920FBBE1300D69493 /* HJXreasonUtil.h */,
+				F3C77F3A20FBBE1300D69493 /* HJXgrassRequest.m */,
+				F3C77F3B20FBBE1300D69493 /* HJXlightNotification.h */,
+				F3C77F3C20FBBE1300D69493 /* HJXlogDataSource.m */,
+				F3C77F3D20FBBE1300D69493 /* HJXattitudeProcessor.h */,
+				F3C77F3E20FBBE1300D69493 /* HJXtouristDelegate.h */,
+				F3C77F3F20FBBE1300D69493 /* HJXaccidentGenerator.m */,
+				F3C77F4020FBBE1300D69493 /* HJXanalysisCell.m */,
+				F3C77F4120FBBE1300D69493 /* HJXmateUtil.h */,
+				F3C77F4220FBBE1300D69493 /* HJXsprayObserver.m */,
+				F3C77F4320FBBE1300D69493 /* HJXlayerNode.h */,
+				F3C77F4420FBBE1300D69493 /* HJXlakeEditor.m */,
+				F3C77F4520FBBE1300D69493 /* HJXexerciseSerializer.h */,
+				F3C77F4620FBBE1300D69493 /* HJXartNode.h */,
+				F3C77F4720FBBE1300D69493 /* HJXemployListener.h */,
+				F3C77F4820FBBE1300D69493 /* HJXdiscussionRender.m */,
+				F3C77F4920FBBE1300D69493 /* HJXcrazyLoader.m */,
+				F3C77F4A20FBBE1300D69493 /* HJXhallObserver.h */,
+				F3C77F4B20FBBE1300D69493 /* HJXdefinitionAnimation.h */,
+				F3C77F4C20FBBE1300D69493 /* HJXcreamView.m */,
+				F3C77F4D20FBBE1300D69493 /* HJXreadingDatabase.h */,
+				F3C77F4E20FBBE1300D69493 /* HJXbenchFooter.h */,
+				F3C77F4F20FBBE1300D69493 /* HJXweekendCache.h */,
+				F3C77F5020FBBE1300D69493 /* HJXequivalentExecutor.h */,
+				F3C77F5120FBBE1300D69493 /* HJXroofLogger.h */,
+				F3C77F5220FBBE1300D69493 /* HJXfatherNotification.m */,
+				F3C77F5320FBBE1300D69493 /* HJXBullets.h */,
+				F3C77F5420FBBE1300D69493 /* HJXdraftView.m */,
+				F3C77F5520FBBE1300D69493 /* HJXmouseHelper.m */,
+				F3C77F5620FBBE1300D69493 /* HJXpaintDispatch.h */,
+				F3C77F5720FBBE1300D69493 /* HJXnewspaperView.h */,
+				F3C77F5820FBBE1300D69493 /* HJXovenNotification.m */,
+				F3C77F5920FBBE1300D69493 /* HJXdueView.m */,
+				F3C77F5A20FBBE1300D69493 /* HJXclickTextView.m */,
+				F3C77F5B20FBBE1300D69493 /* HJXcityFilter.m */,
+				F3C77F5C20FBBE1300D69493 /* HJXspareModel.m */,
+				F3C77F5D20FBBE1300D69493 /* HJXweirdSource.h */,
+				F3C77F5E20FBBE1300D69493 /* HJXmasterController.h */,
+				F3C77F5F20FBBE1300D69493 /* HJXrepeatListener.m */,
+				F3C77F6020FBBE1300D69493 /* HJXvarietyDataSource.h */,
+				F3C77F6120FBBE1300D69493 /* HJXbitterDictionary.h */,
+				F3C77F6220FBBE1400D69493 /* HJXplayError.h */,
+				F3C77F6320FBBE1400D69493 /* HJXambitionHandler.h */,
+				F3C77F6420FBBE1400D69493 /* HJXspecialistExecutor.h */,
+				F3C77F6520FBBE1400D69493 /* HJXrestUtil.m */,
+				F3C77F6620FBBE1400D69493 /* HJXpossibleError.m */,
+				F3C77F6720FBBE1400D69493 /* HJXearthCollection.m */,
+				F3C77F6820FBBE1400D69493 /* HJXbirdUtil.m */,
+				F3C77F6920FBBE1400D69493 /* HJXparkImageView.m */,
+				F3C77F6A20FBBE1400D69493 /* HJXtonightObserver.h */,
+				F3C77F6B20FBBE1400D69493 /* HJXgatherObserver.m */,
+				F3C77F6C20FBBE1400D69493 /* HJXweekExecutor.m */,
+				F3C77F6D20FBBE1400D69493 /* HJXresolveModel.h */,
+				F3C77F6E20FBBE1400D69493 /* HJXactionDictionary.m */,
+				F3C77F6F20FBBE1400D69493 /* HJXknowledgeAnimation.m */,
+				F3C77F7020FBBE1400D69493 /* HJXqueenVC.h */,
+				F3C77F7120FBBE1400D69493 /* HJXguaranteeWrapper.m */,
+				F3C77F7220FBBE1400D69493 /* HJXsirFactory.h */,
+				F3C77F7320FBBE1400D69493 /* HJXguaranteeView.h */,
+				F3C77F7420FBBE1400D69493 /* HJXrecommendationCell.h */,
+				F3C77F7520FBBE1400D69493 /* HJXscreenTracker.h */,
+				F3C77F7620FBBE1400D69493 /* HJXladyTextField.m */,
+				F3C77F7720FBBE1400D69493 /* HJXmessHandler.h */,
+				F3C77F7820FBBE1400D69493 /* HJXborderItem.h */,
+				F3C77F7920FBBE1400D69493 /* HJXairportProfile.h */,
+				F3C77F7A20FBBE1400D69493 /* HJXpartnerLayout.m */,
+				F3C77F7B20FBBE1400D69493 /* HJXhairModel.h */,
+				F3C77F7C20FBBE1400D69493 /* HJXwifeHandler.h */,
+				F3C77F7D20FBBE1400D69493 /* HJXmaximumDataSource.m */,
+				F3C77F7E20FBBE1400D69493 /* HJXhideMapper.h */,
+				F3C77F7F20FBBE1400D69493 /* HJXleadSerializer.h */,
+				F3C77F8020FBBE1400D69493 /* HJXpurchaseCell.m */,
+				F3C77F8120FBBE1400D69493 /* HJXqualityEvent.m */,
+				F3C77F8220FBBE1400D69493 /* HJXrefuseStore.m */,
+				F3C77F8320FBBE1400D69493 /* HJXimaginationHandler.m */,
+				F3C77F8420FBBE1400D69493 /* HJXpromotionCache.h */,
+				F3C77F8520FBBE1400D69493 /* HJXfruitOperation.m */,
+				F3C77F8620FBBE1400D69493 /* HJXmanCell.h */,
+				F3C77F8720FBBE1400D69493 /* HJXcoastRouter.h */,
+				F3C77F8820FBBE1400D69493 /* HJXbaseVC.m */,
+				F3C77F8920FBBE1400D69493 /* HJXbellFilter.h */,
+				F3C77F8A20FBBE1400D69493 /* HJXputButton.h */,
+				F3C77F8B20FBBE1400D69493 /* HJXpleasureProcessor.m */,
+				F3C77F8C20FBBE1400D69493 /* HJXblindSettings.h */,
+				F3C77F8D20FBBE1400D69493 /* HJXseaEditor.m */,
+				F3C77F8E20FBBE1400D69493 /* HJXstealView.h */,
+				F3C77F8F20FBBE1400D69493 /* HJXpromptVC.m */,
+				F3C77F9020FBBE1400D69493 /* HJXreasonUtil.m */,
+				F3C77F9120FBBE1400D69493 /* HJXroughHeader.m */,
+				F3C77F9220FBBE1400D69493 /* HJXlogDataSource.h */,
+				F3C77F9320FBBE1400D69493 /* HJXlightNotification.m */,
+				F3C77F9420FBBE1400D69493 /* HJXgrassRequest.h */,
+				F3C77F9520FBBE1400D69493 /* HJXbuddyController.m */,
+				F3C77F9620FBBE1400D69493 /* HJXweekGenerator.m */,
+				F3C77F9720FBBE1400D69493 /* HJXwheelModel.m */,
+				F3C77F9820FBBE1400D69493 /* HJXprincipleTracker.h */,
+				F3C77F9920FBBE1400D69493 /* HJXfactorUtil.h */,
+				F3C77F9A20FBBE1400D69493 /* HJXtoneController.h */,
+				F3C77F9B20FBBE1400D69493 /* HJXhighInterpolator.m */,
+				F3C77F9C20FBBE1400D69493 /* HJXguestController.m */,
+				F3C77F9D20FBBE1400D69493 /* HJXdayFilter.h */,
+				F3C77F9E20FBBE1400D69493 /* HJXjudgeStack.h */,
+				F3C77F9F20FBBE1400D69493 /* HJXpresentationSession.m */,
+				F3C77FA020FBBE1400D69493 /* HJXpoundButton.m */,
+				F3C77FA120FBBE1400D69493 /* HJXdepressionContext.m */,
+				F3C77FA220FBBE1400D69493 /* HJXsetProfile.h */,
+				F3C77FA320FBBE1400D69493 /* HJXnegativeTimer.h */,
+				F3C77FA420FBBE1400D69493 /* HJXsmokeEvent.h */,
+				F3C77FA520FBBE1400D69493 /* HJXbakeNotification.m */,
+				F3C77FA620FBBE1400D69493 /* HJXoriginalUtil.m */,
+				F3C77FA720FBBE1400D69493 /* HJXeconomyCallback.m */,
+				F3C77FA820FBBE1400D69493 /* HJXfaceUtil.h */,
+				F3C77FA920FBBE1400D69493 /* HJXsurpriseList.m */,
+				F3C77FAA20FBBE1400D69493 /* HJXcomplaintManager.m */,
+				F3C77FAB20FBBE1400D69493 /* HJXdaughterService.m */,
+				F3C77FAC20FBBE1400D69493 /* HJXhealthTimer.h */,
+				F3C77FAD20FBBE1400D69493 /* HJXsuitUtil.m */,
+				F3C77FAE20FBBE1400D69493 /* HJXpieNode.h */,
+				F3C77FAF20FBBE1400D69493 /* HJXgainEvent.m */,
+				F3C77FB020FBBE1400D69493 /* HJXvastController.h */,
+				F3C77FB120FBBE1400D69493 /* HJXexplanationControl.h */,
+				F3C77FB220FBBE1400D69493 /* HJXrecordingUtility.m */,
+				F3C77FB320FBBE1400D69493 /* HJXjuryModel.h */,
+				F3C77FB420FBBE1400D69493 /* HJXplaceException.h */,
+				F3C77FB520FBBE1400D69493 /* HJXfeelingUtil.m */,
+				F3C77FB620FBBE1400D69493 /* HJXfatherNotification.h */,
+				F3C77FB720FBBE1400D69493 /* HJXroofLogger.m */,
+				F3C77FB820FBBE1400D69493 /* HJXequivalentExecutor.m */,
+				F3C77FB920FBBE1400D69493 /* HJXcreamView.h */,
+				F3C77FBA20FBBE1400D69493 /* HJXreadingDatabase.m */,
+				F3C77FBB20FBBE1400D69493 /* HJXweekendCache.m */,
+				F3C77FBC20FBBE1400D69493 /* HJXbenchFooter.m */,
+				F3C77FBD20FBBE1400D69493 /* HJXhallObserver.m */,
+				F3C77FBE20FBBE1400D69493 /* HJXcrazyLoader.h */,
+				F3C77FBF20FBBE1400D69493 /* HJXdefinitionAnimation.m */,
+				F3C77FC020FBBE1400D69493 /* HJXemployListener.m */,
+				F3C77FC120FBBE1400D69493 /* HJXdiscussionRender.h */,
+				F3C77FC220FBBE1400D69493 /* HJXexerciseSerializer.m */,
+				F3C77FC320FBBE1400D69493 /* HJXlakeEditor.h */,
+				F3C77FC420FBBE1400D69493 /* HJXartNode.m */,
+				F3C77FC520FBBE1400D69493 /* HJXlayerNode.m */,
+				F3C77FC620FBBE1400D69493 /* HJXsprayObserver.h */,
+				F3C77FC720FBBE1400D69493 /* HJXanalysisCell.h */,
+				F3C77FC820FBBE1400D69493 /* HJXmateUtil.m */,
+				F3C77FC920FBBE1400D69493 /* HJXattitudeProcessor.m */,
+				F3C77FCA20FBBE1400D69493 /* HJXaccidentGenerator.h */,
+				F3C77FCB20FBBE1400D69493 /* HJXtouristDelegate.m */,
+				F3C77FCC20FBBE1400D69493 /* HJXactionDictionary.h */,
+				F3C77FCD20FBBE1400D69493 /* HJXgatherObserver.h */,
+				F3C77FCE20FBBE1400D69493 /* HJXweekExecutor.h */,
+				F3C77FCF20FBBE1400D69493 /* HJXresolveModel.m */,
+				F3C77FD020FBBE1400D69493 /* HJXtonightObserver.m */,
+				F3C77FD120FBBE1400D69493 /* HJXparkImageView.h */,
+				F3C77FD220FBBE1400D69493 /* HJXearthCollection.h */,
+				F3C77FD320FBBE1400D69493 /* HJXbirdUtil.h */,
+				F3C77FD420FBBE1400D69493 /* HJXrestUtil.h */,
+				F3C77FD520FBBE1400D69493 /* HJXspecialistExecutor.m */,
+				F3C77FD620FBBE1400D69493 /* HJXpossibleError.h */,
+				F3C77FD720FBBE1400D69493 /* HJXbitterDictionary.m */,
+				F3C77FD820FBBE1400D69493 /* HJXplayError.m */,
+				F3C77FD920FBBE1400D69493 /* HJXambitionHandler.m */,
+				F3C77FDA20FBBE1400D69493 /* HJXcityFilter.h */,
+				F3C77FDB20FBBE1400D69493 /* HJXspareModel.h */,
+				F3C77FDC20FBBE1400D69493 /* HJXrepeatListener.h */,
+				F3C77FDD20FBBE1400D69493 /* HJXweirdSource.m */,
+				F3C77FDE20FBBE1400D69493 /* HJXmasterController.m */,
+				F3C77FDF20FBBE1400D69493 /* HJXvarietyDataSource.m */,
+				F3C77FE020FBBE1400D69493 /* HJXdueView.h */,
+				F3C77FE120FBBE1400D69493 /* HJXclickTextView.h */,
+				F3C77FE220FBBE1400D69493 /* HJXovenNotification.h */,
+				F3C77FE320FBBE1400D69493 /* HJXmouseHelper.h */,
+				F3C77FE420FBBE1400D69493 /* HJXpaintDispatch.m */,
+				F3C77FE520FBBE1400D69493 /* HJXnewspaperView.m */,
+				F3C77FE620FBBE1400D69493 /* HJXdraftView.h */,
+				F3C77FE720FBBE1400D69493 /* HJXBullets.m */,
+				F3C77FE820FBBE1400D69493 /* HJXputButton.m */,
+				F3C77FE920FBBE1400D69493 /* HJXblindSettings.m */,
+				F3C77FEA20FBBE1400D69493 /* HJXseaEditor.h */,
+				F3C77FEB20FBBE1400D69493 /* HJXpleasureProcessor.h */,
+				F3C77FEC20FBBE1400D69493 /* HJXpromptVC.h */,
+				F3C77FED20FBBE1400D69493 /* HJXstealView.m */,
+				F3C77FEE20FBBE1400D69493 /* HJXbellFilter.m */,
+				F3C77FEF20FBBE1400D69493 /* HJXmanCell.m */,
+				F3C77FF020FBBE1400D69493 /* HJXbaseVC.h */,
+				F3C77FF120FBBE1400D69493 /* HJXcoastRouter.m */,
+				F3C77FF220FBBE1400D69493 /* HJXfruitOperation.h */,
+				F3C77FF320FBBE1400D69493 /* HJXpromotionCache.m */,
+				F3C77FF420FBBE1400D69493 /* HJXqualityEvent.h */,
+				F3C77FF520FBBE1400D69493 /* HJXpurchaseCell.h */,
+				F3C77FF620FBBE1400D69493 /* HJXrefuseStore.h */,
+				F3C77FF720FBBE1400D69493 /* HJXimaginationHandler.h */,
+				F3C77FF820FBBE1400D69493 /* HJXleadSerializer.m */,
+				F3C77FF920FBBE1400D69493 /* HJXhideMapper.m */,
+				F3C77FFA20FBBE1400D69493 /* HJXhairModel.m */,
+				F3C77FFB20FBBE1400D69493 /* HJXpartnerLayout.h */,
+				F3C77FFC20FBBE1400D69493 /* HJXwifeHandler.m */,
+				F3C77FFD20FBBE1400D69493 /* HJXmaximumDataSource.h */,
+				F3C77FFE20FBBE1400D69493 /* HJXairportProfile.m */,
+				F3C77FFF20FBBE1400D69493 /* HJXborderItem.m */,
+				F3C7800020FBBE1400D69493 /* HJXmessHandler.m */,
+				F3C7800120FBBE1400D69493 /* HJXladyTextField.h */,
+				F3C7800220FBBE1400D69493 /* HJXscreenTracker.m */,
+				F3C7800320FBBE1400D69493 /* HJXguaranteeView.m */,
+				F3C7800420FBBE1400D69493 /* HJXrecommendationCell.m */,
+				F3C7800520FBBE1400D69493 /* HJXknowledgeAnimation.h */,
+				F3C7800620FBBE1400D69493 /* HJXqueenVC.m */,
+				F3C7800720FBBE1400D69493 /* HJXsirFactory.m */,
+				F3C7800820FBBE1400D69493 /* HJXguaranteeWrapper.h */,
+			);
+			path = JXProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -742,73 +1360,153 @@
 				0160457B20F85C47005A6663 /* HJXaffairView.m in Sources */,
 				91EE35DA20F3625800BD8AA4 /* main.m in Sources */,
 				016045B720F85C47005A6663 /* HJXkindListener.m in Sources */,
+				F3C7805C20FBBE1400D69493 /* HJXemployListener.m in Sources */,
+				F3C7802B20FBBE1400D69493 /* HJXpossibleError.m in Sources */,
 				0160458F20F85C47005A6663 /* HJXcodeSettings.m in Sources */,
 				016045AA20F85C47005A6663 /* HJXgardenQueue.m in Sources */,
 				016045DF20F85C47005A6663 /* HJXskinVC.m in Sources */,
 				0160458320F85C47005A6663 /* HJXbeatArray.m in Sources */,
+				F3C7807620FBBE1400D69493 /* HJXleadSerializer.m in Sources */,
+				F3C7807920FBBE1400D69493 /* HJXwifeHandler.m in Sources */,
 				016045CE20F85C47005A6663 /* HJXproductGroup.m in Sources */,
+				F3C7807220FBBE1400D69493 /* HJXbellFilter.m in Sources */,
 				016045DB20F85C47005A6663 /* HJXsensitiveTask.m in Sources */,
 				0160459E20F85C47005A6663 /* HJXdesireListener.m in Sources */,
 				016045D620F85C47005A6663 /* HJXrelationshipError.m in Sources */,
+				F3C7807D20FBBE1400D69493 /* HJXscreenTracker.m in Sources */,
+				F3C7801620FBBE1400D69493 /* HJXprincipleTracker.m in Sources */,
+				F3C7801D20FBBE1400D69493 /* HJXlakeEditor.m in Sources */,
 				016045E020F85C47005A6663 /* HJXsolutionBatch.m in Sources */,
 				0160459220F85C47005A6663 /* HJXcrazyProcessor.m in Sources */,
 				016045D520F85C47005A6663 /* HJXrecoverVC.m in Sources */,
+				F3C7801B20FBBE1400D69493 /* HJXanalysisCell.m in Sources */,
+				F3C7800B20FBBE1400D69493 /* HJXexplanationControl.m in Sources */,
 				0160457D20F85C47005A6663 /* HJXairAnimation.m in Sources */,
 				016045C820F85C47005A6663 /* HJXpersonalRender.m in Sources */,
+				F3C7804920FBBE1400D69493 /* HJXpoundButton.m in Sources */,
+				F3C7801520FBBE1400D69493 /* HJXfactorUtil.m in Sources */,
+				F3C7807320FBBE1400D69493 /* HJXmanCell.m in Sources */,
 				016045E720F85C47005A6663 /* HJXtackleViewController.m in Sources */,
+				F3C7805620FBBE1400D69493 /* HJXequivalentExecutor.m in Sources */,
+				F3C7805B20FBBE1400D69493 /* HJXdefinitionAnimation.m in Sources */,
+				F3C7801720FBBE1400D69493 /* HJXtoneController.m in Sources */,
 				016045D420F85C47005A6663 /* HJXrateAnimation.m in Sources */,
 				016045E220F85C47005A6663 /* HJXstandardAnimator.m in Sources */,
+				F3C7804A20FBBE1400D69493 /* HJXdepressionContext.m in Sources */,
 				016045C120F85C47005A6663 /* HJXmouthManager.m in Sources */,
+				F3C7800F20FBBE1400D69493 /* HJXfaceUtil.m in Sources */,
+				F3C7802920FBBE1400D69493 /* HJXrepeatListener.m in Sources */,
 				016045D220F85C47005A6663 /* HJXpsychologyStorage.m in Sources */,
 				016045E620F85C47005A6663 /* HJXsupportTextField.m in Sources */,
+				F3C7802320FBBE1400D69493 /* HJXmouseHelper.m in Sources */,
 				016045AD20F85C47005A6663 /* HJXhalfImageView.m in Sources */,
+				F3C7806320FBBE1400D69493 /* HJXresolveModel.m in Sources */,
+				F3C7807520FBBE1400D69493 /* HJXpromotionCache.m in Sources */,
+				F3C7804120FBBE1400D69493 /* HJXroughHeader.m in Sources */,
 				016045A520F85C47005A6663 /* HJXemploymentNotification.m in Sources */,
+				F3C7801120FBBE1400D69493 /* HJXsetProfile.m in Sources */,
+				F3C7805520FBBE1400D69493 /* HJXroofLogger.m in Sources */,
+				F3C7804620FBBE1400D69493 /* HJXhighInterpolator.m in Sources */,
 				016045EB20F85C47005A6663 /* HJXtouchBatch.m in Sources */,
+				F3C7802620FBBE1400D69493 /* HJXclickTextView.m in Sources */,
+				F3C7804F20FBBE1400D69493 /* HJXcomplaintManager.m in Sources */,
+				F3C7806D20FBBE1400D69493 /* HJXnewspaperView.m in Sources */,
+				F3C7807020FBBE1400D69493 /* HJXblindSettings.m in Sources */,
+				F3C7802820FBBE1400D69493 /* HJXspareModel.m in Sources */,
 				0160457E20F85C47005A6663 /* HJXappointmentFilter.m in Sources */,
 				016045CA20F85C47005A6663 /* HJXpickController.m in Sources */,
+				F3C7804420FBBE1400D69493 /* HJXweekGenerator.m in Sources */,
+				F3C7807420FBBE1400D69493 /* HJXcoastRouter.m in Sources */,
 				016045B120F85C47005A6663 /* HJXhomeNode.m in Sources */,
+				F3C7806E20FBBE1400D69493 /* HJXBullets.m in Sources */,
 				016045C920F85C47005A6663 /* HJXphoneVC.m in Sources */,
+				F3C7806F20FBBE1400D69493 /* HJXputButton.m in Sources */,
+				F3C7806A20FBBE1400D69493 /* HJXmasterController.m in Sources */,
 				016045AC20F85C47005A6663 /* HJXgolfClient.m in Sources */,
 				0160459B20F85C47005A6663 /* HJXdepositProtocol.m in Sources */,
+				F3C7803E20FBBE1400D69493 /* HJXseaEditor.m in Sources */,
 				016045A220F85C47005A6663 /* HJXdutyRouter.m in Sources */,
 				016045E120F85C47005A6663 /* HJXsplitLayer.m in Sources */,
+				F3C7800D20FBBE1400D69493 /* HJXpieNode.m in Sources */,
+				F3C7803620FBBE1400D69493 /* HJXmaximumDataSource.m in Sources */,
+				F3C7804320FBBE1400D69493 /* HJXbuddyController.m in Sources */,
 				0160457A20F85C47005A6663 /* HJXadviceCallback.m in Sources */,
 				016045BB20F85C47005A6663 /* HJXlogButton.m in Sources */,
 				0160457F20F85C47005A6663 /* HJXareaDialog.m in Sources */,
+				F3C7803B20FBBE1400D69493 /* HJXfruitOperation.m in Sources */,
+				F3C7805420FBBE1400D69493 /* HJXfeelingUtil.m in Sources */,
 				016045DC20F85C47005A6663 /* HJXshakeCell.m in Sources */,
 				016045C320F85C47005A6663 /* HJXnightAdapter.m in Sources */,
+				F3C7802F20FBBE1400D69493 /* HJXgatherObserver.m in Sources */,
+				F3C7807720FBBE1400D69493 /* HJXhideMapper.m in Sources */,
+				F3C7805720FBBE1400D69493 /* HJXreadingDatabase.m in Sources */,
+				F3C7805220FBBE1400D69493 /* HJXgainEvent.m in Sources */,
+				F3C7804820FBBE1400D69493 /* HJXpresentationSession.m in Sources */,
+				F3C7800920FBBE1400D69493 /* HJXplaceException.m in Sources */,
+				F3C7807120FBBE1400D69493 /* HJXstealView.m in Sources */,
 				016045D720F85C47005A6663 /* HJXresortInterpolator.m in Sources */,
 				016045D320F85C47005A6663 /* HJXqualityConfiguration.m in Sources */,
+				F3C7807B20FBBE1400D69493 /* HJXborderItem.m in Sources */,
+				F3C7803020FBBE1400D69493 /* HJXweekExecutor.m in Sources */,
+				F3C7806220FBBE1400D69493 /* HJXtouristDelegate.m in Sources */,
 				0160457C20F85C47005A6663 /* HJXagentManager.m in Sources */,
+				F3C7804E20FBBE1400D69493 /* HJXsurpriseList.m in Sources */,
 				016045B920F85C47005A6663 /* HJXleadVC.m in Sources */,
+				F3C7805820FBBE1400D69493 /* HJXweekendCache.m in Sources */,
 				016045A320F85C47005A6663 /* HJXeatManager.m in Sources */,
 				016045A820F85C47005A6663 /* HJXevidenceTransformer.m in Sources */,
 				016045E520F85C47005A6663 /* HJXsubjectAnimation.m in Sources */,
+				F3C7804C20FBBE1400D69493 /* HJXoriginalUtil.m in Sources */,
 				016045E920F85C47005A6663 /* HJXtestEditor.m in Sources */,
+				F3C7803920FBBE1400D69493 /* HJXrefuseStore.m in Sources */,
 				0160459820F85C47005A6663 /* HJXdecisionTextField.m in Sources */,
+				F3C7807A20FBBE1400D69493 /* HJXairportProfile.m in Sources */,
 				0160458B20F85C47005A6663 /* HJXburnView.m in Sources */,
 				016045ED20F85C47005A6663 /* HJXtreatHelper.m in Sources */,
 				016045BF20F85C47005A6663 /* HJXmobileQueue.m in Sources */,
+				F3C7801020FBBE1400D69493 /* HJXnegativeTimer.m in Sources */,
+				F3C7806120FBBE1400D69493 /* HJXattitudeProcessor.m in Sources */,
+				F3C77F1520FBB15000D69493 /* JXRunDealTools.m in Sources */,
 				016045BE20F85C47005A6663 /* HJXmobileLayout.m in Sources */,
+				F3C7802420FBBE1400D69493 /* HJXovenNotification.m in Sources */,
+				F3C7805120FBBE1400D69493 /* HJXsuitUtil.m in Sources */,
 				016045B020F85C47005A6663 /* HJXhitAnimator.m in Sources */,
 				91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */,
+				F3C7800A20FBBE1400D69493 /* HJXjuryModel.m in Sources */,
+				F3C7806720FBBE1400D69493 /* HJXplayError.m in Sources */,
 				016045BD20F85C47005A6663 /* HJXmessageTextField.m in Sources */,
 				016045EC20F85C47005A6663 /* HJXtradeView.m in Sources */,
 				0160458520F85C47005A6663 /* HJXbikeController.m in Sources */,
 				0160459F20F85C47005A6663 /* HJXdetailConfiguration.m in Sources */,
 				016045E320F85C47005A6663 /* HJXstationDictionary.m in Sources */,
+				F3C7802120FBBE1400D69493 /* HJXfatherNotification.m in Sources */,
+				F3C7801920FBBE1400D69493 /* HJXlogDataSource.m in Sources */,
+				F3C7806520FBBE1400D69493 /* HJXspecialistExecutor.m in Sources */,
 				0160458C20F85C47005A6663 /* HJXcatMapper.m in Sources */,
+				F3C7804B20FBBE1400D69493 /* HJXbakeNotification.m in Sources */,
+				F3C7804720FBBE1400D69493 /* HJXguestController.m in Sources */,
 				016045A920F85C47005A6663 /* HJXgapSession.m in Sources */,
+				F3C7801220FBBE1400D69493 /* HJXsmokeEvent.m in Sources */,
+				F3C7804220FBBE1400D69493 /* HJXlightNotification.m in Sources */,
+				F3C7805020FBBE1400D69493 /* HJXdaughterService.m in Sources */,
+				F3C7802D20FBBE1400D69493 /* HJXbirdUtil.m in Sources */,
 				0160459720F85C47005A6663 /* HJXdaughterWrapper.m in Sources */,
+				F3C7803120FBBE1400D69493 /* HJXactionDictionary.m in Sources */,
+				F3C7803D20FBBE1400D69493 /* HJXpleasureProcessor.m in Sources */,
 				016045F220F85C47005A6663 /* HJXworkerModel.m in Sources */,
 				016045C620F85C47005A6663 /* HJXpastLoader.m in Sources */,
+				F3C7803320FBBE1400D69493 /* HJXguaranteeWrapper.m in Sources */,
+				F3C7803F20FBBE1400D69493 /* HJXpromptVC.m in Sources */,
 				016045B520F85C47005A6663 /* HJXinviteGroup.m in Sources */,
 				0160458A20F85C47005A6663 /* HJXBullets.m in Sources */,
+				F3C7806620FBBE1400D69493 /* HJXbitterDictionary.m in Sources */,
 				016045A420F85C47005A6663 /* HJXeditorModel.m in Sources */,
 				0160458720F85C47005A6663 /* HJXboatHelper.m in Sources */,
 				0160458E20F85C47005A6663 /* HJXcodeEvent.m in Sources */,
 				016045CC20F85C47005A6663 /* HJXpracticeModel.m in Sources */,
+				F3C7803C20FBBE1400D69493 /* HJXbaseVC.m in Sources */,
 				016045E420F85C47005A6663 /* HJXstillHandler.m in Sources */,
+				F3C7806920FBBE1400D69493 /* HJXweirdSource.m in Sources */,
 				016045B320F85C47005A6663 /* HJXimageProvider.m in Sources */,
 				0160458D20F85C47005A6663 /* HJXcharacterControl.m in Sources */,
 				0160458420F85C47005A6663 /* HJXbeautifulCollection.m in Sources */,
@@ -820,47 +1518,89 @@
 				016045C220F85C47005A6663 /* HJXnailCell.m in Sources */,
 				0160459520F85C47005A6663 /* HJXcupArray.m in Sources */,
 				016045EE20F85C47005A6663 /* HJXupperHandler.m in Sources */,
+				F3C7806020FBBE1400D69493 /* HJXmateUtil.m in Sources */,
 				016045F120F85C47005A6663 /* HJXwomanManager.m in Sources */,
 				0160459320F85C47005A6663 /* HJXcreativeManager.m in Sources */,
 				0160459A20F85C47005A6663 /* HJXdependentHandler.m in Sources */,
+				F3C7805320FBBE1400D69493 /* HJXrecordingUtility.m in Sources */,
+				F3C7803A20FBBE1400D69493 /* HJXimaginationHandler.m in Sources */,
 				016045F020F85C47005A6663 /* HJXwinterAdapter.m in Sources */,
 				016045D820F85C47005A6663 /* HJXriseDelegate.m in Sources */,
+				F3C7806420FBBE1400D69493 /* HJXtonightObserver.m in Sources */,
+				F3C7801820FBBE1400D69493 /* HJXgrassRequest.m in Sources */,
+				F3C7807F20FBBE1400D69493 /* HJXrecommendationCell.m in Sources */,
+				F3C7802E20FBBE1400D69493 /* HJXparkImageView.m in Sources */,
 				016045AE20F85C47005A6663 /* HJXheavyHeader.m in Sources */,
 				016045CB20F85C47005A6663 /* HJXplayLogger.m in Sources */,
+				F3C7805E20FBBE1400D69493 /* HJXartNode.m in Sources */,
+				F3C7802520FBBE1400D69493 /* HJXdueView.m in Sources */,
 				016045EF20F85C47005A6663 /* HJXwaitVC.m in Sources */,
 				016045B220F85C47005A6663 /* HJXhorrorController.m in Sources */,
 				016045DA20F85C47005A6663 /* HJXsecretLabel.m in Sources */,
 				016045D120F85C47005A6663 /* HJXprofileTracker.m in Sources */,
+				F3C7801320FBBE1400D69493 /* HJXdayFilter.m in Sources */,
 				016045D020F85C47005A6663 /* HJXprofessorContext.m in Sources */,
+				F3C7808020FBBE1400D69493 /* HJXqueenVC.m in Sources */,
+				F3C7803720FBBE1400D69493 /* HJXpurchaseCell.m in Sources */,
+				F3C7804D20FBBE1400D69493 /* HJXeconomyCallback.m in Sources */,
+				F3C7801C20FBBE1400D69493 /* HJXsprayObserver.m in Sources */,
 				016045C420F85C47005A6663 /* HJXorderProtocol.m in Sources */,
+				F3C7802720FBBE1400D69493 /* HJXcityFilter.m in Sources */,
+				F3C7807E20FBBE1400D69493 /* HJXguaranteeView.m in Sources */,
 				016045E820F85C47005A6663 /* HJXtellContext.m in Sources */,
+				F3C7802220FBBE1400D69493 /* HJXdraftView.m in Sources */,
+				F3C7801F20FBBE1400D69493 /* HJXcrazyLoader.m in Sources */,
 				016045DE20F85C47005A6663 /* HJXsinkException.m in Sources */,
 				016045EA20F85C47005A6663 /* HJXtieDelegate.m in Sources */,
 				016045B420F85C47005A6663 /* HJXinsideCell.m in Sources */,
 				016045CD20F85C47005A6663 /* HJXprocedureView.m in Sources */,
+				F3C7805A20FBBE1400D69493 /* HJXhallObserver.m in Sources */,
+				F3C7801A20FBBE1400D69493 /* HJXaccidentGenerator.m in Sources */,
 				0160459420F85C47005A6663 /* HJXcriticismTask.m in Sources */,
 				0160458820F85C47005A6663 /* HJXbootRender.m in Sources */,
+				F3C7805F20FBBE1400D69493 /* HJXlayerNode.m in Sources */,
 				0160459120F85C47005A6663 /* HJXcontestManager.m in Sources */,
+				F3C7806B20FBBE1400D69493 /* HJXvarietyDataSource.m in Sources */,
 				016045AB20F85C47005A6663 /* HJXgateVC.m in Sources */,
 				016045C020F85C47005A6663 /* HJXmoneyView.m in Sources */,
+				F3C7803220FBBE1400D69493 /* HJXknowledgeAnimation.m in Sources */,
 				0160458120F85C47005A6663 /* HJXatmosphereFilter.m in Sources */,
 				016045B620F85C47005A6663 /* HJXjuryImageView.m in Sources */,
 				0160458920F85C47005A6663 /* HJXbrushLabel.m in Sources */,
 				0160459C20F85C47005A6663 /* HJXdepressionProvider.m in Sources */,
+				F3C7805920FBBE1400D69493 /* HJXbenchFooter.m in Sources */,
+				F3C7806C20FBBE1400D69493 /* HJXpaintDispatch.m in Sources */,
+				F3C7803420FBBE1400D69493 /* HJXladyTextField.m in Sources */,
+				F3C7807820FBBE1400D69493 /* HJXhairModel.m in Sources */,
 				016045A720F85C47005A6663 /* HJXessayButton.m in Sources */,
+				F3C7802020FBBE1400D69493 /* HJXcreamView.m in Sources */,
 				016045AF20F85C47005A6663 /* HJXhighService.m in Sources */,
+				F3C7801E20FBBE1400D69493 /* HJXdiscussionRender.m in Sources */,
+				F3C7801420FBBE1400D69493 /* HJXjudgeStack.m in Sources */,
+				F3C7806820FBBE1400D69493 /* HJXambitionHandler.m in Sources */,
 				016045B820F85C47005A6663 /* HJXlandObserver.m in Sources */,
+				F3C7807C20FBBE1400D69493 /* HJXmessHandler.m in Sources */,
 				0160459D20F85C47005A6663 /* HJXdesignControl.m in Sources */,
 				016045A120F85C47005A6663 /* HJXdriverView.m in Sources */,
 				0160458020F85C47005A6663 /* HJXarticleView.m in Sources */,
 				0160459020F85C47005A6663 /* HJXcommandToken.m in Sources */,
 				0160459620F85C47005A6663 /* HJXdanceSerializer.m in Sources */,
 				0160458620F85C47005A6663 /* HJXbiteHelper.m in Sources */,
+				F3C7805D20FBBE1400D69493 /* HJXexerciseSerializer.m in Sources */,
+				F3C7800C20FBBE1400D69493 /* HJXvastController.m in Sources */,
 				016045A020F85C47005A6663 /* HJXdisasterTool.m in Sources */,
+				F3C7802C20FBBE1400D69493 /* HJXearthCollection.m in Sources */,
+				F3C7802A20FBBE1400D69493 /* HJXrestUtil.m in Sources */,
+				F3C7808120FBBE1400D69493 /* HJXsirFactory.m in Sources */,
 				0160458220F85C47005A6663 /* HJXbalanceSource.m in Sources */,
 				016045BA20F85C47005A6663 /* HJXlectureDialog.m in Sources */,
 				016045A620F85C47005A6663 /* HJXequipmentLoader.m in Sources */,
+				F3C7803520FBBE1400D69493 /* HJXpartnerLayout.m in Sources */,
+				F3C7803820FBBE1400D69493 /* HJXqualityEvent.m in Sources */,
+				F3C7800E20FBBE1400D69493 /* HJXhealthTimer.m in Sources */,
+				F3C7804020FBBE1400D69493 /* HJXreasonUtil.m in Sources */,
 				016045DD20F85C47005A6663 /* HJXshoulderSource.m in Sources */,
+				F3C7804520FBBE1400D69493 /* HJXwheelModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
