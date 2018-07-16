@@ -20,6 +20,11 @@
 // 随机变量最大个数
 #define RandomPropertyCount 7
 
+// 替换调用方法导入该类.h
+#define JXImportClassHString @"$"
+
+static NSMutableString *importClassHString;
+
 @interface SLCMixManager()
 
 @property (nonatomic, assign) NSUInteger randomBodyNum; //body随机数
@@ -43,6 +48,7 @@
         self.fileHeader = @"SLC";
         self.classArray = [NSMutableArray array];
         self.clsMethodsDict = [NSMutableDictionary dictionary];
+        importClassHString = [NSMutableString string];
     }
     return self;
 }
@@ -73,6 +79,8 @@
 #pragma mark ---<PrivateMethod>---
 
 - (void)createBulletsFile {
+    
+    importClassHString = [NSMutableString string];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *fileName = [NSString stringWithFormat:@"%@Bullets",self.fileHeader];
     NSString *filePath = [self.fullPath stringByAppendingPathComponent:fileName];
@@ -82,11 +90,15 @@
     NSString *methodString = @"/**调用所有方法 - (模拟调用,fire完所有局部对象会立即被释放)*/\n+ (void)fire;";
     NSString *hString = [NSString stringWithFormat:@"\n\n\n\n\n#import <Foundation/Foundation.h>\n\n\n\n@interface %@ : NSObject\n\n\n%@\n@end",fileName,methodString]; //.h文件内容
     NSString *mString = [self createBulletsM:fileName methodString:methodString]; //.m文件内容
-    
+
     
     BOOL isCreateH = [fileManager createFileAtPath:[NSString stringWithFormat:@"%@.h",filePath] contents:[hString dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
     if (isCreateH) {
         NSLog(@"%@___文件创建成功!",fileName);
+        // 引入头文件
+        mString = [mString stringByReplacingOccurrencesOfString:JXImportClassHString withString:importClassHString];
+        importClassHString = [NSMutableString string];
+        
         [fileManager createFileAtPath:[NSString stringWithFormat:@"%@.m",filePath] contents:[mString dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
     }else {
         NSLog(@"%@文件创建失败,重名了!",fileName);
@@ -96,7 +108,7 @@
 - (NSString *)createBulletsM:(NSString *)fileName
                 methodString:(NSString *)method {
     
-    NSString *bulletsM = [NSString stringWithFormat:@"\n\n\n\n\n#import \"%@.h\"\n#import <objc/runtime.h>\n@interface %@()\n@property (nonatomic, strong) NSArray <NSString *>* classArray;\n@end\n\n\n@implementation %@\n",fileName,fileName,fileName];
+    NSString *bulletsM = [NSString stringWithFormat:@"\n\n\n\n\n#import \"%@.h\"\n%@\n#import <objc/runtime.h>\n@interface %@()\n@property (nonatomic, strong) NSArray <NSString *>* classArray;\n@end\n\n\n@implementation %@\n",fileName,JXImportClassHString,fileName,fileName];
     
     NSString *classString = @"@[";
     for (NSInteger i = 0; i < self.fileNum; i ++) {
@@ -109,11 +121,18 @@
     
       bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodClass]];
     
-    NSString *methodFire = [NSString stringWithFormat:@"\n+ (void)fire{\n    @autoreleasepool {\n     %@ *bullets = [%@ new];\n       for (NSString *className in bullets.classArray) {\n      Class aClass = NSClassFromString(className);\n      NSObject *object = [aClass new];\n      \n [self getAllMethods:object];\n    }\n      }}",fileName,fileName]; //fire方法
+#warning TODO...
+    // 随机调用一个类的实例方法
+    NSString *preClsSelStrig1 = [self performRandomMethod:fileName];
+
+    // 随机调用一个类的实例方法
+    NSString *preClsSelStrig2 = [self performRandomMethod:fileName];
+    
+    NSString *methodFire = [NSString stringWithFormat:@"\n+ (void)fire{\n    @autoreleasepool {\n     %@ *bullets = [%@ new];\n       for (NSString *className in bullets.classArray) {\n      Class aClass = NSClassFromString(className);\n      NSObject *object = [aClass new];\n      \n [self getAllMethods:object];\n    }\n      }\n    %@\n}",fileName,fileName,preClsSelStrig1]; //fire方法
     
      bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodFire]];
     
-    NSString *methodLists = @"\n+ (NSArray <NSString *>*)getAllMethods:(id)obj{\n    unsigned int methodCount =0;\n    Method* methodList = class_copyMethodList([obj class],&methodCount);\n    NSMutableArray *methodsArray = [NSMutableArray arrayWithCapacity:methodCount];\n    for(int i = 0; i < methodCount; i++){\n     Method temp = methodList[i];\n     method_getImplementation(temp);\n     method_getName(temp);\nconst char* name_s =sel_getName(method_getName(temp));\nint arguments = method_getNumberOfArguments(temp);\n     const char* encoding =method_getTypeEncoding(temp);\n          if (![[NSString stringWithUTF8String:name_s] containsString:@\"set\"]) {\n //不要setter\n   \n       [methodsArray addObject:[NSString stringWithUTF8String:name_s]];\n    }\n     }\n     free(methodList);\n    return methodsArray;\n}\n";
+    NSString *methodLists = [NSString stringWithFormat:@"\n+ (NSArray <NSString *>*)getAllMethods:(id)obj{\n    unsigned int methodCount =0;\n    Method* methodList = class_copyMethodList([obj class],&methodCount);\n    NSMutableArray *methodsArray = [NSMutableArray arrayWithCapacity:methodCount];\n    for(int i = 0; i < methodCount; i++){\n     Method temp = methodList[i];\n     method_getImplementation(temp);\n     method_getName(temp);\nconst char* name_s =sel_getName(method_getName(temp));\n          if (![[NSString stringWithUTF8String:name_s] containsString:@\"set\"]) {\n //不要setter\n   \n       [methodsArray addObject:[NSString stringWithUTF8String:name_s]];\n    }\n     }\n     free(methodList);\n        %@\n     return methodsArray;\n}\n",preClsSelStrig2];
     
     bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodLists]];
     
@@ -138,7 +157,7 @@
     
    __block NSString *hString = [NSString stringWithFormat:@"%@%@%@\n\n#import <Foundation/Foundation.h>\n\n\nNS_ASSUME_NONNULL_BEGIN\n@interface %@ : NSObject\n%@\n",[NSString stringWithFormat:@"%@%@.h",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,[self randomProperty]]; //.h文件内容
     
-    __block NSString *mString = [NSString stringWithFormat:@"%@%@%@\n\n#import \"%@.h\"\n\n\n\n@implementation %@",[NSString stringWithFormat:@"%@%@.m",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,file]; //.m文件内容
+    __block NSString *mString = [NSString stringWithFormat:@"%@%@%@\n\n#import \"%@.h\"\n%@\n\n\n@implementation %@",[NSString stringWithFormat:@"%@%@.m",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,JXImportClassHString,file]; //.m文件内容
     
     void(^handle)(NSArray <NSString *>*methodArray) = ^(NSArray <NSString *>*methodArray){
         
@@ -152,57 +171,15 @@
             mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n\n%@",[self removeLastOneChar:method]]];
             
 #warning TODO...
-            NSString *preClsSelStrig;
             // 随机调用一个类的实例方法
-            if (self.classArray.count > 1) {
-                NSInteger clsIndex = arc4random() % self.classArray.count;
-                NSString *clsString = self.classArray[clsIndex];
-                
-                // 不是当期类
-                if (![file isEqualToString:clsString]) {
-                    
-//                    //所有的方法
-                    NSArray<NSString *> * SELNameArray = self.clsMethodsDict[clsString];
-                    
-                    // 所有方法对应的参数数据
-                    NSDictionary<NSString *,NSArray *> *methodArgumentsDict = [JXRunDealTools getAllMethodArgumentsDict:NSClassFromString(clsString)];
-                    
-                    
-                    
-                    NSString *SELString;
-                    if (SELNameArray.count > 1) {
-                        SELString = SELNameArray[arc4random() % SELNameArray.count];
-
-                        NSArray *arguments = methodArgumentsDict[SELString];
-                    
-                        
-                        NSString *tmp;
-                        // 超过三个参数的方法不调用
-                        if (arguments.count - 2 < 3) {
-                            
-                            if (arguments.count - 2 == 0) {
-                                tmp = [NSString stringWithFormat:@"((void(*)(id, SEL))objc_msgSend)(instance, NSSelectorFromString(@\"%@\"));",SELString];
-                            }
-                            if (arguments.count - 2 == 1) {
-                                tmp = [NSString stringWithFormat:@"[instance performSelector:NSSelectorFromString(SELString) withObject:%@ afterDelay:0];",[JXRunDealTools getArgument:arguments[2]]];
-                            }
-                            
-                            if (arguments.count - 2 == 2) {
-                                tmp = [NSString stringWithFormat:@"[instance performSelector:NSSelectorFromString(SELString) withObject:%@ withObject:%@ afterDelay:0];",[JXRunDealTools getArgument:arguments[2]],[JXRunDealTools getArgument:arguments[3]]];
-                            }
-                            
-                            preClsSelStrig = [NSString stringWithFormat:@"\n\n Class cls = NSClassFromString(@\"%@\");\n id instance = [[cls alloc]init];\n %@\n",clsString,tmp];
-                        }
-                            
-                        }
-        
-                }
-               
-            }
+            NSString *preClsSelStrig = [self performRandomMethod:file];
             
-            mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n{\n      for (NSInteger i = 0; i < 3; i++) {\n        NSString *str = @\"func name = %@\";\n        [str stringByAppendingString:@\"time is 3\"];\n%@ \n       }\n}\n",method,preClsSelStrig]];
+            NSInteger randomI = (arc4random()%3 + 1);
+            mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n{\n      for (NSInteger i = 0; i < %ld; i++) {\n        NSString *str = @\"methodName = %@\";\n        [str stringByAppendingString:@\"line endings is %ld \"];\n\n        } %@\n}\n",randomI,method,randomI,preClsSelStrig]];
+
         }
     
+        
     };
     
     [self randomMethod:handle withClsName:file];
@@ -212,6 +189,10 @@
     BOOL isCreateH = [fileManager createFileAtPath:[NSString stringWithFormat:@"%@.h",filePath] contents:[hString dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
     if (isCreateH) {
         NSLog(@"%@___文件创建成功!",file);
+        // 引入头文件
+        mString = [mString stringByReplacingOccurrencesOfString:JXImportClassHString withString:importClassHString];
+        importClassHString = [NSMutableString string];
+        
         mString = [mString stringByAppendingString:@"\n@end"];
         [fileManager createFileAtPath:[NSString stringWithFormat:@"%@.m",filePath] contents:[mString dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
     }else {
@@ -254,8 +235,9 @@
     NSMutableArray *array = [NSMutableArray array];
     NSMutableArray *SELArr = [NSMutableArray array];
     for (NSInteger i = 0; i < randomNum; i ++) {
-        NSString *methodString = [self randomPerMethod].firstObject;
-        NSString *SELString = [self randomPerMethod].lastObject;
+        NSArray *tmpArray = [self randomPerMethod];
+        NSString *methodString = tmpArray.firstObject;
+        NSString *SELString = tmpArray.lastObject;
         [array addObject:methodString];
         [SELArr addObject:SELString];
     }
@@ -291,11 +273,11 @@
             NSUInteger randomM = arc4random() % 4;
             if (![methodName containsString:newMethod]) { //不包含拼接的新串
                 if (i == 0) {
-                    SELName = [NSString stringWithFormat:@"%@%@:",SELName,newMethod];
+                    SELName = [NSString stringWithFormat:@"%@%@:%ld",SELName,newMethod.capitalizedString,i];
                     methodName = [NSString stringWithFormat:@"%@%@:(%@)%@",methodName,newMethod.capitalizedString,typesArray()[randomM],newMethod];
                     
                 }else {
-                    SELName = [NSString stringWithFormat:@"%@ and%@:",SELName,newMethod];
+                    SELName = [NSString stringWithFormat:@"%@ and%@:%ld",SELName,newMethod.capitalizedString,i];
                   methodName = [NSString stringWithFormat:@"%@ and%@:(%@)%@",methodName,newMethod.capitalizedString,typesArray()[randomM],newMethod];
                 }
             }else { //包含,跳过
@@ -492,7 +474,7 @@
     NSString * mString = @"\n";
     NSMutableArray *methodArray = [NSMutableArray array];
     for (NSInteger i = 0; i < randomNum; i ++) {
-        NSString *methodString = [self randomPerMethod];
+        NSString *methodString = [self randomPerMethod].firstObject;
         if ([readString containsString:methodString]) continue; //原文件如果有,跳过
         if ([mString containsString:methodString]) continue; //新生成的如果有,跳过
         [methodArray addObject:methodString];
@@ -518,6 +500,50 @@
     return backPath;
 }
 
+// preClsSelStrig 方法内部调用其他类的方法
+- (NSString *)performRandomMethod:(NSString *)clsName{
 
+    NSString *preClsSelStrig = @"";
+    if (self.classArray.count > 1) {
+        NSInteger clsIndex = arc4random() % self.classArray.count;
+        NSString *clsString = self.classArray[clsIndex];
+        
+        // 不是当期类
+        if (![clsName isEqualToString:clsString]) {
+            
+            //所有的方法
+            NSArray<NSString *> * SELNameArray = self.clsMethodsDict[clsString];
+            NSString *SELString;
+            if (SELNameArray.count > 1) {
+                SELString = SELNameArray[arc4random() % SELNameArray.count];
+                SELString = [NSString stringWithFormat:@"[instance %@",SELString];
+                if (![importClassHString containsString:clsString]) {
+                    [importClassHString appendString:[NSString stringWithFormat:@"#import \"%@.h\"\n",clsString]];
+                    NSLog(@"importHString -- %@",importClassHString);
+                }
+                
+                // 三个参数
+                if ([SELString containsString:@"2"]) {
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"2" withString:@"nil];"];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:@"nil"];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:@"nil"];
+                }else if ([SELString containsString:@"1"]) {
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:@"nil];"];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:@"nil"];
+                }else if ([SELString containsString:@"0"]) {
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:@"nil];"];
+                }else {
+                    SELString = [NSString stringWithFormat:@"%@];",SELString];
+                }
+                
+                preClsSelStrig = [NSString stringWithFormat:@"\n\n    %@ *instance = [[%@ alloc]init];\n     %@\n",clsString,clsString,SELString];
+                
+            }
+            
+        }
+        
+    }
+    return preClsSelStrig;
+}
 
 @end

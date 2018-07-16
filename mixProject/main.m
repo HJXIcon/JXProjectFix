@@ -8,18 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "SLCMixManager.h"
-#import "HJXBullets.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        [HJXBullets fire];
+        
         
         SLCMixManager *mix = [SLCMixManager new];
         mix.fileHeader = @"HJX"; //header
 //        mix.fileName = @"QuizProject"; //文件夹名称
-//        mix.fileNum = 150; //文件个数
+        mix.fileNum = 10; //文件个数
         [mix fireOnBorn];
-//
+
         
 //        SLCMixManager *mix = [SLCMixManager new];
 //        mix.childFullPath = @"/Users/hjxicon/Desktop/aa";

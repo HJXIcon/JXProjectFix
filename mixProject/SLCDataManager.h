@@ -1591,8 +1591,8 @@ static NSArray <NSString *>*tailArray() {
 
 static NSArray <NSString *>*typesArray() {
     return @[
-             @"BOOL",
-             @"NSInteger",
+             @"NSString *_Nullable",
+             @"NSData *_Nullable",
              @"NSArray *_Nullable",
              @"NSDictionary *_Nullable"
              ];
