@@ -12,11 +12,10 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        
         SLCMixManager *mix = [SLCMixManager new];
-        mix.fileHeader = @"HJX"; //header
+        mix.fileHeader = @"CoCo"; //header
 //        mix.fileName = @"QuizProject"; //文件夹名称
-        mix.fileNum = 10; //文件个数
+        mix.fileNum = 5; //文件个数
         [mix fireOnBorn];
 
         

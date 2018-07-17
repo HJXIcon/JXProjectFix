@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01AA3B1C20FC7E0700EE2123 /* HJXBullets.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B0720FC7E0700EE2123 /* HJXBullets.m */; };
-		01AA3B1D20FC7E0700EE2123 /* HJXcakeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B0920FC7E0700EE2123 /* HJXcakeAdapter.m */; };
-		01AA3B1E20FC7E0700EE2123 /* HJXcoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B0B20FC7E0700EE2123 /* HJXcoverCell.m */; };
-		01AA3B1F20FC7E0700EE2123 /* HJXdriveTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B0D20FC7E0700EE2123 /* HJXdriveTimer.m */; };
-		01AA3B2020FC7E0700EE2123 /* HJXinevitableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B0F20FC7E0700EE2123 /* HJXinevitableView.m */; };
-		01AA3B2120FC7E0700EE2123 /* HJXlawyerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B1120FC7E0700EE2123 /* HJXlawyerStore.m */; };
-		01AA3B2220FC7E0700EE2123 /* HJXmuscleEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B1320FC7E0700EE2123 /* HJXmuscleEvent.m */; };
-		01AA3B2320FC7E0700EE2123 /* HJXpoliceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B1520FC7E0700EE2123 /* HJXpoliceController.m */; };
-		01AA3B2420FC7E0700EE2123 /* HJXreadingAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B1720FC7E0700EE2123 /* HJXreadingAdapter.m */; };
-		01AA3B2520FC7E0700EE2123 /* HJXsheUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B1920FC7E0700EE2123 /* HJXsheUploader.m */; };
-		01AA3B2620FC7E0700EE2123 /* HJXvarietyObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA3B1B20FC7E0700EE2123 /* HJXvarietyObserver.m */; };
 		91EE35DA20F3625800BD8AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE35D920F3625800BD8AA4 /* main.m */; };
 		91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */; };
 		F3C77F1520FBB15000D69493 /* JXRunDealTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1420FBB15000D69493 /* JXRunDealTools.m */; };
@@ -36,28 +25,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01AA3B0620FC7E0700EE2123 /* HJXBullets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXBullets.h; sourceTree = "<group>"; };
-		01AA3B0720FC7E0700EE2123 /* HJXBullets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXBullets.m; sourceTree = "<group>"; };
-		01AA3B0820FC7E0700EE2123 /* HJXcakeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcakeAdapter.h; sourceTree = "<group>"; };
-		01AA3B0920FC7E0700EE2123 /* HJXcakeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcakeAdapter.m; sourceTree = "<group>"; };
-		01AA3B0A20FC7E0700EE2123 /* HJXcoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXcoverCell.h; sourceTree = "<group>"; };
-		01AA3B0B20FC7E0700EE2123 /* HJXcoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXcoverCell.m; sourceTree = "<group>"; };
-		01AA3B0C20FC7E0700EE2123 /* HJXdriveTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXdriveTimer.h; sourceTree = "<group>"; };
-		01AA3B0D20FC7E0700EE2123 /* HJXdriveTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXdriveTimer.m; sourceTree = "<group>"; };
-		01AA3B0E20FC7E0700EE2123 /* HJXinevitableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXinevitableView.h; sourceTree = "<group>"; };
-		01AA3B0F20FC7E0700EE2123 /* HJXinevitableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXinevitableView.m; sourceTree = "<group>"; };
-		01AA3B1020FC7E0700EE2123 /* HJXlawyerStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXlawyerStore.h; sourceTree = "<group>"; };
-		01AA3B1120FC7E0700EE2123 /* HJXlawyerStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXlawyerStore.m; sourceTree = "<group>"; };
-		01AA3B1220FC7E0700EE2123 /* HJXmuscleEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXmuscleEvent.h; sourceTree = "<group>"; };
-		01AA3B1320FC7E0700EE2123 /* HJXmuscleEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXmuscleEvent.m; sourceTree = "<group>"; };
-		01AA3B1420FC7E0700EE2123 /* HJXpoliceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXpoliceController.h; sourceTree = "<group>"; };
-		01AA3B1520FC7E0700EE2123 /* HJXpoliceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXpoliceController.m; sourceTree = "<group>"; };
-		01AA3B1620FC7E0700EE2123 /* HJXreadingAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXreadingAdapter.h; sourceTree = "<group>"; };
-		01AA3B1720FC7E0700EE2123 /* HJXreadingAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXreadingAdapter.m; sourceTree = "<group>"; };
-		01AA3B1820FC7E0700EE2123 /* HJXsheUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXsheUploader.h; sourceTree = "<group>"; };
-		01AA3B1920FC7E0700EE2123 /* HJXsheUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXsheUploader.m; sourceTree = "<group>"; };
-		01AA3B1A20FC7E0700EE2123 /* HJXvarietyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJXvarietyObserver.h; sourceTree = "<group>"; };
-		01AA3B1B20FC7E0700EE2123 /* HJXvarietyObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJXvarietyObserver.m; sourceTree = "<group>"; };
 		91EE35D620F3625800BD8AA4 /* mixProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mixProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EE35D920F3625800BD8AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLCMixManager.h; sourceTree = "<group>"; };
@@ -78,35 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01AA3B0520FC7E0700EE2123 /* mixProject */ = {
-			isa = PBXGroup;
-			children = (
-				01AA3B0620FC7E0700EE2123 /* HJXBullets.h */,
-				01AA3B0720FC7E0700EE2123 /* HJXBullets.m */,
-				01AA3B0820FC7E0700EE2123 /* HJXcakeAdapter.h */,
-				01AA3B0920FC7E0700EE2123 /* HJXcakeAdapter.m */,
-				01AA3B0A20FC7E0700EE2123 /* HJXcoverCell.h */,
-				01AA3B0B20FC7E0700EE2123 /* HJXcoverCell.m */,
-				01AA3B0C20FC7E0700EE2123 /* HJXdriveTimer.h */,
-				01AA3B0D20FC7E0700EE2123 /* HJXdriveTimer.m */,
-				01AA3B0E20FC7E0700EE2123 /* HJXinevitableView.h */,
-				01AA3B0F20FC7E0700EE2123 /* HJXinevitableView.m */,
-				01AA3B1020FC7E0700EE2123 /* HJXlawyerStore.h */,
-				01AA3B1120FC7E0700EE2123 /* HJXlawyerStore.m */,
-				01AA3B1220FC7E0700EE2123 /* HJXmuscleEvent.h */,
-				01AA3B1320FC7E0700EE2123 /* HJXmuscleEvent.m */,
-				01AA3B1420FC7E0700EE2123 /* HJXpoliceController.h */,
-				01AA3B1520FC7E0700EE2123 /* HJXpoliceController.m */,
-				01AA3B1620FC7E0700EE2123 /* HJXreadingAdapter.h */,
-				01AA3B1720FC7E0700EE2123 /* HJXreadingAdapter.m */,
-				01AA3B1820FC7E0700EE2123 /* HJXsheUploader.h */,
-				01AA3B1920FC7E0700EE2123 /* HJXsheUploader.m */,
-				01AA3B1A20FC7E0700EE2123 /* HJXvarietyObserver.h */,
-				01AA3B1B20FC7E0700EE2123 /* HJXvarietyObserver.m */,
-			);
-			path = mixProject;
-			sourceTree = "<group>";
-		};
 		91EE35CD20F3625800BD8AA4 = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +64,6 @@
 		91EE35D820F3625800BD8AA4 /* mixProject */ = {
 			isa = PBXGroup;
 			children = (
-				01AA3B0520FC7E0700EE2123 /* mixProject */,
 				91EE37CA20F3C67500BD8AA4 /* SLCDataManager.h */,
 				91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */,
 				91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */,
@@ -193,20 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01AA3B2220FC7E0700EE2123 /* HJXmuscleEvent.m in Sources */,
-				01AA3B2620FC7E0700EE2123 /* HJXvarietyObserver.m in Sources */,
-				01AA3B1E20FC7E0700EE2123 /* HJXcoverCell.m in Sources */,
-				01AA3B1D20FC7E0700EE2123 /* HJXcakeAdapter.m in Sources */,
-				01AA3B2420FC7E0700EE2123 /* HJXreadingAdapter.m in Sources */,
-				01AA3B1C20FC7E0700EE2123 /* HJXBullets.m in Sources */,
-				01AA3B2320FC7E0700EE2123 /* HJXpoliceController.m in Sources */,
 				91EE35DA20F3625800BD8AA4 /* main.m in Sources */,
-				01AA3B1F20FC7E0700EE2123 /* HJXdriveTimer.m in Sources */,
 				F3C77F1520FBB15000D69493 /* JXRunDealTools.m in Sources */,
-				01AA3B2020FC7E0700EE2123 /* HJXinevitableView.m in Sources */,
 				91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */,
-				01AA3B2120FC7E0700EE2123 /* HJXlawyerStore.m in Sources */,
-				01AA3B2520FC7E0700EE2123 /* HJXsheUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

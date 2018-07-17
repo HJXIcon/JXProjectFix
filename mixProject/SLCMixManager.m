@@ -23,6 +23,9 @@
 // 替换调用方法导入该类.h
 #define JXImportClassHString @"$"
 
+// 随机调用类的的最大个数
+#define JXRandomMaxClassFireCount 5
+
 static NSMutableString *importClassHString;
 
 @interface SLCMixManager()
@@ -87,7 +90,7 @@ static NSMutableString *importClassHString;
     BOOL isFileExists = [fileManager fileExistsAtPath:[NSString stringWithFormat:@"%@.h",filePath]];
     if (isFileExists) return; //文件已存在,立即停止
     
-    NSString *methodString = @"/**调用所有方法 - (模拟调用,fire完所有局部对象会立即被释放)*/\n+ (void)fire;";
+    NSString *methodString = @"/**调用方法 - (模拟调用,mainBulletFire完所有局部对象会立即被释放)*/\n+ (void)mainBulletFire;";
     NSString *hString = [NSString stringWithFormat:@"\n\n\n\n\n#import <Foundation/Foundation.h>\n\n\n\n@interface %@ : NSObject\n\n\n%@\n@end",fileName,methodString]; //.h文件内容
     NSString *mString = [self createBulletsM:fileName methodString:methodString]; //.m文件内容
 
@@ -110,25 +113,41 @@ static NSMutableString *importClassHString;
     
     NSString *bulletsM = [NSString stringWithFormat:@"\n\n\n\n\n#import \"%@.h\"\n%@\n#import <objc/runtime.h>\n@interface %@()\n@property (nonatomic, strong) NSArray <NSString *>* classArray;\n@end\n\n\n@implementation %@\n",fileName,JXImportClassHString,fileName,fileName];
     
-    NSString *classString = @"@[";
-    for (NSInteger i = 0; i < self.fileNum; i ++) {
-        NSString *aClass = self.classArray[i];
-        classString = [classString stringByAppendingString:[NSString stringWithFormat:@"@\"%@\",",aClass]];
+    // 随机调用类的方法
+    NSMutableArray<NSString *> *needClsArray = [NSMutableArray array];
+    NSMutableArray<NSString *> *preClsSelStrigArray = [NSMutableArray array];
+    for (NSInteger i = 0; i < JXRandomMaxClassFireCount; i ++) {
+         NSInteger randomIndex = arc4random() % self.classArray.count;
+        NSString *clsName = self.classArray[randomIndex];
+        [needClsArray addObject:clsName];
     }
-    classString = [classString stringByAppendingString:@"]"];
+   
     
-    NSString *methodClass = [NSString stringWithFormat:@"- (NSArray <NSString *>*)classArray {\n    if (!_classArray) {\n     _classArray = %@;\n    }\n    return _classArray;\n}",classString];
+    for (NSString *clsName in needClsArray) {
+        [preClsSelStrigArray addObject:[self performRandomMethod:clsName]];
+    }
+
     
-      bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodClass]];
+    // 队列组
+    NSString *groupString = @"\n    dispatch_group_t group = dispatch_group_create();\n      dispatch_queue_t queue = dispatch_queue_create(\"x123\", DISPATCH_QUEUE_CONCURRENT);";
+
+    
+    // 执行所有的类的方法
+    for (NSString *str in preClsSelStrigArray) {
+        groupString = [groupString stringByAppendingString:[NSString stringWithFormat:@"      dispatch_group_async(group, queue, ^{\n    %@\n});\n",str]];
+    }
+    
     
 #warning TODO...
     // 随机调用一个类的实例方法
     NSString *preClsSelStrig1 = [self performRandomMethod:fileName];
+    
+    groupString = [groupString stringByAppendingString:[NSString stringWithFormat:@"      dispatch_group_notify(group, queue, ^{\n    %@\n});\n",preClsSelStrig1]];
 
     // 随机调用一个类的实例方法
     NSString *preClsSelStrig2 = [self performRandomMethod:fileName];
     
-    NSString *methodFire = [NSString stringWithFormat:@"\n+ (void)fire{\n    @autoreleasepool {\n     %@ *bullets = [%@ new];\n       for (NSString *className in bullets.classArray) {\n      Class aClass = NSClassFromString(className);\n      NSObject *object = [aClass new];\n      \n [self getAllMethods:object];\n    }\n      }\n    %@\n}",fileName,fileName,preClsSelStrig1]; //fire方法
+    NSString *methodFire = [NSString stringWithFormat:@"\n+ (void)mainBulletFire{\n        %@\n}",groupString]; //fire方法
     
      bulletsM = [bulletsM stringByAppendingString:[NSString stringWithFormat:@"%@",methodFire]];
     
@@ -514,9 +533,10 @@ static NSMutableString *importClassHString;
             //所有的方法
             NSArray<NSString *> * SELNameArray = self.clsMethodsDict[clsString];
             NSString *SELString;
+            NSString *instanceName = [self getInstanceName:clsString];
             if (SELNameArray.count > 1) {
                 SELString = SELNameArray[arc4random() % SELNameArray.count];
-                SELString = [NSString stringWithFormat:@"[instance %@",SELString];
+                SELString = [NSString stringWithFormat:@"[%@ %@",instanceName,SELString];
                 if (![importClassHString containsString:clsString]) {
                     [importClassHString appendString:[NSString stringWithFormat:@"#import \"%@.h\"\n",clsString]];
                     NSLog(@"importHString -- %@",importClassHString);
@@ -536,7 +556,7 @@ static NSMutableString *importClassHString;
                     SELString = [NSString stringWithFormat:@"%@];",SELString];
                 }
                 
-                preClsSelStrig = [NSString stringWithFormat:@"\n\n    %@ *instance = [[%@ alloc]init];\n     %@\n",clsString,clsString,SELString];
+                preClsSelStrig = [NSString stringWithFormat:@"\n\n    %@ *%@ = [[%@ alloc]init];\n     %@\n",clsString,instanceName,clsString,SELString];
                 
             }
             
@@ -544,6 +564,47 @@ static NSMutableString *importClassHString;
         
     }
     return preClsSelStrig;
+}
+
+- (NSString *)getInstanceName:(NSString *)clsName{
+    NSString *name = @"instance";
+    if ([clsName containsString:@"Cell"]) {
+        name = @"cell";
+    }
+    if ([clsName containsString:@"VC"] || [clsName containsString:@"ViewController"] || [clsName containsString:@"Controller"]) {
+        name = @"vc";
+    }
+    if ([clsName containsString:@"View"]) {
+        name = @"view";
+    }
+    if ([clsName containsString:@"Helper"]) {
+        name = @"helper";
+    }
+    if ([clsName containsString:@"Tool"]) {
+        name = @"tool";
+    }
+    if ([clsName containsString:@"Button"]) {
+        name = @"btn";
+    }
+    if ([clsName containsString:@"ImageView"]) {
+        name = @"imgView";
+    }
+    
+    if ([clsName containsString:@"Label"]) {
+        name = @"label";
+    }
+    
+    if ([clsName containsString:@"Manager"]) {
+        name = @"manager";
+    }
+    
+    if ([clsName containsString:@"Model"]) {
+        name = @"model";
+    }
+    if ([clsName containsString:@"Animation"]) {
+        name = @"animation";
+    }
+    return name;
 }
 
 @end
