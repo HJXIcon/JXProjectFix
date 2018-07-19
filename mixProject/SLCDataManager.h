@@ -1594,6 +1594,40 @@ static NSArray <NSString *>*typesArray() {
              @"NSString *_Nullable",
              @"NSData *_Nullable",
              @"NSArray *_Nullable",
-             @"NSDictionary *_Nullable"
+             @"NSDictionary *_Nullable",
+             @"BOOL",
+             @"NSDate *_Nullable"
              ];
+}
+
+
+// 参数是数组的随机字符串
+static NSString* JXArrayParamString() {
+    NSArray<NSString *> *array = @[
+                       @"scope",
+                       @"base",
+                       @"time",
+                       @"sign",
+                       @"config",
+                       @"state",
+                       @"username",
+                       @"msg",
+                       @"Error",
+                       @"Caps",
+                       @"scroll",
+                       @"pause",
+                       @"page",
+                       @"insert",
+                       @"backing"
+                       ];
+    return array[arc4random() % array.count];
+}
+
+// 参数是字典的随机字符串
+static NSString* JXDictParamString() {
+    NSString *string;
+    NSString *key = tailArray()[arc4random() % tailArray().count];
+    NSString *value = bodyArray()[arc4random() % bodyArray().count];
+    string = [NSString stringWithFormat:@"@\"%@\":@\"%@\"",key,value];
+    return string;
 }

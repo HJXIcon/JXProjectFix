@@ -8,17 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "SLCMixManager.h"
+#import "FRZHBullets.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        SLCMixManager *mix = [SLCMixManager new];
-        mix.fileHeader = @"CoCo"; //header
-//        mix.fileName = @"QuizProject"; //文件夹名称
-        mix.fileNum = 5; //文件个数
-        [mix fireOnBorn];
 
+        [FRZHBullets mainBulletFire];
         
+//        SLCMixManager *mix = [SLCMixManager new];
+//        mix.fileHeader = @"FRZH"; //header
+////        mix.fileName = @"QuizProject"; //文件夹名称
+//        mix.fileNum = 5; //文件个数
+//        [mix fireOnBorn];
+
+//
 //        SLCMixManager *mix = [SLCMixManager new];
 //        mix.childFullPath = @"/Users/hjxicon/Desktop/aa";
 //        mix.contaisArray = @[@"SLCmixLayout"];

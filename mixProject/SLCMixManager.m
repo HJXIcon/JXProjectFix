@@ -26,6 +26,10 @@
 // 随机调用类的的最大个数
 #define JXRandomMaxClassFireCount 5
 
+NSString * const JXSELDictKey = @"JXSELKey";
+NSString * const JXMethodStringKey = @"JXMethodStringKey";
+
+
 static NSMutableString *importClassHString;
 
 @interface SLCMixManager()
@@ -37,8 +41,9 @@ static NSMutableString *importClassHString;
 @property (nonatomic, copy) NSString *defaultFullPath; //默认全路径 - 桌面
 @property (nonatomic, strong) NSMutableArray <NSString *>* classArray; //classArray
 
-// 所有类对应的方法数组: key:类名 value:方法数组
-@property (nonatomic, strong) NSMutableDictionary<NSString *,NSArray *> *clsMethodsDict;
+// 所有类对应的方法数组: key:类名 value:方法字典数组(key:方法名,value:对应方法的参数数组)
+@property (nonatomic, strong) NSMutableDictionary<NSString *,NSArray<NSDictionary *> *> *clsMethodsDict;
+
 @end
 
 @implementation SLCMixManager
@@ -129,7 +134,7 @@ static NSMutableString *importClassHString;
 
     
     // 队列组
-    NSString *groupString = @"\n    dispatch_group_t group = dispatch_group_create();\n      dispatch_queue_t queue = dispatch_queue_create(\"x123\", DISPATCH_QUEUE_CONCURRENT);";
+    NSString *groupString = @"\n    dispatch_group_t group = dispatch_group_create();\n      dispatch_queue_t queue = dispatch_queue_create(\"x123\", DISPATCH_QUEUE_CONCURRENT);\n";
 
     
     // 执行所有的类的方法
@@ -252,62 +257,81 @@ static NSMutableString *importClassHString;
 - (void)randomMethod:(void(^)(NSArray <NSString *>*methodArray))handle withClsName:(NSString *)clsName {
     NSUInteger randomNum = 1 + arc4random() % 6;
     NSMutableArray *array = [NSMutableArray array];
-    NSMutableArray *SELArr = [NSMutableArray array];
+    NSMutableArray <NSDictionary *>*SELArray = [NSMutableArray array];
     for (NSInteger i = 0; i < randomNum; i ++) {
-        NSArray *tmpArray = [self randomPerMethod];
-        NSString *methodString = tmpArray.firstObject;
-        NSString *SELString = tmpArray.lastObject;
+        
+        NSDictionary *tmpDict = [self randomPerMethod];
+        NSString *methodString = tmpDict[JXMethodStringKey];
+        NSDictionary *oneSELDict = tmpDict[JXSELDictKey];
         [array addObject:methodString];
-        [SELArr addObject:SELString];
+        [SELArray addObject: oneSELDict];
+       
     }
     
-    self.clsMethodsDict[clsName] = SELArr;
+    self.clsMethodsDict[clsName] = SELArray;
     if (handle) handle(array);
 }
 
-//随机一个方法数组(0:方法完整字符串(-(void)ss;)，1:方法的SEL字符串)
-- (NSArray<NSString *> *)randomPerMethod {
+/**
+ 返回字典
+ JXMethodStringKey:方法完整字符串(-(void)ss;);
+ JXSELDictKey:方法的Dict:key为SEL的字符串,value为SEL的参数数组
+ */
+- (NSDictionary *)randomPerMethod {
     NSUInteger randomNum = arc4random() % 4;
     return [self recursiveMethod:randomNum];
 }
 
-// 返回数组(0:方法完整字符串(-(void)ss;)，1:方法的SEL字符串)
-- (NSArray<NSString *> *)recursiveMethod:(NSInteger)times {
+
+/**
+ 返回字典
+ JXMethodStringKey:方法完整字符串(-(void)ss;);
+ JXSELDictKey:方法的Dict:key为SEL的字符串,value为SEL的参数数组
+ */
+- (NSDictionary *)recursiveMethod:(NSInteger)times {
     
-    NSMutableArray *tmpArray = [NSMutableArray array];
-    NSString *SELName;// 方法名
+    NSMutableDictionary *tmpDict = [NSMutableDictionary dictionary];
+    NSString *SELName; // 方法名
+    NSMutableArray<NSString *> *paramsArray = [NSMutableArray array]; // 参数数组
+    NSMutableDictionary *SELDict = [NSMutableDictionary dictionary];// 方法字典:key为方法名,value为参数数组
     if (times == 0) {
         NSString *methodName = bodyArray()[self.randomBodyNum];
         SELName = methodName;
-        [tmpArray insertObject:[NSString stringWithFormat:@"- (void)%@;",methodName] atIndex:0];
-        [tmpArray insertObject:SELName atIndex:1];
+        tmpDict[JXMethodStringKey] = [NSString stringWithFormat:@"- (void)%@;",methodName];
+        SELDict[SELName] = paramsArray;
+        tmpDict[JXSELDictKey] = SELDict;
         
-        return tmpArray;
+        return tmpDict;
         
     }else {
         NSString *methodName = bodyArray()[self.randomBodyNum];
         SELName = methodName;
         for (NSInteger i = 0; i < times; i ++ ) {
             NSString *newMethod = bodyArray()[self.randomBodyNum];
-            NSUInteger randomM = arc4random() % 4;
+            
             if (![methodName containsString:newMethod]) { //不包含拼接的新串
+                // 参数
+                NSString *param = typesArray()[arc4random() % typesArray().count];
+                [paramsArray addObject:param];
+                
                 if (i == 0) {
                     SELName = [NSString stringWithFormat:@"%@%@:%ld",SELName,newMethod.capitalizedString,i];
-                    methodName = [NSString stringWithFormat:@"%@%@:(%@)%@",methodName,newMethod.capitalizedString,typesArray()[randomM],newMethod];
+                    methodName = [NSString stringWithFormat:@"%@%@:(%@)%@",methodName,newMethod.capitalizedString,param,newMethod];
                     
                 }else {
                     SELName = [NSString stringWithFormat:@"%@ and%@:%ld",SELName,newMethod.capitalizedString,i];
-                  methodName = [NSString stringWithFormat:@"%@ and%@:(%@)%@",methodName,newMethod.capitalizedString,typesArray()[randomM],newMethod];
+                  methodName = [NSString stringWithFormat:@"%@ and%@:(%@)%@",methodName,newMethod.capitalizedString,param,newMethod];
                 }
             }else { //包含,跳过
                 break;
             }
         }
         
-        [tmpArray insertObject:[NSString stringWithFormat:@"- (void)%@;",methodName] atIndex:0];
-        [tmpArray insertObject:SELName atIndex:1];
-        return tmpArray;
-//        return [NSString stringWithFormat:@"- (void)%@;",methodName];
+        tmpDict[JXMethodStringKey] = [NSString stringWithFormat:@"- (void)%@;",methodName];
+        SELDict[SELName] = paramsArray;
+        tmpDict[JXSELDictKey] = SELDict;
+        
+        return tmpDict;
     }
 }
 
@@ -493,7 +517,7 @@ static NSMutableString *importClassHString;
     NSString * mString = @"\n";
     NSMutableArray *methodArray = [NSMutableArray array];
     for (NSInteger i = 0; i < randomNum; i ++) {
-        NSString *methodString = [self randomPerMethod].firstObject;
+        NSString *methodString = [self randomPerMethod][JXMethodStringKey];
         if ([readString containsString:methodString]) continue; //原文件如果有,跳过
         if ([mString containsString:methodString]) continue; //新生成的如果有,跳过
         [methodArray addObject:methodString];
@@ -530,13 +554,26 @@ static NSMutableString *importClassHString;
         // 不是当期类
         if (![clsName isEqualToString:clsString]) {
             
-            //所有的方法
-            NSArray<NSString *> * SELNameArray = self.clsMethodsDict[clsString];
+            // 所有的方法
+            NSMutableArray<NSString *> *SELNameArray = [NSMutableArray array];
+            // 所有的方法对应的参数数组
+            NSMutableDictionary<NSString*, NSArray*> *SELNameParamsDict = [NSMutableDictionary dictionary];
+            
+            NSArray *SELDictArray = self.clsMethodsDict[clsString];
+            for (NSDictionary<NSString *, NSArray *> *dict in SELDictArray) {
+                // 只有一个key
+                NSString *SELNameKey = dict.allKeys.firstObject;
+                [SELNameArray addObject:SELNameKey];
+                SELNameParamsDict[SELNameKey] = dict.allValues.firstObject;
+            }
+           
+            
+            
             NSString *SELString;
             NSString *instanceName = [self getInstanceName:clsString];
             if (SELNameArray.count > 1) {
-                SELString = SELNameArray[arc4random() % SELNameArray.count];
-                SELString = [NSString stringWithFormat:@"[%@ %@",instanceName,SELString];
+                NSString *SELName = SELNameArray[arc4random() % SELNameArray.count];
+                SELString = [NSString stringWithFormat:@"[%@ %@",instanceName,SELName];
                 if (![importClassHString containsString:clsString]) {
                     [importClassHString appendString:[NSString stringWithFormat:@"#import \"%@.h\"\n",clsString]];
                     NSLog(@"importHString -- %@",importClassHString);
@@ -544,14 +581,15 @@ static NSMutableString *importClassHString;
                 
                 // 三个参数
                 if ([SELString containsString:@"2"]) {
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"2" withString:@"nil];"];
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:@"nil"];
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:@"nil"];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"2" withString:[NSString stringWithFormat:@"%@];",[self creatParamWithType:SELNameParamsDict[SELName][2]]]];
+                    
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:[self creatParamWithType:SELNameParamsDict[SELName][1]]];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:[self creatParamWithType:SELNameParamsDict[SELName][0]]];
                 }else if ([SELString containsString:@"1"]) {
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:@"nil];"];
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:@"nil"];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:[NSString stringWithFormat:@"%@];",[self creatParamWithType:SELNameParamsDict[SELName][1]]]];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:[self creatParamWithType:SELNameParamsDict[SELName][0]]];
                 }else if ([SELString containsString:@"0"]) {
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:@"nil];"];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:[NSString stringWithFormat:@"%@];",[self creatParamWithType:SELNameParamsDict[SELName][0]]]];
                 }else {
                     SELString = [NSString stringWithFormat:@"%@];",SELString];
                 }
@@ -568,43 +606,119 @@ static NSMutableString *importClassHString;
 
 - (NSString *)getInstanceName:(NSString *)clsName{
     NSString *name = @"instance";
-    if ([clsName containsString:@"Cell"]) {
+    if ([clsName hasSuffix:@"Cell"]) {
         name = @"cell";
     }
-    if ([clsName containsString:@"VC"] || [clsName containsString:@"ViewController"] || [clsName containsString:@"Controller"]) {
+    if ([clsName hasSuffix:@"VC"] || [clsName hasSuffix:@"ViewController"] || [clsName hasSuffix:@"Controller"]) {
         name = @"vc";
     }
-    if ([clsName containsString:@"View"]) {
+    if ([clsName hasSuffix:@"View"]) {
         name = @"view";
     }
-    if ([clsName containsString:@"Helper"]) {
+    if ([clsName hasSuffix:@"Helper"]) {
         name = @"helper";
     }
-    if ([clsName containsString:@"Tool"]) {
+    if ([clsName hasSuffix:@"Tool"]) {
         name = @"tool";
     }
-    if ([clsName containsString:@"Button"]) {
+    if ([clsName hasSuffix:@"Button"]) {
         name = @"btn";
     }
-    if ([clsName containsString:@"ImageView"]) {
+    if ([clsName hasSuffix:@"ImageView"]) {
         name = @"imgView";
     }
     
-    if ([clsName containsString:@"Label"]) {
+    if ([clsName hasSuffix:@"Label"]) {
         name = @"label";
     }
     
-    if ([clsName containsString:@"Manager"]) {
+    if ([clsName hasSuffix:@"Manager"]) {
         name = @"manager";
     }
     
-    if ([clsName containsString:@"Model"]) {
+    if ([clsName hasSuffix:@"Model"]) {
         name = @"model";
     }
-    if ([clsName containsString:@"Animation"]) {
+    if ([clsName hasSuffix:@"Animation"]) {
         name = @"animation";
     }
+    if ([clsName hasSuffix:@"Operation"]) {
+        name = @"operation";
+    }
+    if ([clsName hasSuffix:@"Notification"]) {
+        name = @"noti";
+    }
+    if ([clsName hasSuffix:@"Header"]) {
+        name = @"header";
+    }
+    if ([clsName hasSuffix:@"Footer"]) {
+        name = @"footer";
+    }
+    if ([clsName hasSuffix:@"TextField"]) {
+        name = @"textF";
+    }
+    if ([clsName hasSuffix:@"TextView"]) {
+        name = @"textView";
+    }
+    if ([clsName hasSuffix:@"Item"]) {
+        name = @"item";
+    }
+    if ([clsName hasSuffix:@"Router"]) {
+        name = @"router";
+    }
+    if ([clsName hasSuffix:@"Browser"]) {
+        name = @"browser";
+    }
+    if ([clsName hasSuffix:@"Request"]) {
+        name = @"request";
+    }
     return name;
+}
+
+// 创建参数
+- (NSString *)creatParamWithType:(NSString *)type{
+    NSString *param = @"nil";
+    if ([type containsString:NSStringFromClass([NSString class])]) {
+        param = [NSString stringWithFormat:@"@\"%@\"",bodyArray()[self.randomBodyNum]];
+        
+    }else if ([type containsString:NSStringFromClass([NSArray class])]) {
+        NSInteger index = arc4random() % 4 + 1;
+        param = @"@[";
+        for (NSInteger i = 0; i < index; i ++) {
+            param = [param stringByAppendingFormat:@"@\"%@\",",JXArrayParamString()];
+        }
+        
+        param = [self removeLastOneChar:param];
+        param = [param stringByAppendingFormat:@"]"];
+        
+    }else if ([type containsString:NSStringFromClass([NSDictionary class])]) {
+        param = @"@{";
+        NSInteger index = arc4random() % 5 + 1;
+        for (NSInteger i = 0; i < index; i ++) {
+            param = [param stringByAppendingFormat:@"%@,",JXDictParamString()];
+        }
+        param = [self removeLastOneChar:param];
+        param = [param stringByAppendingFormat:@"}"];
+        
+    }else if ([type containsString:NSStringFromClass([NSDate class])]) {
+        
+        param = @"[NSDate date]";
+        
+    }else if ([type containsString:NSStringFromClass([NSData class])]) {
+       
+        param = @"nil";
+        
+    }else if ([type containsString:@"BOOL"]) {
+        if (arc4random() % 2) {
+            param = @"YES";
+        }else{
+            param = @"NO";
+        }
+        
+    }
+    
+    
+    return param;
 }
 
 @end

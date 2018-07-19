@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 #ifndef GCD_Async_Serial
 #define GCD_Async_Serial(block)\
 dispatch_async(dispatch_queue_create("com.slc.queue", DISPATCH_QUEUE_SERIAL),block);
@@ -27,6 +28,9 @@ dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);
 #define GCD_Unlock(lock)\
 dispatch_semaphore_signal(lock);
 #endif
+
+extern NSString * const JXSELKey;
+extern NSString * const JXMethodStringKey;
 
 
 @interface SLCMixManager : NSObject
