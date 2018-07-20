@@ -179,7 +179,7 @@ static NSMutableString *importClassHString;
     BOOL isFileExists = [fileManager fileExistsAtPath:[NSString stringWithFormat:@"%@.h",filePath]];
     if (isFileExists) return; //文件已存在,立即停止
     
-   __block NSString *hString = [NSString stringWithFormat:@"%@%@%@\n\n#import <Foundation/Foundation.h>\n\n\nNS_ASSUME_NONNULL_BEGIN\n@interface %@ : NSObject\n%@\n",[NSString stringWithFormat:@"%@%@.h",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,[self randomProperty]]; //.h文件内容
+   __block NSString *hString = [NSString stringWithFormat:@"%@%@%@\n\n#import <Foundation/Foundation.h>\n#import <UIKit/UIKit.h>\n\n\nNS_ASSUME_NONNULL_BEGIN\n@interface %@ : %@\n%@\n",[NSString stringWithFormat:@"%@%@.h",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,[self getSubClassStringWithClsName:file],[self randomProperty]]; //.h文件内容
     
     __block NSString *mString = [NSString stringWithFormat:@"%@%@%@\n\n#import \"%@.h\"\n%@\n\n\n@implementation %@",[NSString stringWithFormat:@"%@%@.m",ClassCommentString,file],ProjectNameString,CreaterAndCreatedTime,file,JXImportClassHString,file]; //.m文件内容
     
@@ -571,7 +571,7 @@ static NSMutableString *importClassHString;
             
             NSString *SELString;
             NSString *instanceName = [self getInstanceName:clsString];
-            if (SELNameArray.count > 1) {
+            if (SELNameArray.count >= 1) {
                 NSString *SELName = SELNameArray[arc4random() % SELNameArray.count];
                 SELString = [NSString stringWithFormat:@"[%@ %@",instanceName,SELName];
                 if (![importClassHString containsString:clsString]) {
@@ -594,7 +594,17 @@ static NSMutableString *importClassHString;
                     SELString = [NSString stringWithFormat:@"%@];",SELString];
                 }
                 
-                preClsSelStrig = [NSString stringWithFormat:@"\n\n    %@ *%@ = [[%@ alloc]init];\n     %@\n",clsString,instanceName,clsString,SELString];
+                // 判断是否是View
+                if ([clsString hasSuffix:@"View"]) {
+                    
+                    NSString *mainThreadStr = @"    if (![NSThread isMainThread]) {\n        dispatch_async(dispatch_get_main_queue(), ^{\n ";
+                    preClsSelStrig = [NSString stringWithFormat:@"\n\n%@        %@ *%@ = [[%@ alloc]init];\n     %@\n  \n  });\n }",mainThreadStr,clsString,instanceName,clsString,SELString];
+                    
+                }else{
+                    preClsSelStrig = [NSString stringWithFormat:@"\n\n    %@ *%@ = [[%@ alloc]init];\n     %@\n",clsString,instanceName,clsString,SELString];
+                }
+                
+                
                 
             }
             
@@ -673,6 +683,36 @@ static NSMutableString *importClassHString;
         name = @"request";
     }
     return name;
+}
+
+- (NSString *)getSubClassStringWithClsName:(NSString *)clsName{
+    NSString *subClass = @"NSObject";
+    
+    
+    if ([clsName hasSuffix:@"VC"] || [clsName hasSuffix:@"ViewController"] || [clsName hasSuffix:@"Controller"]) {
+        subClass = @"UIViewController";
+    }
+    if ([clsName hasSuffix:@"View"]) {
+        subClass = @"UIView";
+    }
+    
+    if ([clsName hasSuffix:@"Button"]) {
+        subClass = @"UIButton";
+    }
+    if ([clsName hasSuffix:@"ImageView"]) {
+        subClass = @"UIImageView";
+    }
+    
+    if ([clsName hasSuffix:@"Label"]) {
+        subClass = @"UILabel";
+    }
+    if ([clsName hasSuffix:@"TextField"]) {
+        subClass = @"UITextField";
+    }
+    if ([clsName hasSuffix:@"TextView"]) {
+        subClass = @"UITextView";
+    }
+    return subClass;
 }
 
 // 创建参数

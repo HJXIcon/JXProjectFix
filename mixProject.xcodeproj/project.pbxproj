@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01B48FE8210078410041DC12 /* FRZHBullets.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B48FDD210078410041DC12 /* FRZHBullets.m */; };
-		01B48FE9210078410041DC12 /* FRZHcancelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B48FDF210078410041DC12 /* FRZHcancelVC.m */; };
-		01B48FEA210078410041DC12 /* FRZHcomputerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B48FE1210078410041DC12 /* FRZHcomputerAnimator.m */; };
-		01B48FEB210078410041DC12 /* FRZHdriveEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B48FE3210078410041DC12 /* FRZHdriveEvent.m */; };
-		01B48FEC210078410041DC12 /* FRZHinspectionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B48FE5210078410041DC12 /* FRZHinspectionTask.m */; };
-		01B48FED210078410041DC12 /* FRZHsentenceTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B48FE7210078410041DC12 /* FRZHsentenceTransformer.m */; };
 		91EE35DA20F3625800BD8AA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE35D920F3625800BD8AA4 /* main.m */; };
 		91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */; };
 		F3C77F1520FBB15000D69493 /* JXRunDealTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C77F1420FBB15000D69493 /* JXRunDealTools.m */; };
@@ -31,18 +25,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01B48FDC210078410041DC12 /* FRZHBullets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRZHBullets.h; sourceTree = "<group>"; };
-		01B48FDD210078410041DC12 /* FRZHBullets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRZHBullets.m; sourceTree = "<group>"; };
-		01B48FDE210078410041DC12 /* FRZHcancelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRZHcancelVC.h; sourceTree = "<group>"; };
-		01B48FDF210078410041DC12 /* FRZHcancelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRZHcancelVC.m; sourceTree = "<group>"; };
-		01B48FE0210078410041DC12 /* FRZHcomputerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRZHcomputerAnimator.h; sourceTree = "<group>"; };
-		01B48FE1210078410041DC12 /* FRZHcomputerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRZHcomputerAnimator.m; sourceTree = "<group>"; };
-		01B48FE2210078410041DC12 /* FRZHdriveEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRZHdriveEvent.h; sourceTree = "<group>"; };
-		01B48FE3210078410041DC12 /* FRZHdriveEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRZHdriveEvent.m; sourceTree = "<group>"; };
-		01B48FE4210078410041DC12 /* FRZHinspectionTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRZHinspectionTask.h; sourceTree = "<group>"; };
-		01B48FE5210078410041DC12 /* FRZHinspectionTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRZHinspectionTask.m; sourceTree = "<group>"; };
-		01B48FE6210078410041DC12 /* FRZHsentenceTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRZHsentenceTransformer.h; sourceTree = "<group>"; };
-		01B48FE7210078410041DC12 /* FRZHsentenceTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRZHsentenceTransformer.m; sourceTree = "<group>"; };
 		91EE35D620F3625800BD8AA4 /* mixProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mixProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		91EE35D920F3625800BD8AA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLCMixManager.h; sourceTree = "<group>"; };
@@ -63,26 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01B48FDB210078410041DC12 /* mixProject */ = {
-			isa = PBXGroup;
-			children = (
-				01B48FDC210078410041DC12 /* FRZHBullets.h */,
-				01B48FDD210078410041DC12 /* FRZHBullets.m */,
-				01B48FDE210078410041DC12 /* FRZHcancelVC.h */,
-				01B48FDF210078410041DC12 /* FRZHcancelVC.m */,
-				01B48FE0210078410041DC12 /* FRZHcomputerAnimator.h */,
-				01B48FE1210078410041DC12 /* FRZHcomputerAnimator.m */,
-				01B48FE2210078410041DC12 /* FRZHdriveEvent.h */,
-				01B48FE3210078410041DC12 /* FRZHdriveEvent.m */,
-				01B48FE4210078410041DC12 /* FRZHinspectionTask.h */,
-				01B48FE5210078410041DC12 /* FRZHinspectionTask.m */,
-				01B48FE6210078410041DC12 /* FRZHsentenceTransformer.h */,
-				01B48FE7210078410041DC12 /* FRZHsentenceTransformer.m */,
-			);
-			name = mixProject;
-			path = ../../mixProject;
-			sourceTree = "<group>";
-		};
 		91EE35CD20F3625800BD8AA4 = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +64,6 @@
 		91EE35D820F3625800BD8AA4 /* mixProject */ = {
 			isa = PBXGroup;
 			children = (
-				01B48FDB210078410041DC12 /* mixProject */,
 				91EE37CA20F3C67500BD8AA4 /* SLCDataManager.h */,
 				91EE37C520F3A97900BD8AA4 /* SLCMixManager.h */,
 				91EE37C620F3A97900BD8AA4 /* SLCMixManager.m */,
@@ -169,14 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01B48FEC210078410041DC12 /* FRZHinspectionTask.m in Sources */,
 				91EE35DA20F3625800BD8AA4 /* main.m in Sources */,
-				01B48FE8210078410041DC12 /* FRZHBullets.m in Sources */,
 				F3C77F1520FBB15000D69493 /* JXRunDealTools.m in Sources */,
-				01B48FED210078410041DC12 /* FRZHsentenceTransformer.m in Sources */,
-				01B48FEA210078410041DC12 /* FRZHcomputerAnimator.m in Sources */,
-				01B48FEB210078410041DC12 /* FRZHdriveEvent.m in Sources */,
-				01B48FE9210078410041DC12 /* FRZHcancelVC.m in Sources */,
 				91EE37C720F3A97900BD8AA4 /* SLCMixManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
