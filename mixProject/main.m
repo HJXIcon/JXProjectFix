@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         SLCMixManager *mix = [SLCMixManager new];
         mix.fileHeader = @"WD"; //header
 //        mix.fileName = @"QuizProject"; //文件夹名称
-        mix.fileNum = 50; //文件个数
+        mix.fileNum = 20; //文件个数
         [mix fireOnBorn];
 
 //

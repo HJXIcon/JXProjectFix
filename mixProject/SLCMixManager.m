@@ -589,7 +589,7 @@ static NSMutableString *importClassHString;
                     SELString = [SELString stringByReplacingOccurrencesOfString:@"1" withString:[NSString stringWithFormat:@"%@];",[self creatParamWithType:SELNameParamsDict[SELName][1]]]];
                     SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:[self creatParamWithType:SELNameParamsDict[SELName][0]]];
                 }else if ([SELString containsString:@"0"]) {
-                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0" withString:[NSString stringWithFormat:@"%@];",[self creatParamWithType:SELNameParamsDict[SELName][0]]]];
+                    SELString = [SELString stringByReplacingOccurrencesOfString:@"0"  withString:[NSString stringWithFormat:@"%@];",[self creatParamWithType:SELNameParamsDict[SELName][0]]]];
                 }else {
                     SELString = [NSString stringWithFormat:@"%@];",SELString];
                 }
@@ -598,7 +598,7 @@ static NSMutableString *importClassHString;
                 if ([clsString hasSuffix:@"View"]) {
                     
                     NSString *mainThreadStr = @"    if (![NSThread isMainThread]) {\n        dispatch_async(dispatch_get_main_queue(), ^{\n ";
-                    preClsSelStrig = [NSString stringWithFormat:@"\n\n%@        %@ *%@ = [[%@ alloc]init];\n     %@\n  \n  });\n }",mainThreadStr,clsString,instanceName,clsString,SELString];
+                    preClsSelStrig = [NSString stringWithFormat:@"\n\n%@        %@ *%@ = [[%@ alloc]init];\n    %@.frame = CGRectMake(arc4random() %% 50, (arc4random() %% 50 + 50), (arc4random() %% 50 + 150), (arc4random() %% 10 + 30));\n     %@\n  \n  });\n }",mainThreadStr,clsString,instanceName,clsString,instanceName,SELString];
                     
                 }else{
                     preClsSelStrig = [NSString stringWithFormat:@"\n\n    %@ *%@ = [[%@ alloc]init];\n     %@\n",clsString,instanceName,clsString,SELString];
