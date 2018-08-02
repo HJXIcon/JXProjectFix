@@ -24,11 +24,13 @@ int main(int argc, const char * argv[]) {
 
 //
         SLCMixManager *mix = [SLCMixManager new];
-//        mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/BeiYuSDK";
-        mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/testFramework";
+        mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/BeiYuSDK";
+//        mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/testFramework";
 //        mix.contaisArray = @[@"SLCmixLayout"];
-        mix.blackArray = @[@"JXBlack"];
-        mix.childMethodNum = 3;
+
+        mix.blackArray = @[@"CoreData",@"PublicModule",@"AFNetworking",@"BYUrl",@"BYConstants",@"JHCommon",@"UDID",@"Category",@"HUD",@"BeiYuUnionSDK"];
+        
+        mix.childMethodNum = 4;
         [mix fireOnChild];
 
     }

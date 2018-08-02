@@ -398,6 +398,7 @@ static NSMutableString *importClassHString;
         NSLog(@"error:目录不存在");
         return;
     }else {
+        
         [self forwardAllFiles:directory handle:^(NSString *dir) {
             
             //  黑名单

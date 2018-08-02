@@ -65,7 +65,7 @@ extern NSString * const JXMethodStringKey;
 /**指定的包含某些字符串的特殊类 - 不设不处理*/
 @property (nonatomic, strong) NSArray <NSString *>* contaisArray;
 
-/**不处理的特殊类 - 不设不处理*/
+/**不处理的特殊类,文件夹 - 不设不处理*/
 @property (nonatomic, strong) NSArray <NSString *>* blackArray;
 
 #pragma mark ---<调用方法>---
