@@ -26,6 +26,9 @@
 // 随机调用类的的最大个数
 #define JXRandomMaxClassFireCount 5
 
+// 调用方法的替换字符
+#define JXCallMethodStirng @"=.="
+
 NSString * const JXSELDictKey = @"JXSELKey";
 NSString * const JXMethodStringKey = @"JXMethodStringKey";
 
@@ -44,6 +47,10 @@ static NSMutableString *importClassHString;
 // 所有类对应的方法数组: key:类名 value:方法字典数组(key:方法名,value:对应方法的参数数组)
 @property (nonatomic, strong) NSMutableDictionary<NSString *,NSArray<NSDictionary *> *> *clsMethodsDict;
 
+
+/// ----->> >>> >> >> >> >> >> >>
+// 保存原有的方法字符
+
 @end
 
 @implementation SLCMixManager
@@ -51,7 +58,7 @@ static NSMutableString *importClassHString;
 - (instancetype)init {
     if (self = [super init]) {
         self.fileNum = 120;
-        self.fileName = @"mixProject";
+        self.fileName = @"IconProject";
         self.fullPath = [self defaultFullPath];
         self.fileHeader = @"SLC";
         self.classArray = [NSMutableArray array];
@@ -478,13 +485,16 @@ static NSMutableString *importClassHString;
     NSFileHandle *writeHandle = [NSFileHandle fileHandleForWritingAtPath:path]; //写入
     NSFileHandle *readHandle = [NSFileHandle fileHandleForReadingAtPath:path]; //读取
     
+    
     NSData *readData = [readHandle readDataToEndOfFile]; //读取所有内容
     NSString *readString = [[NSString alloc] initWithData:readData encoding:NSUTF8StringEncoding]; //文件原内容
     
-     NSInteger end = [writeHandle seekToEndOfFile];
+    NSInteger end = [writeHandle seekToEndOfFile];
     
     NSInteger num = self.childTailPosition != 0 ? self.childTailPosition : 5;
     [writeHandle seekToFileOffset:end - num];
+    
+   
     
     NSString *hString = @"\n";
     for (NSString *method in array) {
@@ -506,26 +516,110 @@ static NSMutableString *importClassHString;
     NSFileHandle *writeHandle = [NSFileHandle fileHandleForWritingAtPath:path]; //写入
     NSFileHandle *readHandle = [NSFileHandle fileHandleForReadingAtPath:path]; //读取
     
+    NSFileHandle *writeMFileHandle = [NSFileHandle fileHandleForWritingAtPath:path]; // .m文件写入
+    
+    
     NSData *readData = [readHandle readDataToEndOfFile]; //读取所有内容
     NSString *readString = [[NSString alloc] initWithData:readData encoding:NSUTF8StringEncoding]; //文件原内容
     
-    NSInteger end = [writeHandle seekToEndOfFile];
-    NSInteger num = self.childTailPosition != 0 ? self.childTailPosition : 5;
-    [writeHandle seekToFileOffset:end - num];
+    // 1.保存原有方法
+    NSArray<NSString *> *originMethodArr = [readString componentsSeparatedByString:@"- ("];
+    // 2.需要调用方法的个数
+    static NSInteger needRepalceMethodCount = 0;
+    for (NSInteger i = 0; i < originMethodArr.count; i++) {
+        
+        // 3.在对应的需要调用方法的地方做上标记 =.=0
+        if (i == 0) continue;
+        NSString *string = originMethodArr[i];
+        if ([string containsString:@"viewDidLoad"] || [string containsString:@"viewWillAppear"] || [string containsString:@"viewDidAppear"] || [string containsString:@"viewDidDisappear"] || [string containsString:@"viewWillDisappear"] || [string containsString:@"dealloc"]) {
+            continue;
+        }
+        NSRange range = [string rangeOfString:@"{"];
+        
+        if (range.location == NSNotFound) {
+            continue;
+        }
+        NSString *subToString = [string substringToIndex:range.location + 1];
+        string = [NSString stringWithFormat:@"- (%@",subToString];
+        
+        NSString *originMethodString = string;
+        NSString *replaceMethodString = [string stringByAppendingString:[NSString stringWithFormat:@"\n    %@%ld",JXCallMethodStirng,needRepalceMethodCount]];
+        
+        readString = [readString stringByReplacingOccurrencesOfString:originMethodString withString:replaceMethodString];
+        NSLog(@"string == %@",string);
+        needRepalceMethodCount ++;
+    }
+    
 
     NSUInteger randomNum = self.childMethodNum != 0 ? self.childMethodNum : 1 + arc4random() % 6;
     NSString * mString = @"\n";
+    
+    // 4.随机生成垃圾方法
     NSMutableArray *methodArray = [NSMutableArray array];
+    // 方法调用
+    NSString *preSELString;
     for (NSInteger i = 0; i < randomNum; i ++) {
-        NSString *methodString = [self randomPerMethod][JXMethodStringKey];
+        NSDictionary *methodInfoDict = [self randomPerMethod];
+        
+#warning TODO...
+        // 方法名 -> 让原有的方法调用新增的方法 -> 替换方法调用字符
+        NSString *methodString = methodInfoDict[JXMethodStringKey];
+        NSDictionary *SelParamDict = methodInfoDict[JXSELDictKey];
+        
         if ([readString containsString:methodString]) continue; //原文件如果有,跳过
         if ([mString containsString:methodString]) continue; //新生成的如果有,跳过
+        
+        // 5.调用垃圾方法的字符串
+        NSString *preSELName = SelParamDict.allKeys.lastObject;
+        NSArray<NSString *> *paramArr = SelParamDict[preSELName];
+        preSELString = [NSString stringWithFormat:@"[self %@",preSELName];
+        
+        if (paramArr.count > 0) {
+            for (NSInteger j = 0; j < paramArr.count; j++) {
+                preSELString = [preSELString stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%ld",j] withString:[self creatParamWithType:paramArr[j]]];
+            }
+            preSELString = [preSELString stringByAppendingString:@"];\n"];
+        }else{
+            preSELString = [preSELString stringByAppendingString:@"];\n"];
+        }
+        
+        
+        // 6.替换成调用垃圾方法的字符
+        if (needRepalceMethodCount >= randomNum) {
+            
+             readString = [readString stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@%ld",JXCallMethodStirng,i] withString:preSELString];
+            
+            // 按之前多余的标记清空
+            for (NSInteger z = randomNum; z < needRepalceMethodCount; z ++) {
+                readString = [readString stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@%ld",JXCallMethodStirng,z] withString:@""];
+            }
+            
+        }else{
+            // needRepalceMethodCount < randomNum
+            
+           readString = [readString stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@%ld",JXCallMethodStirng,i] withString:preSELString];
+        }
+        
+        NSLog(@"readString ==== %@",readString);
+        
         [methodArray addObject:methodString];
         
         mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n\n%@",[self removeLastOneChar:methodString]]];
         mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n{\n      for (NSInteger i = 0; i < 3; i++) {\n        NSString *str = @\"func name = %@\";\n        [str stringByAppendingString:@\"time is 3\"];\n       }\n}\n",methodString]];
+        
     }
-
+    
+    
+    
+    
+    // 清空内容
+    [writeMFileHandle writeData:[readString dataUsingEncoding:NSUTF8StringEncoding]];
+    [writeMFileHandle closeFile]; //关闭写
+    
+    
+    NSInteger end = [writeHandle seekToEndOfFile];
+    NSInteger num = self.childTailPosition != 0 ? self.childTailPosition : 5;
+    [writeHandle seekToFileOffset:end - num];
     mString = [mString stringByAppendingString:@"\n\n@end"];
     NSData *data = [mString dataUsingEncoding:NSUTF8StringEncoding];
     [writeHandle writeData:data]; //写入数据

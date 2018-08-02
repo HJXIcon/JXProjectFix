@@ -16,18 +16,18 @@ int main(int argc, const char * argv[]) {
 
 //        [FRZHBullets mainBulletFire];
         
-        SLCMixManager *mix = [SLCMixManager new];
-        mix.fileHeader = @"WD"; //header
-//        mix.fileName = @"QuizProject"; //文件夹名称
-        mix.fileNum = 20; //文件个数
-        [mix fireOnBorn];
+//        SLCMixManager *mix = [SLCMixManager new];
+//        mix.fileHeader = @"WKCQ"; //header
+////        mix.fileName = @"QuizProject"; //文件夹名称
+//        mix.fileNum = 25; //文件个数
+//        [mix fireOnBorn];
 
 //
-//        SLCMixManager *mix = [SLCMixManager new];
-//        mix.childFullPath = @"/Users/hjxicon/Desktop/aa";
+        SLCMixManager *mix = [SLCMixManager new];
+        mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/testFramework";
 //        mix.contaisArray = @[@"SLCmixLayout"];
-//        mix.childMethodNum = 10;
-//        [mix fireOnChild];
+        mix.childMethodNum = 3;
+        [mix fireOnChild];
 
     }
     return 0;
