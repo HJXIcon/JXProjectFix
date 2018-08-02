@@ -24,8 +24,10 @@ int main(int argc, const char * argv[]) {
 
 //
         SLCMixManager *mix = [SLCMixManager new];
+//        mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/BeiYuSDK";
         mix.childFullPath = @"/Users/hjxicon/Desktop/12-H文件/testFramework";
 //        mix.contaisArray = @[@"SLCmixLayout"];
+        mix.blackArray = @[@"JXBlack"];
         mix.childMethodNum = 3;
         [mix fireOnChild];
 

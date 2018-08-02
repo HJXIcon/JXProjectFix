@@ -399,6 +399,16 @@ static NSMutableString *importClassHString;
         return;
     }else {
         [self forwardAllFiles:directory handle:^(NSString *dir) {
+            
+            //  黑名单
+            if (self.blackArray && self.blackArray.count != 0) {
+                for (NSString *string in self.blackArray) {
+                    if ([dir containsString:string]) {
+                        return;
+                    }
+                }
+            }
+            
             if (self.contaisArray && self.contaisArray.count != 0) { //指定
                 for (NSString *string in self.contaisArray) {
                     if ([dir containsString:string]) {
@@ -546,7 +556,6 @@ static NSMutableString *importClassHString;
         NSString *replaceMethodString = [string stringByAppendingString:[NSString stringWithFormat:@"\n    %@%ld",JXCallMethodStirng,needRepalceMethodCount]];
         
         readString = [readString stringByReplacingOccurrencesOfString:originMethodString withString:replaceMethodString];
-        NSLog(@"string == %@",string);
         needRepalceMethodCount ++;
     }
     
@@ -600,8 +609,6 @@ static NSMutableString *importClassHString;
            readString = [readString stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@%ld",JXCallMethodStirng,i] withString:preSELString];
         }
         
-        NSLog(@"readString ==== %@",readString);
-        
         [methodArray addObject:methodString];
         
         mString = [mString stringByAppendingString:[NSString stringWithFormat:@"\n\n%@",[self removeLastOneChar:methodString]]];
@@ -615,7 +622,7 @@ static NSMutableString *importClassHString;
     // 清空内容
     [writeMFileHandle writeData:[readString dataUsingEncoding:NSUTF8StringEncoding]];
     [writeMFileHandle closeFile]; //关闭写
-    
+    needRepalceMethodCount = 0;
     
     NSInteger end = [writeHandle seekToEndOfFile];
     NSInteger num = self.childTailPosition != 0 ? self.childTailPosition : 5;
